@@ -3,7 +3,7 @@ import React from 'react'
 const Navbar = () => {
   return (
     <>
-        <div className='w-full h-20 bg-transparent backdrop-blur-lg flex items-center justify-between border-1 border-b-blue-600'>
+        <div className='w-full h-20 fixed bg-transparent backdrop-blur-lg flex items-center justify-between border-1 border-b-gray-800'>
             <div className="flex items-center px-7 relative">
                 <img src='/logo.png' className='w-20 h-20 rounded-2xl object-cover' alt="" />
                 <h1 className='text-xl font-bold bg-gradient-to-r from-blue-500 via-red-500 to-white bg-clip-text text-transparent hover:cursor-pointer'>Crowd Taste</h1>
