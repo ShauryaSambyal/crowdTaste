@@ -15,7 +15,7 @@ const Searchbar = () => {
     const restaurantAPI = axios.create({
         baseURL: 'https://api.foursquare.com/v3',
         headers: {
-            'Authorization': `fsq3${apiKey}`,
+            'Authorization': apiKey,
             'Content-Type': 'application/json'
         }
     })
@@ -27,15 +27,17 @@ const Searchbar = () => {
         }
         setLoading(true)
         try {
-            const response = await axios.get('http://localhost:5000/api/restaurants', {
+            const response = await restaurantAPI.get('/places/search', {
                 params: {
                     query: searchQuery || "restaurant",
                     ll: "12.9716,77.5946",
-                    limit: 10
+                    limit: 10,
+                    categories: "13065"
                 }
             })
-            setRestaurants(response.data.results || [])
-            console.log(restaurants);
+            
+            console.log(searchQuery)
+            console.log(response.data);
         }catch (error) {
             if (error.response) {
                 console.error("Foursquare error:", error.response.data);
