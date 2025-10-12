@@ -24,7 +24,7 @@ const Searchbar = () => {
         setLoading(true);
         try {
             // The request will now go to your backend at GET /api/restaurants
-            const response = await restaurantAPI.get('/places/search', {
+            const response = await restaurantAPI.get('/restaurants', {
                 params: {
                     query: searchQuery,
                     ll: "12.9716,77.5946",

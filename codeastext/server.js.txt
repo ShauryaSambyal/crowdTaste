@@ -1,3 +1,5 @@
+
+// server.js
 import express, { json } from 'express';
 import axios from 'axios';
 import cors from 'cors';
@@ -6,7 +8,7 @@ import dotenv from 'dotenv';
 dotenv.config()
 const app = express();
 const PORT = 3001;
-const apiKey = process.env.API_KEY
+const apiKey = process.env.VITE_API_KEY
 // Enable CORS for your React app
 app.use(cors({
   origin: 'http://localhost:5173'

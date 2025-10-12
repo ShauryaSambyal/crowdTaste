@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+*{
+    font-family: poppins;
+}
+
+body{
+    background-color: #151514;
+}
+.scroll-hide::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}
