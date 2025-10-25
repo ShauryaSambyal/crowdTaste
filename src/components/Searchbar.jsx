@@ -10,45 +10,10 @@ const Searchbar = () => {
     const [reviews, setReviews] = useState([]);
     const [filters, setFilters] = useState([]);
 
-    // This is the only change needed for the API call logic.
-    // The axios instance now correctly uses the backend proxy.
-    const restaurantAPI = axios.create({
-        baseURL: '/api' 
-    });
+    var searchRestaurants = () =>{
+        
+    }
 
-    const searchRestaurants = async () => {
-        if (!searchQuery.trim()) {
-            alert('Please enter a restaurant name');
-            return;
-        }
-        setLoading(true);
-        try {
-            // The request will now go to your backend at GET /api/restaurants
-            const response = await restaurantAPI.get('/places/search', {
-                params: {
-                    query: searchQuery,
-                    ll: "12.9716,77.5946",
-                    limit: 10,
-                    categories: "13065"
-                }
-            });
-            
-            console.log(searchQuery);
-            console.log(response.data);
-            // setRestaurants(response.data.results); // You can uncomment this to update your state
-        } catch (error) {
-            if (error.response) {
-                console.error("Foursquare error:", error.response.data);
-            } else {
-                console.error("Error:", error);
-            }
-            setRestaurants([]);
-            
-        } finally {
-            setLoading(false);
-        }
-    };
-    
     const onclick = (e) => {
         e.preventDefault();
         searchRestaurants();

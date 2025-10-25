@@ -1,0 +1,1339 @@
+[
+  {
+    "name": "Mavalli Tiffin Rooms (MTR)",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "South Indian Vegetarian, Karnataka Cuisine",
+    "famous_for": [
+      "high rating",
+      "authentic Karnataka food",
+      "historic institution",
+      "Rava Idli invention",
+      "affordable"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1598512217743-41c19b222f67?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Karavalli",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "Coastal South Indian (Mangalorean, Goan, Kerala)",
+    "famous_for": [
+      "fine dining",
+      "seafood",
+      "good vibe",
+      "high rating",
+      "luxury dining"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1616421455364-db08620e234c?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Mysuru Mylari Hotel (Vinayaka Mylari)",
+    "location": "Mysuru",
+    "type_of_dishes_served": "South Indian Vegetarian (Breakfast)",
+    "famous_for": [
+      "Masala Dosa",
+      "authentic Karnataka food",
+      "historic institution",
+      "affordable",
+      "high rating"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1589178736181-7d1a2f6c0117?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Pai Tiffins",
+    "location": "Mangaluru",
+    "type_of_dishes_served": "Coastal Karnataka Vegetarian",
+    "famous_for": [
+      "Neer Dosa",
+      "Goli Bajji",
+      "Mangalorean cuisine",
+      "affordable",
+      "high rating"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1596756627571-70097c02c019?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1634842183216-2d1f971c2f9d?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Toit Brewpub",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "Pub Food, Continental, Craft Beer",
+    "famous_for": [
+      "craft beer",
+      "good vibe",
+      "pizza",
+      "high rating",
+      "nightlife"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1517248135460-4c311c80f3f2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Nagarjuna Restaurant",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "Andhra Cuisine (Spicy Non-Veg)",
+    "famous_for": [
+      "Andhra Biryani",
+      "spicy food",
+      "Guntur chicken",
+      "high rating",
+      "good for non-veg"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1555562060-6b62762a4d3f?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Khanavali (North Karnataka Style)",
+    "location": "Hubballi-Dharwad",
+    "type_of_dishes_served": "North Karnataka Meals (Jowar Roti)",
+    "famous_for": [
+      "Jolada Rotti",
+      "North Karnataka food",
+      "affordable",
+      "authentic cuisine",
+      "simple vibe"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1594916964177-d42f534125b0?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Pallavi Bar and Restaurant",
+    "location": "Mangaluru",
+    "type_of_dishes_served": "Mangalorean Seafood, Indian",
+    "famous_for": [
+      "seafood",
+      "Fish Fry",
+      "high rating",
+      "Mangalorean cuisine"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1579736805096-7c919d71c4c9?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1583000965045-8c7600869502?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Vidyarthi Bhavan",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "South Indian Vegetarian (Breakfast)",
+    "famous_for": [
+      "Masala Dosa",
+      "historic institution",
+      "affordable",
+      "high rating",
+      "authentic Karnataka food"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1586518174786-e0f6f272c444?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1594916964177-d42f534125b0?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Sagar Fast Food",
+    "location": "Mysuru",
+    "type_of_dishes_served": "North Indian, Chaat, Fast Food",
+    "famous_for": [
+      "Pav Bhaji",
+      "North Indian food",
+      "affordable",
+      "quick service",
+      "street food"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1563273398-316887570884?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Koshy's Parade Cafe",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "Continental, Indian, Bakery",
+    "famous_for": [
+      "historic institution",
+      "good vibe",
+      "classic Bangalore institution",
+      "high rating",
+      "filter coffee"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1541701570778-578d65a8e0f6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1601362770851-240a5a67f08c?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Meghana Foods",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "Andhra, Biryani, Indian Non-Veg",
+    "famous_for": [
+      "Biryani",
+      "spicy food",
+      "affordable",
+      "high rating",
+      "fast service"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1589178736181-7d1a2f6c0117?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "GTR (Guru Tiffin Room)",
+    "location": "Mysuru",
+    "type_of_dishes_served": "South Indian Vegetarian, Breakfast",
+    "famous_for": [
+      "Butter Dosa",
+      "authentic Karnataka food",
+      "affordable",
+      "historic institution",
+      "high rating"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1582236528751-b0e9a3b9f3a6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Coast 2 Coast",
+    "location": "Mangaluru",
+    "type_of_dishes_served": "Mangalorean Seafood, Indian",
+    "famous_for": [
+      "Prawn Ghee Roast",
+      "seafood",
+      "Mangalorean cuisine",
+      "good for non-veg",
+      "high rating"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1565431326402-9a008e3b4a20?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Central Tiffin Room (CTR) - Shri Sagar",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "South Indian Vegetarian, Breakfast",
+    "famous_for": [
+      "Benne Masala Dosa",
+      "historic institution",
+      "affordable",
+      "high rating",
+      "authentic Karnataka food"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1596756627571-70097c02c019?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Plan B",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "American, Pub Food, Wings",
+    "famous_for": [
+      "Chicken Wings",
+      "good vibe",
+      "affordable",
+      "American food",
+      "bar/pub"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1517248135460-4c311c80f3f2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1563273398-316887570884?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "The Barge",
+    "location": "Mysuru",
+    "type_of_dishes_served": "Multicuisine, Microbrewery",
+    "famous_for": [
+      "craft beer",
+      "good vibe",
+      "high rating",
+      "luxury dining",
+      "multicuisine"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1549488349-e09d0234a413?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1563273398-316887570884?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Shetty Lunch Home",
+    "location": "Mangaluru",
+    "type_of_dishes_served": "Mangalorean Seafood, Non-Veg",
+    "famous_for": [
+      "Fish Thali",
+      "Mangalorean cuisine",
+      "affordable",
+      "good for non-veg",
+      "authentic food"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1579736805096-7c919d71c4c9?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Brahmin's Coffee Bar",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "South Indian Vegetarian (Breakfast)",
+    "famous_for": [
+      "Idli-Vada-Chutney",
+      "authentic Karnataka food",
+      "affordable",
+      "historic institution",
+      "high rating"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1586518174786-e0f6f272c444?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": ""},
+    {
+    "name": "Kamat Bugle Rock",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "South Indian Vegetarian",
+    "famous_for": [
+      "Thatte Idli",
+      "affordable",
+      "authentic Karnataka food",
+      "quick service",
+      "historic institution"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1541701570778-578d65a8e0f6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "The Glass House",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "European, Continental, Bar",
+    "famous_for": [
+      "good ambiance",
+      "luxury dining",
+      "high rating",
+      "cocktails",
+      "fusion dishes"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1596756627571-70097c02c019?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Hotel Sarathi",
+    "location": "Mysuru",
+    "type_of_dishes_served": "Indian, Biryani, Non-Veg",
+    "famous_for": [
+      "Mutton Biryani",
+      "affordable",
+      "good for non-veg",
+      "authentic food"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1582236528751-b0e9a3b9f3a6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Pai Tiffins",
+    "location": "Udupi",
+    "type_of_dishes_served": "South Indian Vegetarian, Coastal",
+    "famous_for": [
+      "Udupi Tiffins",
+      "Masala Dosa",
+      "affordable",
+      "authentic food"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1579736805096-7c919d71c4c9?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "The Black Sheep Bistro",
+    "location": "Mangaluru",
+    "type_of_dishes_served": "Continental, Indian, Fusion",
+    "famous_for": [
+      "fusion cuisine",
+      "good vibe",
+      "high rating",
+      "innovative dishes"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1565431326402-9a008e3b4a20?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Chowman",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "Chinese, Asian",
+    "famous_for": [
+      "authentic Chinese",
+      "affordable",
+      "good for delivery",
+      "high rating"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1589178736181-7d1a2f6c0117?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Vidyarthi Bhavan",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "South Indian Vegetarian (Breakfast)",
+    "famous_for": [
+      "Masala Dosa",
+      "historic institution",
+      "affordable",
+      "authentic Karnataka food",
+      "filter coffee"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1555562060-6b62762a4d3f?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Tippu Soolthan Bar & Restaurant",
+    "location": "Mysuru",
+    "type_of_dishes_served": "Indian, Non-Veg, Local Cuisine",
+    "famous_for": [
+      "Mutton Dishes",
+      "local cuisine",
+      "affordable",
+      "good for non-veg"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1582236528751-b0e9a3b9f3a6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Spice Bazaar",
+    "location": "Hubballi-Dharwad",
+    "type_of_dishes_served": "North Indian, Chinese, Continental",
+    "famous_for": [
+      "variety of cuisines",
+      "affordable",
+      "family dining",
+      "good ambiance"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1594916964177-d42f534125b0?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Ebony",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "North Indian, Thai, Continental (Rooftop)",
+    "famous_for": [
+      "rooftop dining",
+      "city view",
+      "fine dining",
+      "high rating",
+      "good vibe"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1517248135460-4c311c80f3f2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Chung Wah",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "Chinese, Asian",
+    "famous_for": [
+      "authentic Chinese",
+      "historic institution",
+      "affordable",
+      "good for non-veg"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1589178736181-7d1a2f6c0117?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Sri Krishna Gana Sabha",
+    "location": "Mysuru",
+    "type_of_dishes_served": "South Indian Vegetarian",
+    "famous_for": [
+      "South Indian breakfast",
+      "affordable",
+      "authentic food",
+      "quick service"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1582236528751-b0e9a3b9f3a6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Tandoor",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "North Indian, Mughlai",
+    "famous_for": [
+      "North Indian food",
+      "Kebabs",
+      "high rating",
+      "fine dining"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1555562060-6b62762a4d3f?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Fish & Fish",
+    "location": "Mangaluru",
+    "type_of_dishes_served": "Coastal Karnataka, Seafood",
+    "famous_for": [
+      "seafood",
+      "affordable",
+      "authentic cuisine",
+      "good for non-veg"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1579736805096-7c919d71c4c9?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Hotel Dwaraka",
+    "location": "Hassan",
+    "type_of_dishes_served": "South Indian Vegetarian",
+    "famous_for": [
+      "South Indian breakfast",
+      "affordable",
+      "quick service",
+      "filter coffee"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1549488349-e09d0234a413?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Smally's Resto Cafe",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "Fast Food, Burgers, American, Cafe",
+    "famous_for": [
+      "burgers",
+      "affordable",
+      "youth favourite",
+      "quick bites"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1586518174786-e0f6f272c444?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "The Oberoi Grand Dining Room",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "Fine Dining, Indian, International",
+    "famous_for": [
+      "luxury dining",
+      "high rating",
+      "good ambiance",
+      "hotel dining"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1565431326402-9a008e3b4a20?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Amma's Pastries",
+    "location": "Bengaluru (Multiple Locations)",
+    "type_of_dishes_served": "Bakery, Desserts, Fast Food",
+    "famous_for": [
+      "pastries",
+      "affordable",
+      "quick bites",
+      "local favourite"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1541701570778-578d65a8e0f6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Apoorva Deluxe",
+    "location": "Mysuru",
+    "type_of_dishes_served": "Indian, Biryani, Non-Veg",
+    "famous_for": [
+      "Chicken Biryani",
+      "affordable",
+      "good for non-veg",
+      "family dining"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1582236528751-b0e9a3b9f3a6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "The Pump House",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "Craft Beer, Pub Food, Continental",
+    "famous_for": [
+      "craft beer",
+      "good vibe",
+      "spacious seating",
+      "high rating",
+      "bar/pub"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1517248135460-4c311c80f3f2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+    "name": "Truffles",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "American, Cafe, Burgers, Fast Food",
+    "famous_for": [
+      "burgers",
+      "fast food",
+      "affordable",
+      "youth favourite",
+      "high rating"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1549488349-e09d0234a413?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Chianti",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "Italian, Continental",
+    "famous_for": [
+      "pasta",
+      "authentic Italian",
+      "fine dining",
+      "high rating",
+      "good vibe"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1596756627571-70097c02c019?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Rasta Cafe",
+    "location": "Bengaluru-Mysuru Highway",
+    "type_of_dishes_served": "Continental, Cafe, Hookah",
+    "famous_for": [
+      "late night dining",
+      "good vibe",
+      "highway stop",
+      "spacious seating",
+      "hookah lounge"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1589178736181-7d1a2f6c0117?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1616421455364-db08620e234c?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Adiga's",
+    "location": "Mysuru",
+    "type_of_dishes_served": "South Indian, Indian Sweets",
+    "famous_for": [
+      "South Indian food",
+      "affordable",
+      "quick service",
+      "high rating",
+      "filter coffee"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1586518174786-e0f6f272c444?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Mangala Bar & Restaurant",
+    "location": "Mangaluru",
+    "type_of_dishes_served": "Mangalorean, Indian, Non-Veg",
+    "famous_for": [
+      "Chicken Ghee Roast",
+      "Mangalorean cuisine",
+      "high rating",
+      "good for non-veg"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1565431326402-9a008e3b4a20?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "The Only Place",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "Steaks, Continental, American",
+    "famous_for": [
+      "steaks",
+      "authentic Western food",
+      "historic institution",
+      "good for non-veg"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1555562060-6b62762a4d3f?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1583000965045-8c7600869502?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Empire Restaurant",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "Indian, Arabian, Non-Veg",
+    "famous_for": [
+      "late night dining",
+      "shawarma",
+      "Ghee Rice & Chicken Kebab",
+      "affordable",
+      "good for non-veg"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1594916964177-d42f534125b0?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Prakriti Deluxe",
+    "location": "Mysuru",
+    "type_of_dishes_served": "Indian, Non-Veg, Biryani",
+    "famous_for": [
+      "Biryani",
+      "pocket friendly",
+      "family dining",
+      "good for non-veg"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1582236528751-b0e9a3b9f3a6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "The Bombay Cafe",
+    "location": "Hubballi-Dharwad",
+    "type_of_dishes_served": "Indian, Chinese, Continental",
+    "famous_for": [
+      "variety of cuisines",
+      "high rating",
+      "family dining",
+      "good vibe"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1517248135460-4c311c80f3f2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1563273398-316887570884?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Janatha Deluxe",
+    "location": "Mangaluru",
+    "type_of_dishes_served": "South Indian Vegetarian, Coastal",
+    "famous_for": [
+      "Goli Bajji",
+      "Mangalorean cuisine",
+      "affordable",
+      "authentic food"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1579736805096-7c919d71c4c9?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1634842183216-2d1f971c2f9d?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Social",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "Continental, North Indian, Pub Food, Cocktails",
+    "famous_for": [
+      "good vibe",
+      "cocktails",
+      "pub/bar",
+      "innovative food",
+      "high rating"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1517248135460-4c311c80f3f2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Shizusan",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "Pan Asian, Sushi, Thai, Chinese",
+    "famous_for": [
+      "Pan Asian",
+      "sushi",
+      "good vibe",
+      "fine dining",
+      "high rating"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1565431326402-9a008e3b4a20?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Shivaji Military Hotel",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "Nati Style (Local Non-Veg), Donne Biryani",
+    "famous_for": [
+      "Donne Biryani",
+      "Mutton Curry",
+      "affordable",
+      "authentic Karnataka food",
+      "good for non-veg"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1589178736181-7d1a2f6c0117?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Hotel RRR",
+    "location": "Mysuru",
+    "type_of_dishes_served": "Andhra, Biryani, Non-Veg",
+    "famous_for": [
+      "Biryani",
+      "Andhra style food",
+      "affordable",
+      "good for non-veg",
+      "high rating"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1582236528751-b0e9a3b9f3a6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Malgudi Drive-In",
+    "location": "Mangaluru",
+    "type_of_dishes_served": "South Indian, Fast Food, Cafe",
+    "famous_for": [
+      "drive-in experience",
+      "affordable",
+      "good vibe",
+      "quick bites"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1579736805096-7c919d71c4c9?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1634842183216-2d1f971c2f9d?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Savoury Restaurant",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "Middle Eastern, Indian, Arabian",
+    "famous_for": [
+      "Shawarma",
+      "Arabic cuisine",
+      "affordable",
+      "good for non-veg",
+      "late night dining"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1541701570778-578d65a8e0f6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Vyas Vihar",
+    "location": "Mysuru",
+    "type_of_dishes_served": "Pure Vegetarian, Rajasthani/Gujarati Thali",
+    "famous_for": [
+      "Thali (meal platter)",
+      "North Indian veg",
+      "affordable",
+      "authentic cuisine"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1586518174786-e0f6f272c444?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "The Big Barbeque",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "BBQ, Indian, Chinese",
+    "famous_for": [
+      "buffet",
+      "live grill",
+      "affordable",
+      "good for families",
+      "high rating"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1517248135460-4c311c80f3f2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Hotel Sriram",
+    "location": "Davanagere",
+    "type_of_dishes_served": "South Indian Vegetarian, Davanagere Special",
+    "famous_for": [
+      "Davanagere Benne Dosa",
+      "affordable",
+      "authentic Karnataka food",
+      "high rating"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1549488349-e09d0234a413?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Samudra Darshan",
+    "location": "Udupi/Mangaluru",
+    "type_of_dishes_served": "Coastal Karnataka, Seafood",
+    "famous_for": [
+      "seafood",
+      "coastal vibe",
+      "Mangalorean cuisine",
+      "high rating"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1579736805096-7c919d71c4c9?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "The Hole in the Wall Cafe",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "Breakfast, American, Cafe",
+    "famous_for": [
+      "English Breakfast",
+      "pancakes",
+      "good vibe",
+      "affordable"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1586518174786-e0f6f272c444?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1549488349-e09d0234a413?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "House of Commons",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "Pub Food, Continental, Indian, Bar",
+    "famous_for": [
+      "affordable drinks",
+      "good vibe",
+      "nightlife",
+      "lively atmosphere",
+      "affordable"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1517248135460-4c311c80f3f2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Kamath Lokaruchi",
+    "location": "Bengaluru-Mysuru Highway",
+    "type_of_dishes_served": "South Indian Vegetarian, Karnataka Cuisine",
+    "famous_for": [
+      "Thatte Idli",
+      "highway stop",
+      "authentic Karnataka food",
+      "affordable",
+      "quick service"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1589178736181-7d1a2f6c0117?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Byg Brewski Brewing Company",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "Craft Beer, Continental, North Indian, Asian",
+    "famous_for": [
+      "craft beer",
+      "good vibe",
+      "spacious outdoor seating",
+      "high rating",
+      "luxury dining"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1586518174786-e0f6f272c444?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "RNR Donne Biryani",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "Nati Style (Local Non-Veg), Donne Biryani",
+    "famous_for": [
+      "Donne Biryani",
+      "affordable",
+      "authentic Karnataka food",
+      "good for non-veg",
+      "high rating"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1555562060-6b62762a4d3f?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Oyster Bay",
+    "location": "Mysuru",
+    "type_of_dishes_served": "Seafood, Indian, Chinese",
+    "famous_for": [
+      "seafood",
+      "good vibe",
+      "family dining",
+      "high rating"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1582236528751-b0e9a3b9f3a6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Paakashala",
+    "location": "Bengaluru (Multiple Locations)",
+    "type_of_dishes_served": "South Indian Vegetarian, Breakfast",
+    "famous_for": [
+      "pure vegetarian",
+      "affordable",
+      "high rating",
+      "good ambiance",
+      "family friendly"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1596756627571-70097c02c019?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Fox in the Field",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "Craft Beer, Continental, Indian",
+    "famous_for": [
+      "craft beer",
+      "rooftop view",
+      "good vibe",
+      "high rating",
+      "nightlife"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1549488349-e09d0234a413?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Asha Tiffins",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "South Indian Vegetarian (Tiffin)",
+    "famous_for": [
+      "affordable",
+      "quick service",
+      "Masala Dosa",
+      "high rating",
+      "authentic Karnataka food"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1586518174786-e0f6f272c444?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Kadli Restaurant",
+    "location": "Hubballi-Dharwad",
+    "type_of_dishes_served": "North Karnataka, Coastal, Indian",
+    "famous_for": [
+      "authentic Karnataka food",
+      "Jowar Roti",
+      "affordable",
+      "high rating"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1594916964177-d42f534125b0?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Chai Point",
+    "location": "Bengaluru (Multiple Locations)",
+    "type_of_dishes_served": "Beverages, Quick Bites, Indian Snacks",
+    "famous_for": [
+      "Chai (Tea)",
+      "affordable",
+      "quick service",
+      "casual vibe"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1555562060-6b62762a4d3f?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1549488349-e09d0234a413?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Kudla",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "Mangalorean, Coastal Seafood",
+    "famous_for": [
+      "Mangalorean cuisine",
+      "seafood",
+      "Fish Curry",
+      "high rating",
+      "authentic cuisine"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1565431326402-9a008e3b4a20?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Hotel Fish Land",
+    "location": "Mysuru",
+    "type_of_dishes_served": "Mangalorean, Seafood, Indian Non-Veg",
+    "famous_for": [
+      "Fish Thali",
+      "seafood",
+      "affordable",
+      "good for non-veg"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1582236528751-b0e9a3b9f3a6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1583000965045-8c7600869502?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Toscano",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "Italian, European, Wine",
+    "famous_for": [
+      "authentic Italian",
+      "wine selection",
+      "fine dining",
+      "high rating",
+      "good vibe"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1596756627571-70097c02c019?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Halli Mane",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "South Indian Vegetarian, Karnataka Cuisine",
+    "famous_for": [
+      "authentic Karnataka food",
+      "Akki Rotti",
+      "affordable",
+      "traditional ambiance"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1589178736181-7d1a2f6c0117?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Absolute Barbecues (AB's)",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "BBQ, Indian, European, Wish Grill",
+    "famous_for": [
+      "Wish Grill concept",
+      "buffet",
+      "good for non-veg",
+      "high rating"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1517248135460-4c311c80f3f2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Green Leaf",
+    "location": "Mysuru",
+    "type_of_dishes_served": "North Indian, Chinese, Vegetarian",
+    "famous_for": [
+      "North Indian veg",
+      "affordable",
+      "family dining",
+      "high rating"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1582236528751-b0e9a3b9f3a6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Dakshin",
+    "location": "Bengaluru (ITC Gardenia)",
+    "type_of_dishes_served": "Fine Dining South Indian (Regional)",
+    "famous_for": [
+      "fine dining",
+      "luxury dining",
+      "authentic South Indian",
+      "high rating",
+      "good vibe"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1565431326402-9a008e3b4a20?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1549488349-e09d0234a413?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Ritz Classic",
+    "location": "Mangaluru",
+    "type_of_dishes_served": "Mangalorean, Seafood, Indian",
+    "famous_for": [
+      "seafood",
+      "Mangalorean cuisine",
+      "high rating",
+      "family dining"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1579736805096-7c919d71c4c9?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Vattika (The Village)",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "North Indian, Rajasthani, Gujarati (Buffet)",
+    "famous_for": [
+      "village theme",
+      "cultural vibe",
+      "buffet",
+      "family dining"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1541701570778-578d65a8e0f6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Udupi Sri Krishna Bhavan",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "South Indian Vegetarian",
+    "famous_for": [
+      "South Indian breakfast",
+      "affordable",
+      "historic institution",
+      "authentic Karnataka food"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1586518174786-e0f6f272c444?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Toit Brewpub",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "Craft Beer, Italian, Pub Food",
+    "famous_for": [
+      "craft beer (Toit Weiss)",
+      "good vibe",
+      "pizzas",
+      "high rating",
+      "nightlife"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1586518174786-e0f6f272c444?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1549488349-e09d0234a413?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Shreyas",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "South Indian Vegetarian (Thali)",
+    "famous_for": [
+      "South Indian Thali",
+      "authentic Karnataka food",
+      "affordable",
+      "no-frills dining",
+      "high rating"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1555562060-6b62762a4d3f?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Gokul Chat",
+    "location": "Mysuru",
+    "type_of_dishes_served": "Street Food, North Indian Snacks, Chat",
+    "famous_for": [
+      "Pani Puri",
+      "street food",
+      "affordable",
+      "quick bites",
+      "high rating"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1582236528751-b0e9a3b9f3a6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1634842183216-2d1f971c2f9d?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Pallavi Bar & Restaurant",
+    "location": "Mangaluru",
+    "type_of_dishes_served": "Mangalorean, Seafood, Indian Non-Veg",
+    "famous_for": [
+      "Anjal Fish Fry",
+      "seafood",
+      "authentic cuisine",
+      "good for non-veg"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1579736805096-7c919d71c4c9?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Mavalli Tiffin Room (MTR) - JP Nagar",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "South Indian Vegetarian, Historic",
+    "famous_for": [
+      "Rava Idli",
+      "historic institution",
+      "authentic Karnataka food",
+      "high quality",
+      "affordable"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1589178736181-7d1a2f6c0117?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Sultans of Spice",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "North Indian, Mughal, Buffet",
+    "famous_for": [
+      "buffet",
+      "North Indian food",
+      "good vibe",
+      "high rating",
+      "family dining"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1596756627571-70097c02c019?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Hotel Mylari",
+    "location": "Mysuru",
+    "type_of_dishes_served": "South Indian Vegetarian (Dosa)",
+    "famous_for": [
+      "Masala Dosa (Unique Style)",
+      "historic institution",
+      "affordable",
+      "authentic Karnataka food"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1582236528751-b0e9a3b9f3a6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Chakra Restaurant",
+    "location": "Belagavi (Belgaum)",
+    "type_of_dishes_served": "Indian, North Indian, Chinese",
+    "famous_for": [
+      "variety of cuisines",
+      "affordable",
+      "family dining",
+      "high rating"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1541701570778-578d65a8e0f6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "The Fatty Bao",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "Pan Asian, Japanese, Thai",
+    "famous_for": [
+      "Bao buns",
+      "Asian food",
+      "good vibe",
+      "high rating",
+      "cocktails"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1565431326402-9a008e3b4a20?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Pecos",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "Pub Food, Continental, Bar",
+    "famous_for": [
+      "cheap beer",
+      "old-school Bangalore pub",
+      "rock music",
+      "affordable"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1517248135460-4c311c80f3f2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Hyderabadi Biryani House",
+    "location": "Mysuru",
+    "type_of_dishes_served": "Indian, Biryani, Non-Veg",
+    "famous_for": [
+      "Hyderabadi Biryani",
+      "affordable",
+      "good for non-veg",
+      "high rating"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1582236528751-b0e9a3b9f3a6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Sree Krishna Bhavan",
+    "location": "Udupi",
+    "type_of_dishes_served": "South Indian Vegetarian",
+    "famous_for": [
+      "Udupi Cuisine",
+      "affordable",
+      "authentic Karnataka food",
+      "historic institution"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1579736805096-7c919d71c4c9?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "The Permit Room",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "South Indian, Fusion, Cocktails",
+    "famous_for": [
+      "cocktails (South Indian twist)",
+      "good vibe",
+      "fusion food",
+      "high rating"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1586518174786-e0f6f272c444?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Nagarjuna Restaurant",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "Andhra, Biryani, Indian Non-Veg",
+    "famous_for": [
+      "Andhra Meals",
+      "spicy food",
+      "good for non-veg",
+      "high rating"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1596756627571-70097c02c019?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Om Shanthi",
+    "location": "Mysuru",
+    "type_of_dishes_served": "South Indian Vegetarian, North Indian",
+    "famous_for": [
+      "South Indian food",
+      "affordable",
+      "family dining",
+      "high rating"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1582236528751-b0e9a3b9f3a6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Samudra",
+    "location": "Mangaluru",
+    "type_of_dishes_served": "Coastal Karnataka, Seafood, Indian",
+    "famous_for": [
+      "seafood",
+      "coastal cuisine",
+      "affordable",
+      "authentic food"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1579736805096-7c919d71c4c9?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Yauatcha",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "Chinese, Dim Sum, Asian, Luxury",
+    "famous_for": [
+      "Dim Sum",
+      "luxury dining",
+      "high rating",
+      "authentic Chinese"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1565431326402-9a008e3b4a20?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Kamat Yatri Nivas",
+    "location": "Bengaluru",
+    "type_of_dishes_served": "South Indian Vegetarian",
+    "famous_for": [
+      "South Indian Thali",
+      "affordable",
+      "family dining",
+      "authentic Karnataka food"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1541701570778-578d65a8e0f6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Hotel Dwaraka",
+    "location": "Tumakuru (Tumkur)",
+    "type_of_dishes_served": "South Indian Vegetarian",
+    "famous_for": [
+      "Tatte Idli",
+      "affordable",
+      "authentic Karnataka food",
+      "quick service"
+    ],
+    "restaurant_image": "https://images.unsplash.com/photo-1589178736181-7d1a2f6c0117?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  }
+
+]
