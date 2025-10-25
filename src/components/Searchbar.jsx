@@ -1,5 +1,6 @@
-import axios from 'axios';
 import React, { useState } from 'react';
+import restaurantData from '../data.json'
+
 
 const Searchbar = () => {
     const [restaurants, setRestaurants] = useState([]);
@@ -11,11 +12,12 @@ const Searchbar = () => {
     const [filters, setFilters] = useState([]);
 
     var searchRestaurants = () =>{
-        
+
     }
 
     const onclick = (e) => {
         e.preventDefault();
+        console.log(restaurantData[0].name)
         searchRestaurants();
     };
     

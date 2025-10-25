@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Searchbar from './components/Searchbar'
 import Trending from './components/Trending'
 
+
 const App = () => {
   return (
     <>
