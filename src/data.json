@@ -855,6 +855,266 @@
     "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "name": "Domino's Pizza",
+    "type_of_food": "Pizza, Italian-American",
+    "restaurant_image_search": "Domino's Pizza store exterior",
+    "food_image_search": "Domino's Pepperoni Pizza",
+    "location_example": "Ann Arbor, Michigan, USA (Global Headquarters)",
+    "famous_for": [
+      "Delivery Focus",
+      "Affordable",
+      "Fast Service",
+      "High Brand Recognition"
+    ]
+  },
+  {
+    "name": "Pizza Hut",
+    "type_of_food": "Pizza, Pasta, Italian-American",
+    "restaurant_image_search": "Pizza Hut restaurant exterior",
+    "food_image_search": "Pizza Hut Pan Pizza",
+    "location_example": "Plano, Texas, USA (Global Headquarters)",
+    "famous_for": [
+      "Pan Pizza",
+      "Casual Dining Option (at select locations)",
+      "Affordable",
+      "Global Presence"
+    ]
+  },
+  {
+    "name": "McDonald's",
+    "type_of_food": "Fast Food, Burgers, Fries",
+    "restaurant_image_search": "McDonald's Golden Arches exterior",
+    "food_image_search": "McDonald's Big Mac and Fries",
+    "location_example": "Chicago, Illinois, USA (Global Headquarters)",
+    "famous_for": [
+      "Iconic Brand",
+      "Extremely Affordable",
+      "Family-Friendly",
+      "High Foot Traffic"
+    ]
+  },
+  {
+    "name": "KFC (Kentucky Fried Chicken)",
+    "type_of_food": "Fried Chicken, Fast Food",
+    "restaurant_image_search": "KFC store exterior and logo",
+    "food_image_search": "KFC Original Recipe Chicken Bucket",
+    "location_example": "Louisville, Kentucky, USA (Global Headquarters)",
+    "famous_for": [
+      "Original Recipe Chicken",
+      "Colonel Sanders Iconography",
+      "Affordable",
+      "Fast Service"
+    ]
+  },
+  {
+    "name": "Starbucks",
+    "type_of_food": "Coffee, Beverages, Bakery, Light Food",
+    "restaurant_image_search": "Starbucks cafe interior and exterior",
+    "food_image_search": "Starbucks Frappuccino and Pastry",
+    "location_example": "Seattle, Washington, USA (Global Headquarters)",
+    "famous_for": [
+      "Premium Coffee",
+      "Casual Vibe",
+      "High Rating (for atmosphere and coffee)",
+      "High Price Point (relative to fast food)"
+    ]
+  },
+  {
+    "name": "Subway",
+    "type_of_food": "Sandwiches, Salads, Wraps",
+    "restaurant_image_search": "Subway restaurant exterior",
+    "food_image_search": "Subway sandwich with fresh vegetables",
+    "location_example": "Milford, Connecticut, USA (Global Headquarters)",
+    "famous_for": [
+      "Customizable Meals",
+      "Affordable",
+      "Healthier Fast Food Option",
+      "Fresh Ingredients (Bread baked daily)"
+    ]
+  },
+  {
+    "name": "Burger King",
+    "type_of_food": "Fast Food, Grilled Burgers",
+    "restaurant_image_search": "Burger King restaurant exterior and logo",
+    "food_image_search": "Burger King Whopper",
+    "location_example": "Miami, Florida, USA (Global Headquarters)",
+    "famous_for": [
+      "Flame-Grilled Burgers",
+      "Affordable",
+      "Fast Service",
+      "Rival to McDonald's"
+    ]
+  },
+  {
+    "name": "Taco Bell",
+    "type_of_food": "Mexican-inspired Fast Food",
+    "restaurant_image_search": "Taco Bell restaurant exterior",
+    "food_image_search": "Taco Bell Crunchy Taco Supreme",
+    "location_example": "Irvine, California, USA (Global Headquarters)",
+    "famous_for": [
+      "Affordable",
+      "Unique Tex-Mex Fusion",
+      "Late-Night Meals",
+      "High Brand Loyalty"
+    ]
+  },
+  {
+    "name": "Chipotle Mexican Grill",
+    "type_of_food": "Mexican, Burritos, Bowls, Tacos",
+    "restaurant_image_search": "Chipotle restaurant interior/exterior",
+    "food_image_search": "Chipotle Burrito Bowl",
+    "location_example": "Newport Beach, California, USA (Global Headquarters)",
+    "famous_for": [
+      "Fast Casual Concept",
+      "High Quality/Fresh Ingredients",
+      "Customizable",
+      "Above-Average Rating"
+    ]
+  },
+  {
+    "name": "Panda Express",
+    "type_of_food": "American Chinese Fast Food",
+    "restaurant_image_search": "Panda Express store exterior",
+    "food_image_search": "Panda Express Orange Chicken",
+    "location_example": "Rosemead, California, USA (Global Headquarters)",
+    "famous_for": [
+      "Orange Chicken",
+      "Affordable",
+      "Mall/Food Court Locations",
+      "Consistent Quality"
+    ]
+  },
+  {
+    "name": "Dunkin' (formerly Dunkin' Donuts)",
+    "type_of_food": "Coffee, Donuts, Breakfast",
+    "restaurant_image_search": "Dunkin' store exterior and logo",
+    "food_image_search": "Dunkin' Donuts and Iced Coffee",
+    "location_example": "Canton, Massachusetts, USA (Global Headquarters)",
+    "famous_for": [
+      "Donuts and Coffee",
+      "Affordable",
+      "Fast Service for Breakfast",
+      "East Coast Favorite"
+    ]
+  },
+  {
+    "name": "Wendy's",
+    "type_of_food": "Fast Food, Burgers, Chili",
+    "restaurant_image_search": "Wendy's restaurant exterior",
+    "food_image_search": "Wendy's Square Burger",
+    "location_example": "Dublin, Ohio, USA (Global Headquarters)",
+    "famous_for": [
+      "Square Burger Patties",
+      "Affordable",
+      "Fresh Beef (never frozen)",
+      "High Rating (among fast-food)"
+    ]
+  },
+  {
+    "name": "Five Guys",
+    "type_of_food": "Gourmet Burgers, Fries",
+    "restaurant_image_search": "Five Guys restaurant interior/exterior",
+    "food_image_search": "Five Guys burger and peanut bags",
+    "location_example": "Lorton, Virginia, USA (Global Headquarters)",
+    "famous_for": [
+      "Premium Quality Burgers",
+      "High Rating (for food taste)",
+      "Above-Average Price Point",
+      "Free Peanuts"
+    ]
+  },
+  {
+    "name": "Tim Hortons",
+    "type_of_food": "Coffee, Donuts, Baked Goods, Sandwiches",
+    "restaurant_image_search": "Tim Hortons cafe exterior",
+    "food_image_search": "Tim Hortons Double-Double coffee and Timbits",
+    "location_example": "Toronto, Ontario, Canada (Global Headquarters)",
+    "famous_for": [
+      "Canadian Icon",
+      "Affordable Coffee",
+      "Breakfast/Coffee Vibe",
+      "Timbits"
+    ]
+  },
+  {
+    "name": "Shake Shack",
+    "type_of_food": "Burgers, Hot Dogs, Shakes",
+    "restaurant_image_search": "Shake Shack restaurant exterior",
+    "food_image_search": "Shake Shack ShackBurger and Crinkle Fries",
+    "location_example": "New York, New York, USA (Global Headquarters)",
+    "famous_for": [
+      "Premium Fast Casual",
+      "Modern Vibe",
+      "High Quality",
+      "Above-Average Price Point"
+    ]
+  },
+  {
+    "name": "Applebee's",
+    "type_of_food": "Casual Dining, American Cuisine, Grill & Bar",
+    "restaurant_image_search": "Applebee's Grill & Bar exterior",
+    "food_image_search": "Applebee's Riblets or Steak Dinner",
+    "location_example": "Glendale, California, USA (Global Headquarters)",
+    "famous_for": [
+      "Casual Dining",
+      "Affordable (Value Meals)",
+      "Full Table Service",
+      "Neighborhood Bar Vibe"
+    ]
+  },
+  {
+    "name": "Olive Garden",
+    "type_of_food": "Casual Dining, Italian-American",
+    "restaurant_image_search": "Olive Garden restaurant exterior",
+    "food_image_search": "Olive Garden breadsticks and pasta",
+    "location_example": "Orlando, Florida, USA (Global Headquarters)",
+    "famous_for": [
+      "Unlimited Breadsticks and Salad",
+      "Casual Dining",
+      "Family-Friendly",
+      "Consistent Experience"
+    ]
+  },
+  {
+    "name": "Chili's Grill & Bar",
+    "type_of_food": "Casual Dining, Tex-Mex, American Grill",
+    "restaurant_image_search": "Chili's Grill & Bar exterior",
+    "food_image_search": "Chili's Baby Back Ribs or Fajitas",
+    "location_example": "Dallas, Texas, USA (Global Headquarters)",
+    "famous_for": [
+      "Tex-Mex & Grill",
+      "Casual Dining",
+      "Affordable Margaritas/Drinks",
+      "Lively Vibe"
+    ]
+  },
+  {
+    "name": "Baskin-Robbins",
+    "type_of_food": "Ice Cream, Desserts",
+    "restaurant_image_search": "Baskin-Robbins store exterior and logo",
+    "food_image_search": "Baskin-Robbins Ice Cream Cones and Flavors",
+    "location_example": "Canton, Massachusetts, USA (Global Headquarters)",
+    "famous_for": [
+      "31 Flavors",
+      "Desserts/Treats",
+      "Family-Friendly",
+      "Affordable Treat"
+    ]
+  },
+  {
+    "name": "Papa John's Pizza",
+    "type_of_food": "Pizza, Italian-American",
+    "restaurant_image_search": "Papa John's store exterior and logo",
+    "food_image_search": "Papa John's Pizza and Garlic Sauce",
+    "location_example": "Atlanta, Georgia, USA (Global Headquarters)",
+    "famous_for": [
+      "Better Ingredients, Better Pizza slogan",
+      "Garlic Dipping Sauce",
+      "Affordable (Delivery Focus)",
+      "High Quality (among delivery pizza)"
+    ]
+  },
+  {
     "name": "RNR Donne Biryani",
     "location": "Bengaluru",
     "type_of_dishes_served": "Nati Style (Local Non-Veg), Donne Biryani",

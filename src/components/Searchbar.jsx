@@ -3,21 +3,24 @@ import restaurantData from '../data.json'
 
 
 const Searchbar = () => {
-    const [restaurants, setRestaurants] = useState([]);
-    const [loading, setLoading] = useState(false);
-    const [location, setLocation] = useState('');
     const [searchQuery, setSearchQuery] = useState('');
-    const [selectedRestaurant, setSelectedRestaurant] = useState(null);
-    const [reviews, setReviews] = useState([]);
-    const [filters, setFilters] = useState([]);
+    const [filtered, setFiltered] = useState([])
 
-    var searchRestaurants = () =>{
+    const searchRestaurants = () =>{
+        const restaurant = restaurantData.filter(restaurants =>{
+            return restaurants.name.toLowerCase().includes(searchQuery.toLowerCase())
+        })
+        setFiltered(restaurant)
 
+        restaurant.forEach(r =>{
+            console.log(r.name)
+        })
+
+        
     }
 
     const onclick = (e) => {
         e.preventDefault();
-        console.log(restaurantData[0].name)
         searchRestaurants();
     };
     
@@ -30,15 +33,13 @@ const Searchbar = () => {
                 <h2 className='hidden sm:block px-2 font-light text-blue-400 text-lg mb-6 max-w-2xl mx-auto leading-relaxed'>Skip the endless scrolling. Get ultra-short summaries of every restaurant based on thousands of real reviews. Find your perfect place in seconds.</h2>
             </div>
             <form action="" className='px-6'>
-                <input  type="text" value={searchQuery} onChange={(e) => { // Use value attribute for controlled component
+                <input  type="text" value={searchQuery} onChange={(e) => {
                     setSearchQuery(e.target.value);
                 }} placeholder='Search for restaurants...' className='bg-gray-400 px-18 border-3 border-transparent py-3 hover:border-3 hover:border-blue-500 duration-200 ease-in rounded-4xl'/>
                 <button onClick={onclick} type='button' className='mx-4 px-8 py-3 text-blue-600 border-2 border-blue-600 rounded-4xl my-3 hover:bg-blue-600 hover:text-white duration-150'>Search</button>
 
-                <div className="scroll-hide mt-3 py-2 px-10 flex items-center sm:justify-center gap-2 overflow-x-auto overflow-y-hidden ">
-                    <input type="text" value={location} onChange={(e) => {
-                        setLocation(e.target.value);
-                    }} placeholder='Location' className='bg-white rounded-4xl py-2 text-center hover:cursor-pointer hover:border-2 hover:border-blue-600' />
+    
+                <div className="scroll-hide mt-3 py-2 px-10 flex items-center sm:justify-center gap-2 overflow-x-auto overflow-y-hidden relative">
                     <div className='div flex gap-2 border-1 border-white rounded-4xl py-2 px-2 hover:border-1 hover:border-blue-600 duration-150 hover:cursor-pointer'>
                         <h2 className='text-white'>Ambience</h2>
                         <i className="ri-bowl-fill text-white"></i>
@@ -57,6 +58,19 @@ const Searchbar = () => {
                     </div>
                 </div>
             </form>
+            {filtered.length > 0 && (
+                <div className='mt-10 px-6 max-w-4xl mx-auto'>
+                    <h3 className='text-white text-2xl mb-4'>Search Results ({filtered.length})</h3>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4'>
+                        {filtered.map((restaurant, index) => (
+                            <div key={index} className='bg-gradient-to-br from-blue-900 to-blue-800 p-6 rounded-2xl border-2 border-blue-600 hover:border-blue-400 transition duration-200 hover:cursor-pointer'>
+                                <h4 className='text-white text-xl font-semibold mb-2'>{restaurant.name}</h4>
+                                <p className='text-blue-200 text-sm'>{restaurant.type}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            )}
         </div>
     </>
   )
