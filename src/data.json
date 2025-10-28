@@ -57,7 +57,7 @@
   },
   {
     "name": "Toit Brewpub",
-    "location": "Bengaluru",
+    "location": "Indranagar, Bengaluru",
     "type_of_dishes_served": "Pub Food, Continental, Craft Beer",
     "famous_for": [
       "craft beer",
@@ -1344,7 +1344,7 @@
   },
   {
     "name": "Toit Brewpub",
-    "location": "Bengaluru",
+    "location": "Mahadevapura, Bengaluru",
     "type_of_dishes_served": "Craft Beer, Italian, Pub Food",
     "famous_for": [
       "craft beer (Toit Weiss)",
@@ -1397,20 +1397,7 @@
     "restaurant_image": "https://images.unsplash.com/photo-1579736805096-7c919d71c4c9?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
-  {
-    "name": "Mavalli Tiffin Room (MTR) - JP Nagar",
-    "location": "Bengaluru",
-    "type_of_dishes_served": "South Indian Vegetarian, Historic",
-    "famous_for": [
-      "Rava Idli",
-      "historic institution",
-      "authentic Karnataka food",
-      "high quality",
-      "affordable"
-    ],
-    "restaurant_image": "https://images.unsplash.com/photo-1589178736181-7d1a2f6c0117?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  },
+
   {
     "name": "Sultans of Spice",
     "location": "Bengaluru",

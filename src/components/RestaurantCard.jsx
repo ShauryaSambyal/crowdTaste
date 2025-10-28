@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
+import restaurantData from '../data.json'
 
-const RestaurantCard = () => {
+const RestaurantCard = ({query}) => {
   return (
     <>
-        
+        <div className='w-full h-screen bg-amber-400'></div>
     </>
   )
 }

@@ -7,6 +7,13 @@
 body{
     background-color: #151514;
 }
-.scroll-hide::-webkit-scrollbar {
-  display: none;  /* Safari and Chrome */
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
