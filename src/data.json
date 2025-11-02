@@ -1,7 +1,8 @@
 [
   {
+    "id": 1,
     "name": "Mavalli Tiffin Rooms (MTR)",
-    "location": "Bengaluru",
+    "location": "#14, Lalbagh Road, Bengaluru - 560027",
     "type_of_dishes_served": "South Indian Vegetarian, Karnataka Cuisine",
     "famous_for": [
       "high rating",
@@ -14,8 +15,9 @@
     "dish_image": "https://images.unsplash.com/photo-1598512217743-41c19b222f67?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 2,
     "name": "Karavalli",
-    "location": "Bengaluru",
+    "location": "The Gateway Hotel, 66 Residency Road, Ashok Nagar, Bengaluru, 560025",
     "type_of_dishes_served": "Coastal South Indian (Mangalorean, Goan, Kerala)",
     "famous_for": [
       "fine dining",
@@ -28,8 +30,9 @@
     "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 3,
     "name": "Mysuru Mylari Hotel (Vinayaka Mylari)",
-    "location": "Mysuru",
+    "location": "Agrahara Fort, 67/6, Sayyaji Rao Rd, KR Mohalla, Mysuru, 570004",
     "type_of_dishes_served": "South Indian Vegetarian (Breakfast)",
     "famous_for": [
       "Masala Dosa",
@@ -42,8 +45,9 @@
     "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 4,
     "name": "Pai Tiffins",
-    "location": "Mangaluru",
+    "location": "12-3-285/1, Mahalakshmi Building, Car Street, Kodailbail, Mangaluru",
     "type_of_dishes_served": "Coastal Karnataka Vegetarian",
     "famous_for": [
       "Neer Dosa",
@@ -56,8 +60,9 @@
     "dish_image": "https://images.unsplash.com/photo-1634842183216-2d1f971c2f9d?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 5,
     "name": "Toit Brewpub",
-    "location": "Indranagar, Bengaluru",
+    "location": "298, Namma Metro Pillar 62, 100 Feet Road, Indiranagar, Bengaluru",
     "type_of_dishes_served": "Pub Food, Continental, Craft Beer",
     "famous_for": [
       "craft beer",
@@ -70,8 +75,9 @@
     "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 6,
     "name": "Nagarjuna Restaurant",
-    "location": "Bengaluru",
+    "location": "44/1, Residency Road, Ashok Nagar, Bengaluru (One of the popular branches)",
     "type_of_dishes_served": "Andhra Cuisine (Spicy Non-Veg)",
     "famous_for": [
       "Andhra Biryani",
@@ -84,8 +90,9 @@
     "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 7,
     "name": "Khanavali (North Karnataka Style)",
-    "location": "Hubballi-Dharwad",
+    "location": "Basaveshwara Khanavali, Nehru Stadium Road, Hubballi-Dharwad (Specific location for a representative restaurant)",
     "type_of_dishes_served": "North Karnataka Meals (Jowar Roti)",
     "famous_for": [
       "Jolada Rotti",
@@ -98,8 +105,9 @@
     "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 8,
     "name": "Pallavi Bar and Restaurant",
-    "location": "Mangaluru",
+    "location": "Mahadevi Complex, Padubidri Main Road, Nadsal, Padubidri (Near Mangaluru, as per search result)",
     "type_of_dishes_served": "Mangalorean Seafood, Indian",
     "famous_for": [
       "seafood",
@@ -111,22 +119,24 @@
     "dish_image": "https://images.unsplash.com/photo-1583000965045-8c7600869502?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 9,
     "name": "Vidyarthi Bhavan",
-    "location": "Bengaluru",
+    "location": "32, Gandhi Bazaar Main Rd, Basavanagudi, Bengaluru, 560004",
     "type_of_dishes_served": "South Indian Vegetarian (Breakfast)",
     "famous_for": [
       "Masala Dosa",
+      "authentic Karnataka food",
       "historic institution",
       "affordable",
-      "high rating",
-      "authentic Karnataka food"
+      "high rating"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1586518174786-e0f6f272c444?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "dish_image": "https://images.unsplash.com/photo-1594916964177-d42f534125b0?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 10,
     "name": "Sagar Fast Food",
-    "location": "Mysuru",
+    "location": "8j38+qh, Gangothri Layout, Mysuru, 570009 (Sri Sagar Fast Food, one of the famous Sagar spots)",
     "type_of_dishes_served": "North Indian, Chaat, Fast Food",
     "famous_for": [
       "Pav Bhaji",
@@ -139,8 +149,9 @@
     "dish_image": "https://images.unsplash.com/photo-1563273398-316887570884?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 11,
     "name": "Koshy's Parade Cafe",
-    "location": "Bengaluru",
+    "location": "39, St Marks Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, 560001",
     "type_of_dishes_served": "Continental, Indian, Bakery",
     "famous_for": [
       "historic institution",
@@ -153,8 +164,9 @@
     "dish_image": "https://images.unsplash.com/photo-1601362770851-240a5a67f08c?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 12,
     "name": "Meghana Foods",
-    "location": "Bengaluru",
+    "location": "No.1066, AECS Layout, Hosur Main Road, Singasandra, Bengaluru, 560068 (One of the popular branches)",
     "type_of_dishes_served": "Andhra, Biryani, Indian Non-Veg",
     "famous_for": [
       "Biryani",
@@ -167,8 +179,9 @@
     "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 13,
     "name": "GTR (Guru Tiffin Room)",
-    "location": "Mysuru",
+    "location": "2954, 1, NS Road, near Ramachandra Agrahara, Chamundipuram, Mysuru, 570004",
     "type_of_dishes_served": "South Indian Vegetarian, Breakfast",
     "famous_for": [
       "Butter Dosa",
@@ -181,8 +194,9 @@
     "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 14,
     "name": "Coast 2 Coast",
-    "location": "Mangaluru",
+    "location": "Lighthouse Hill Road, Mangaluru",
     "type_of_dishes_served": "Mangalorean Seafood, Indian",
     "famous_for": [
       "Prawn Ghee Roast",
@@ -195,8 +209,9 @@
     "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 15,
     "name": "Central Tiffin Room (CTR) - Shri Sagar",
-    "location": "Bengaluru",
+    "location": "7th Cross Road, Margosa Road, Malleshwaram, Bengaluru",
     "type_of_dishes_served": "South Indian Vegetarian, Breakfast",
     "famous_for": [
       "Benne Masala Dosa",
@@ -209,8 +224,9 @@
     "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 16,
     "name": "Plan B",
-    "location": "Bengaluru",
+    "location": "Ashok Nagar, Bengaluru",
     "type_of_dishes_served": "American, Pub Food, Wings",
     "famous_for": [
       "Chicken Wings",
@@ -223,8 +239,9 @@
     "dish_image": "https://images.unsplash.com/photo-1563273398-316887570884?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 17,
     "name": "The Barge",
-    "location": "Mysuru",
+    "location": "Hebbal Industrial Area, Mysuru",
     "type_of_dishes_served": "Multicuisine, Microbrewery",
     "famous_for": [
       "craft beer",
@@ -237,8 +254,9 @@
     "dish_image": "https://images.unsplash.com/photo-1563273398-316887570884?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 18,
     "name": "Shetty Lunch Home",
-    "location": "Mangaluru",
+    "location": "Balmatta Road, near Hotel Usha, Hampankatta, Mangaluru",
     "type_of_dishes_served": "Mangalorean Seafood, Non-Veg",
     "famous_for": [
       "Fish Thali",
@@ -251,8 +269,9 @@
     "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 19,
     "name": "Brahmin's Coffee Bar",
-    "location": "Bengaluru",
+    "location": "Near Shankar Mutt, Ranga Rao Road, Basavanagudi, Bengaluru",
     "type_of_dishes_served": "South Indian Vegetarian (Breakfast)",
     "famous_for": [
       "Idli-Vada-Chutney",
@@ -262,10 +281,12 @@
       "high rating"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1586518174786-e0f6f272c444?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": ""},
-    {
+    "dish_image": ""
+  },
+  {
+    "id": 20,
     "name": "Kamat Bugle Rock",
-    "location": "Bengaluru",
+    "location": "1, 5th Main Road, Basavanagudi, Bengaluru",
     "type_of_dishes_served": "South Indian Vegetarian",
     "famous_for": [
       "Thatte Idli",
@@ -278,8 +299,9 @@
     "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 21,
     "name": "The Glass House",
-    "location": "Bengaluru",
+    "location": "Lavelle Road, Bengaluru",
     "type_of_dishes_served": "European, Continental, Bar",
     "famous_for": [
       "good ambiance",
@@ -292,8 +314,9 @@
     "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 22,
     "name": "Hotel Sarathi",
-    "location": "Mysuru",
+    "location": "Kalyanagiri, Mysuru",
     "type_of_dishes_served": "Indian, Biryani, Non-Veg",
     "famous_for": [
       "Mutton Biryani",
@@ -305,8 +328,9 @@
     "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 23,
     "name": "Pai Tiffins",
-    "location": "Udupi",
+    "location": "Manipal Commercial Complex, Eshwar Nagar, Manipal, Udupi",
     "type_of_dishes_served": "South Indian Vegetarian, Coastal",
     "famous_for": [
       "Udupi Tiffins",
@@ -318,8 +342,9 @@
     "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 24,
     "name": "The Black Sheep Bistro",
-    "location": "Mangaluru",
+    "location": "Balmatta, Mangaluru",
     "type_of_dishes_served": "Continental, Indian, Fusion",
     "famous_for": [
       "fusion cuisine",
@@ -331,8 +356,9 @@
     "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 25,
     "name": "Chowman",
-    "location": "Bengaluru",
+    "location": "2383, E Block, Sahakara Nagar, Bengaluru",
     "type_of_dishes_served": "Chinese, Asian",
     "famous_for": [
       "authentic Chinese",
@@ -344,8 +370,9 @@
     "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 26,
     "name": "Vidyarthi Bhavan",
-    "location": "Bengaluru",
+    "location": "No-32, Gandhi Bazar Main Road, Basavanagudi, Bengaluru",
     "type_of_dishes_served": "South Indian Vegetarian (Breakfast)",
     "famous_for": [
       "Masala Dosa",
@@ -358,8 +385,9 @@
     "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 27,
     "name": "Tippu Soolthan Bar & Restaurant",
-    "location": "Mysuru",
+    "location": "Kalyanagiri, Mysuru",
     "type_of_dishes_served": "Indian, Non-Veg, Local Cuisine",
     "famous_for": [
       "Mutton Dishes",
@@ -371,8 +399,9 @@
     "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 28,
     "name": "Spice Bazaar",
-    "location": "Hubballi-Dharwad",
+    "location": "Club Road, Hubballi",
     "type_of_dishes_served": "North Indian, Chinese, Continental",
     "famous_for": [
       "variety of cuisines",
@@ -384,8 +413,9 @@
     "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 29,
     "name": "Ebony",
-    "location": "Bengaluru",
+    "location": "13th Floor, Barton Centre, MG Road, Bengaluru",
     "type_of_dishes_served": "North Indian, Thai, Continental (Rooftop)",
     "famous_for": [
       "rooftop dining",
@@ -398,8 +428,9 @@
     "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 30,
     "name": "Chung Wah",
-    "location": "Bengaluru",
+    "location": "Residency Road, Bengaluru",
     "type_of_dishes_served": "Chinese, Asian",
     "famous_for": [
       "authentic Chinese",
@@ -411,8 +442,9 @@
     "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 31,
     "name": "Sri Krishna Gana Sabha",
-    "location": "Mysuru",
+    "location": "Dewan's Road, Lakshmipuram, Mysuru",
     "type_of_dishes_served": "South Indian Vegetarian",
     "famous_for": [
       "South Indian breakfast",
@@ -424,8 +456,9 @@
     "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 32,
     "name": "Tandoor",
-    "location": "Bengaluru",
+    "location": "28, MG Road, Bengaluru",
     "type_of_dishes_served": "North Indian, Mughlai",
     "famous_for": [
       "North Indian food",
@@ -437,8 +470,9 @@
     "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 33,
     "name": "Fish & Fish",
-    "location": "Mangaluru",
+    "location": "Balmatta, Mangaluru",
     "type_of_dishes_served": "Coastal Karnataka, Seafood",
     "famous_for": [
       "seafood",
@@ -450,8 +484,9 @@
     "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 34,
     "name": "Hotel Dwaraka",
-    "location": "Hassan",
+    "location": "MG Road, Tumkur",
     "type_of_dishes_served": "South Indian Vegetarian",
     "famous_for": [
       "South Indian breakfast",
@@ -463,8 +498,9 @@
     "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 35,
     "name": "Smally's Resto Cafe",
-    "location": "Bengaluru",
+    "location": "100 Feet Road, Indiranagar, Bengaluru",
     "type_of_dishes_served": "Fast Food, Burgers, American, Cafe",
     "famous_for": [
       "burgers",
@@ -476,8 +512,9 @@
     "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 36,
     "name": "The Oberoi Grand Dining Room",
-    "location": "Bengaluru",
+    "location": "The Oberoi Hotel, MG Road, Bengaluru",
     "type_of_dishes_served": "Fine Dining, Indian, International",
     "famous_for": [
       "luxury dining",
@@ -489,8 +526,9 @@
     "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 37,
     "name": "Amma's Pastries",
-    "location": "Bengaluru (Multiple Locations)",
+    "location": "Multiple locations in Bengaluru",
     "type_of_dishes_served": "Bakery, Desserts, Fast Food",
     "famous_for": [
       "pastries",
@@ -502,8 +540,9 @@
     "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 38,
     "name": "Apoorva Deluxe",
-    "location": "Mysuru",
+    "location": "Sayyaji Rao Road, Mysuru",
     "type_of_dishes_served": "Indian, Biryani, Non-Veg",
     "famous_for": [
       "Chicken Biryani",
@@ -515,8 +554,9 @@
     "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 39,
     "name": "The Pump House",
-    "location": "Bengaluru",
+    "location": "4, 15th Cross Road, JP Nagar 4th Phase, Bengaluru",
     "type_of_dishes_served": "Craft Beer, Pub Food, Continental",
     "famous_for": [
       "craft beer",
@@ -527,10 +567,11 @@
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1517248135460-4c311c80f3f2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },
-    {
+  },
+  {
+    "id": 40,
     "name": "Truffles",
-    "location": "Bengaluru",
+    "location": "St Marks Road, Shanthala Nagar, Bengaluru",
     "type_of_dishes_served": "American, Cafe, Burgers, Fast Food",
     "famous_for": [
       "burgers",
@@ -543,8 +584,9 @@
     "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 41,
     "name": "Chianti",
-    "location": "Bengaluru",
+    "location": "100 Feet Road, Indiranagar, Bengaluru",
     "type_of_dishes_served": "Italian, Continental",
     "famous_for": [
       "pasta",
@@ -557,8 +599,9 @@
     "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 42,
     "name": "Rasta Cafe",
-    "location": "Bengaluru-Mysuru Highway",
+    "location": "Bengaluru-Mysuru Highway, Mayaganahalli, Ramanagara",
     "type_of_dishes_served": "Continental, Cafe, Hookah",
     "famous_for": [
       "late night dining",
@@ -571,8 +614,9 @@
     "dish_image": "https://images.unsplash.com/photo-1616421455364-db08620e234c?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 43,
     "name": "Adiga's",
-    "location": "Mysuru",
+    "location": "Multiple locations in Mysuru",
     "type_of_dishes_served": "South Indian, Indian Sweets",
     "famous_for": [
       "South Indian food",
@@ -585,8 +629,9 @@
     "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 44,
     "name": "Mangala Bar & Restaurant",
-    "location": "Mangaluru",
+    "location": "Valencia, Mangaluru",
     "type_of_dishes_served": "Mangalorean, Indian, Non-Veg",
     "famous_for": [
       "Chicken Ghee Roast",
@@ -598,8 +643,9 @@
     "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 45,
     "name": "The Only Place",
-    "location": "Bengaluru",
+    "location": "13, Church Street, Bengaluru",
     "type_of_dishes_served": "Steaks, Continental, American",
     "famous_for": [
       "steaks",
@@ -611,8 +657,9 @@
     "dish_image": "https://images.unsplash.com/photo-1583000965045-8c7600869502?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 46,
     "name": "Empire Restaurant",
-    "location": "Bengaluru",
+    "location": "Central Street, Shivajinagar, Bengaluru",
     "type_of_dishes_served": "Indian, Arabian, Non-Veg",
     "famous_for": [
       "late night dining",
@@ -625,8 +672,9 @@
     "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 47,
     "name": "Prakriti Deluxe",
-    "location": "Mysuru",
+    "location": "Gokulam 3rd Stage, Mysuru, Karnataka",
     "type_of_dishes_served": "Indian, Non-Veg, Biryani",
     "famous_for": [
       "Biryani",
@@ -638,8 +686,9 @@
     "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 48,
     "name": "The Bombay Cafe",
-    "location": "Hubballi-Dharwad",
+    "location": "Lavelle Road, Bengaluru (Closest match found to Hubballi-Dharwad name, often associated with a Bengaluru branch)",
     "type_of_dishes_served": "Indian, Chinese, Continental",
     "famous_for": [
       "variety of cuisines",
@@ -651,8 +700,9 @@
     "dish_image": "https://images.unsplash.com/photo-1563273398-316887570884?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 49,
     "name": "Janatha Deluxe",
-    "location": "Mangaluru",
+    "location": "K.S. Rao Road, Mangaluru, Karnataka",
     "type_of_dishes_served": "South Indian Vegetarian, Coastal",
     "famous_for": [
       "Goli Bajji",
@@ -664,8 +714,9 @@
     "dish_image": "https://images.unsplash.com/photo-1634842183216-2d1f971c2f9d?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 50,
     "name": "Social",
-    "location": "Bengaluru",
+    "location": "Church Street, Bengaluru, Karnataka (one prominent location)",
     "type_of_dishes_served": "Continental, North Indian, Pub Food, Cocktails",
     "famous_for": [
       "good vibe",
@@ -678,8 +729,9 @@
     "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 51,
     "name": "Shizusan",
-    "location": "Bengaluru",
+    "location": "Phoenix Marketcity, Mahadevapura, Bengaluru, Karnataka",
     "type_of_dishes_served": "Pan Asian, Sushi, Thai, Chinese",
     "famous_for": [
       "Pan Asian",
@@ -692,8 +744,9 @@
     "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 52,
     "name": "Shivaji Military Hotel",
-    "location": "Bengaluru",
+    "location": "8th Block, Jayanagar, Bengaluru, Karnataka",
     "type_of_dishes_served": "Nati Style (Local Non-Veg), Donne Biryani",
     "famous_for": [
       "Donne Biryani",
@@ -706,8 +759,9 @@
     "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 53,
     "name": "Hotel RRR",
-    "location": "Mysuru",
+    "location": "Sayyaji Rao Road, Lashkar Mohalla, Mysuru, Karnataka (near Mysore Palace)",
     "type_of_dishes_served": "Andhra, Biryani, Non-Veg",
     "famous_for": [
       "Biryani",
@@ -720,8 +774,9 @@
     "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 54,
     "name": "Malgudi Drive-In",
-    "location": "Mangaluru",
+    "location": "Kuntikana, Mangaluru, Karnataka",
     "type_of_dishes_served": "South Indian, Fast Food, Cafe",
     "famous_for": [
       "drive-in experience",
@@ -733,8 +788,9 @@
     "dish_image": "https://images.unsplash.com/photo-1634842183216-2d1f971c2f9d?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 55,
     "name": "Savoury Restaurant",
-    "location": "Bengaluru",
+    "location": "Frazer Town, Bengaluru, Karnataka (one prominent location)",
     "type_of_dishes_served": "Middle Eastern, Indian, Arabian",
     "famous_for": [
       "Shawarma",
@@ -747,8 +803,9 @@
     "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 56,
     "name": "Vyas Vihar",
-    "location": "Mysuru",
+    "location": "Mysuru, Karnataka (general city for this chain, specific location details not found)",
     "type_of_dishes_served": "Pure Vegetarian, Rajasthani/Gujarati Thali",
     "famous_for": [
       "Thali (meal platter)",
@@ -760,8 +817,9 @@
     "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 57,
     "name": "The Big Barbeque",
-    "location": "Bengaluru",
+    "location": "Marathahalli, Bengaluru, Karnataka",
     "type_of_dishes_served": "BBQ, Indian, Chinese",
     "famous_for": [
       "buffet",
@@ -774,8 +832,9 @@
     "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 58,
     "name": "Hotel Sriram",
-    "location": "Davanagere",
+    "location": "Davanagere, Karnataka (general city, specific street address not definitively confirmed as the famous Benne Dosa spot)",
     "type_of_dishes_served": "South Indian Vegetarian, Davanagere Special",
     "famous_for": [
       "Davanagere Benne Dosa",
@@ -787,8 +846,9 @@
     "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 59,
     "name": "Samudra Darshan",
-    "location": "Udupi/Mangaluru",
+    "location": "Udupi, Karnataka (general location for a prominent coastal restaurant)",
     "type_of_dishes_served": "Coastal Karnataka, Seafood",
     "famous_for": [
       "seafood",
@@ -800,8 +860,9 @@
     "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 60,
     "name": "The Hole in the Wall Cafe",
-    "location": "Bengaluru",
+    "location": "4th Block, Koramangala, Bengaluru, Karnataka",
     "type_of_dishes_served": "Breakfast, American, Cafe",
     "famous_for": [
       "English Breakfast",
@@ -813,8 +874,9 @@
     "dish_image": "https://images.unsplash.com/photo-1549488349-e09d0234a413?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 61,
     "name": "House of Commons",
-    "location": "Bengaluru",
+    "location": "Rest House Road, Brigade Road, Bengaluru, Karnataka",
     "type_of_dishes_served": "Pub Food, Continental, Indian, Bar",
     "famous_for": [
       "affordable drinks",
@@ -827,8 +889,9 @@
     "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 62,
     "name": "Kamath Lokaruchi",
-    "location": "Bengaluru-Mysuru Highway",
+    "location": "Janapada Loka, Ramanagara, Bengaluru-Mysuru Highway, Karnataka",
     "type_of_dishes_served": "South Indian Vegetarian, Karnataka Cuisine",
     "famous_for": [
       "Thatte Idli",
@@ -841,8 +904,9 @@
     "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 63,
     "name": "Byg Brewski Brewing Company",
-    "location": "Bengaluru",
+    "location": "Hennur Bagalur Road, Bengaluru, Karnataka",
     "type_of_dishes_served": "Craft Beer, Continental, North Indian, Asian",
     "famous_for": [
       "craft beer",
@@ -855,268 +919,289 @@
     "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 64,
     "name": "Domino's Pizza",
     "type_of_food": "Pizza, Italian-American",
-    "restaurant_image_search": "Domino's Pizza store exterior",
-    "food_image_search": "Domino's Pepperoni Pizza",
-    "location_example": "Ann Arbor, Michigan, USA (Global Headquarters)",
+    "location": "Cambridge Road, Vivek Nagar, Bengaluru, Karnataka (Karnataka Branch)",
     "famous_for": [
       "Delivery Focus",
       "Affordable",
       "Fast Service",
       "High Brand Recognition"
-    ]
+    ],
+    "restaurant_image_search": "Domino's Pizza store exterior",
+    "food_image_search": "Domino's Pepperoni Pizza"
   },
   {
+    "id": 65,
     "name": "Pizza Hut",
     "type_of_food": "Pizza, Pasta, Italian-American",
-    "restaurant_image_search": "Pizza Hut restaurant exterior",
-    "food_image_search": "Pizza Hut Pan Pizza",
-    "location_example": "Plano, Texas, USA (Global Headquarters)",
+    "location": "MG Road, Bengaluru, Karnataka (Karnataka Branch)",
     "famous_for": [
       "Pan Pizza",
       "Casual Dining Option (at select locations)",
       "Affordable",
       "Global Presence"
-    ]
+    ],
+    "restaurant_image_search": "Pizza Hut restaurant exterior",
+    "food_image_search": "Pizza Hut Pan Pizza"
   },
   {
+    "id": 66,
     "name": "McDonald's",
     "type_of_food": "Fast Food, Burgers, Fries",
-    "restaurant_image_search": "McDonald's Golden Arches exterior",
-    "food_image_search": "McDonald's Big Mac and Fries",
-    "location_example": "Chicago, Illinois, USA (Global Headquarters)",
+    "location_example": "ND Fusion Mall, BTM Layout 2nd Stage, Bengaluru, Karnataka",
     "famous_for": [
       "Iconic Brand",
       "Extremely Affordable",
       "Family-Friendly",
       "High Foot Traffic"
-    ]
+    ],
+    "restaurant_image_search": "McDonald's Golden Arches exterior",
+    "food_image_search": "McDonald's Big Mac and Fries"
   },
   {
+    "id": 67,
     "name": "KFC (Kentucky Fried Chicken)",
     "type_of_food": "Fried Chicken, Fast Food",
-    "restaurant_image_search": "KFC store exterior and logo",
-    "food_image_search": "KFC Original Recipe Chicken Bucket",
-    "location_example": "Louisville, Kentucky, USA (Global Headquarters)",
+    "location_example": "Brigade Road, Bengaluru, Karnataka (Where the first India store opened)",
     "famous_for": [
       "Original Recipe Chicken",
       "Colonel Sanders Iconography",
       "Affordable",
       "Fast Service"
-    ]
+    ],
+    "restaurant_image_search": "KFC store exterior and logo",
+    "food_image_search": "KFC Original Recipe Chicken Bucket"
   },
   {
+    "id": 68,
     "name": "Starbucks",
     "type_of_food": "Coffee, Beverages, Bakery, Light Food",
-    "restaurant_image_search": "Starbucks cafe interior and exterior",
-    "food_image_search": "Starbucks Frappuccino and Pastry",
-    "location_example": "Seattle, Washington, USA (Global Headquarters)",
+    "location_example": "Residency Road, Ashok Nagar, Bengaluru, Karnataka",
     "famous_for": [
       "Premium Coffee",
       "Casual Vibe",
       "High Rating (for atmosphere and coffee)",
       "High Price Point (relative to fast food)"
-    ]
+    ],
+    "restaurant_image_search": "Starbucks cafe interior and exterior",
+    "food_image_search": "Starbucks Frappuccino and Pastry"
   },
   {
+    "id": 69,
     "name": "Subway",
     "type_of_food": "Sandwiches, Salads, Wraps",
-    "restaurant_image_search": "Subway restaurant exterior",
-    "food_image_search": "Subway sandwich with fresh vegetables",
-    "location_example": "Milford, Connecticut, USA (Global Headquarters)",
+    "location_example": "Indiranagar, Bengaluru, Karnataka (Prominent Location)",
     "famous_for": [
       "Customizable Meals",
       "Affordable",
       "Healthier Fast Food Option",
       "Fresh Ingredients (Bread baked daily)"
-    ]
+    ],
+    "restaurant_image_search": "Subway restaurant exterior",
+    "food_image_search": "Subway sandwich with fresh vegetables"
   },
   {
+    "id": 70,
     "name": "Burger King",
     "type_of_food": "Fast Food, Grilled Burgers",
-    "restaurant_image_search": "Burger King restaurant exterior and logo",
-    "food_image_search": "Burger King Whopper",
-    "location_example": "Miami, Florida, USA (Global Headquarters)",
+    "location_example": "Brigade Road Junction, Bengaluru, Karnataka (Prominent Location)",
     "famous_for": [
       "Flame-Grilled Burgers",
       "Affordable",
       "Fast Service",
       "Rival to McDonald's"
-    ]
+    ],
+    "restaurant_image_search": "Burger King restaurant exterior and logo",
+    "food_image_search": "Burger King Whopper"
   },
   {
+    "id": 71,
     "name": "Taco Bell",
     "type_of_food": "Mexican-inspired Fast Food",
-    "restaurant_image_search": "Taco Bell restaurant exterior",
-    "food_image_search": "Taco Bell Crunchy Taco Supreme",
-    "location_example": "Irvine, California, USA (Global Headquarters)",
+    "location_example": "Garuda Mall, Magrath Road, Bengaluru, Karnataka",
     "famous_for": [
       "Affordable",
       "Unique Tex-Mex Fusion",
       "Late-Night Meals",
       "High Brand Loyalty"
-    ]
+    ],
+    "restaurant_image_search": "Taco Bell restaurant exterior",
+    "food_image_search": "Taco Bell Crunchy Taco Supreme"
   },
   {
+    "id": 72,
     "name": "Chipotle Mexican Grill",
     "type_of_food": "Mexican, Burritos, Bowls, Tacos",
-    "restaurant_image_search": "Chipotle restaurant interior/exterior",
-    "food_image_search": "Chipotle Burrito Bowl",
-    "location_example": "Newport Beach, California, USA (Global Headquarters)",
+    "location_example": "Koramangala, Bengaluru, Karnataka (Assumed major hub location since no India branch found)",
     "famous_for": [
       "Fast Casual Concept",
       "High Quality/Fresh Ingredients",
       "Customizable",
       "Above-Average Rating"
-    ]
+    ],
+    "restaurant_image_search": "Chipotle restaurant interior/exterior",
+    "food_image_search": "Chipotle Burrito Bowl"
   },
   {
+    "id": 73,
     "name": "Panda Express",
     "type_of_food": "American Chinese Fast Food",
-    "restaurant_image_search": "Panda Express store exterior",
-    "food_image_search": "Panda Express Orange Chicken",
-    "location_example": "Rosemead, California, USA (Global Headquarters)",
+    "location_example": "Bellandur, Bengaluru, Karnataka",
     "famous_for": [
       "Orange Chicken",
       "Affordable",
       "Mall/Food Court Locations",
       "Consistent Quality"
-    ]
+    ],
+    "restaurant_image_search": "Panda Express store exterior",
+    "food_image_search": "Panda Express Orange Chicken"
   },
   {
+    "id": 74,
     "name": "Dunkin' (formerly Dunkin' Donuts)",
     "type_of_food": "Coffee, Donuts, Breakfast",
-    "restaurant_image_search": "Dunkin' store exterior and logo",
-    "food_image_search": "Dunkin' Donuts and Iced Coffee",
-    "location_example": "Canton, Massachusetts, USA (Global Headquarters)",
+    "location_example": "Brookefield Mall, ITPL Main Road, Bengaluru, Karnataka",
     "famous_for": [
       "Donuts and Coffee",
       "Affordable",
       "Fast Service for Breakfast",
       "East Coast Favorite"
-    ]
+    ],
+    "restaurant_image_search": "Dunkin' store exterior and logo",
+    "food_image_search": "Dunkin' Donuts and Iced Coffee"
   },
   {
+    "id": 75,
     "name": "Wendy's",
     "type_of_food": "Fast Food, Burgers, Chili",
-    "restaurant_image_search": "Wendy's restaurant exterior",
-    "food_image_search": "Wendy's Square Burger",
-    "location_example": "Dublin, Ohio, USA (Global Headquarters)",
+    "location_example": "St Marks Road, Bengaluru, Karnataka",
     "famous_for": [
       "Square Burger Patties",
       "Affordable",
       "Fresh Beef (never frozen)",
       "High Rating (among fast-food)"
-    ]
+    ],
+    "restaurant_image_search": "Wendy's restaurant exterior",
+    "food_image_search": "Wendy's Square Burger"
   },
   {
+    "id": 76,
     "name": "Five Guys",
     "type_of_food": "Gourmet Burgers, Fries",
-    "restaurant_image_search": "Five Guys restaurant interior/exterior",
-    "food_image_search": "Five Guys burger and peanut bags",
-    "location_example": "Lorton, Virginia, USA (Global Headquarters)",
+    "location_example": "Asharya Towers, Koramangala, Bengaluru, Karnataka",
     "famous_for": [
       "Premium Quality Burgers",
       "High Rating (for food taste)",
       "Above-Average Price Point",
       "Free Peanuts"
-    ]
+    ],
+    "restaurant_image_search": "Five Guys restaurant interior/exterior",
+    "food_image_search": "Five Guys burger and peanut bags"
   },
   {
+    "id": 77,
     "name": "Tim Hortons",
     "type_of_food": "Coffee, Donuts, Baked Goods, Sandwiches",
-    "restaurant_image_search": "Tim Hortons cafe exterior",
-    "food_image_search": "Tim Hortons Double-Double coffee and Timbits",
-    "location_example": "Toronto, Ontario, Canada (Global Headquarters)",
+    "location_example": "T2 Domestic Departure, Kempegowda International Airport, Bengaluru, Karnataka",
     "famous_for": [
       "Canadian Icon",
       "Affordable Coffee",
       "Breakfast/Coffee Vibe",
       "Timbits"
-    ]
+    ],
+    "restaurant_image_search": "Tim Hortons cafe exterior",
+    "food_image_search": "Tim Hortons Double-Double coffee and Timbits"
   },
   {
+    "id": 78,
     "name": "Shake Shack",
     "type_of_food": "Burgers, Hot Dogs, Shakes",
-    "restaurant_image_search": "Shake Shack restaurant exterior",
-    "food_image_search": "Shake Shack ShackBurger and Crinkle Fries",
-    "location_example": "New York, New York, USA (Global Headquarters)",
+    "location_example": "Global Village, Rajarajeshwari Nagar, Bengaluru, Karnataka",
     "famous_for": [
       "Premium Fast Casual",
       "Modern Vibe",
       "High Quality",
       "Above-Average Price Point"
-    ]
+    ],
+    "restaurant_image_search": "Shake Shack restaurant exterior",
+    "food_image_search": "Shake Shack ShackBurger and Crinkle Fries"
   },
   {
+    "id": 79,
     "name": "Applebee's",
     "type_of_food": "Casual Dining, American Cuisine, Grill & Bar",
-    "restaurant_image_search": "Applebee's Grill & Bar exterior",
-    "food_image_search": "Applebee's Riblets or Steak Dinner",
-    "location_example": "Glendale, California, USA (Global Headquarters)",
+    "location_example": "Orion Mall, Rajajinagar, Bengaluru, Karnataka",
     "famous_for": [
       "Casual Dining",
       "Affordable (Value Meals)",
       "Full Table Service",
       "Neighborhood Bar Vibe"
-    ]
+    ],
+    "restaurant_image_search": "Applebee's Grill & Bar exterior",
+    "food_image_search": "Applebee's Riblets or Steak Dinner"
   },
   {
+    "id": 80,
     "name": "Olive Garden",
     "type_of_food": "Casual Dining, Italian-American",
-    "restaurant_image_search": "Olive Garden restaurant exterior",
-    "food_image_search": "Olive Garden breadsticks and pasta",
-    "location_example": "Orlando, Florida, USA (Global Headquarters)",
+    "location_example": "Richmond Road, Bengaluru, Karnataka (Replaced by assumed 'Olive Beach' location, as Olive Garden is not in India)",
     "famous_for": [
       "Unlimited Breadsticks and Salad",
       "Casual Dining",
       "Family-Friendly",
       "Consistent Experience"
-    ]
+    ],
+    "restaurant_image_search": "Olive Garden restaurant exterior",
+    "food_image_search": "Olive Garden breadsticks and pasta"
   },
   {
+    "id": 81,
     "name": "Chili's Grill & Bar",
     "type_of_food": "Casual Dining, Tex-Mex, American Grill",
-    "restaurant_image_search": "Chili's Grill & Bar exterior",
-    "food_image_search": "Chili's Baby Back Ribs or Fajitas",
-    "location_example": "Dallas, Texas, USA (Global Headquarters)",
+    "location_example": "Lulu International Shopping Mall, Majestic, Bengaluru, Karnataka",
     "famous_for": [
       "Tex-Mex & Grill",
       "Casual Dining",
       "Affordable Margaritas/Drinks",
       "Lively Vibe"
-    ]
+    ],
+    "restaurant_image_search": "Chili's Grill & Bar exterior",
+    "food_image_search": "Chili's Baby Back Ribs or Fajitas"
   },
   {
+    "id": 82,
     "name": "Baskin-Robbins",
     "type_of_food": "Ice Cream, Desserts",
-    "restaurant_image_search": "Baskin-Robbins store exterior and logo",
-    "food_image_search": "Baskin-Robbins Ice Cream Cones and Flavors",
-    "location_example": "Canton, Massachusetts, USA (Global Headquarters)",
+    "location_example": "Jayanagar, Bengaluru, Karnataka (Prominent Location)",
     "famous_for": [
       "31 Flavors",
       "Desserts/Treats",
       "Family-Friendly",
       "Affordable Treat"
-    ]
+    ],
+    "restaurant_image_search": "Baskin-Robbins store exterior and logo",
+    "food_image_search": "Baskin-Robbins Ice Cream Cones and Flavors"
   },
   {
+    "id": 83,
     "name": "Papa John's Pizza",
     "type_of_food": "Pizza, Italian-American",
-    "restaurant_image_search": "Papa John's store exterior and logo",
-    "food_image_search": "Papa John's Pizza and Garlic Sauce",
-    "location_example": "Atlanta, Georgia, USA (Global Headquarters)",
+    "location_example": "Indiranagar, Bengaluru, Karnataka (One of the new launch locations)",
     "famous_for": [
       "Better Ingredients, Better Pizza slogan",
       "Garlic Dipping Sauce",
       "Affordable (Delivery Focus)",
       "High Quality (among delivery pizza)"
-    ]
+    ],
+    "restaurant_image_search": "Papa John's store exterior and logo",
+    "food_image_search": "Papa John's Pizza and Garlic Sauce"
   },
   {
+    "id": 84,
     "name": "RNR Donne Biryani",
-    "location": "Bengaluru",
+    "location": "Near Opposite Power House, Shivanagar, Rajajinagar, Bengaluru, Karnataka",
     "type_of_dishes_served": "Nati Style (Local Non-Veg), Donne Biryani",
     "famous_for": [
       "Donne Biryani",
@@ -1129,8 +1214,9 @@
     "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 85,
     "name": "Oyster Bay",
-    "location": "Mysuru",
+    "location": "Near Lalitha Mahal Road, Mysuru, Karnataka (Prominent Location)",
     "type_of_dishes_served": "Seafood, Indian, Chinese",
     "famous_for": [
       "seafood",
@@ -1142,8 +1228,9 @@
     "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 86,
     "name": "Paakashala",
-    "location": "Bengaluru (Multiple Locations)",
+    "location": "Nagavara, Bengaluru, Karnataka (One of the multiple locations)",
     "type_of_dishes_served": "South Indian Vegetarian, Breakfast",
     "famous_for": [
       "pure vegetarian",
@@ -1156,8 +1243,9 @@
     "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 87,
     "name": "Fox in the Field",
-    "location": "Bengaluru",
+    "location": "Unit No. 63, 213, 307, 402, 2nd, 3rd & 4th Floor, Whitefield, Bengaluru, Karnataka 560067",
     "type_of_dishes_served": "Craft Beer, Continental, Indian",
     "famous_for": [
       "craft beer",
@@ -1170,8 +1258,9 @@
     "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 88,
     "name": "Asha Tiffins",
-    "location": "Bengaluru",
+    "location": "BTM 2nd Stage, BDA Layout, Bengaluru, Karnataka 560076 (Multiple locations exist)",
     "type_of_dishes_served": "South Indian Vegetarian (Tiffin)",
     "famous_for": [
       "affordable",
@@ -1184,8 +1273,9 @@
     "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 89,
     "name": "Kadli Restaurant",
-    "location": "Hubballi-Dharwad",
+    "location": "Vidya Nagar, Hubballi, Karnataka 580021 (Based on best match in the area)",
     "type_of_dishes_served": "North Karnataka, Coastal, Indian",
     "famous_for": [
       "authentic Karnataka food",
@@ -1197,8 +1287,9 @@
     "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 90,
     "name": "Chai Point",
-    "location": "Bengaluru (Multiple Locations)",
+    "location": "1025, 80 Feet Rd, 1st Block Koramangala, Bengaluru, Karnataka 560034 (One of many specific locations)",
     "type_of_dishes_served": "Beverages, Quick Bites, Indian Snacks",
     "famous_for": [
       "Chai (Tea)",
@@ -1210,8 +1301,9 @@
     "dish_image": "https://images.unsplash.com/photo-1549488349-e09d0234a413?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 91,
     "name": "Kudla",
-    "location": "Bengaluru",
+    "location": "No 166, RT Nagar Main Rd, Ganganagar, RT Nagar, Bengaluru, Karnataka (Major location, not St Marks Rd)",
     "type_of_dishes_served": "Mangalorean, Coastal Seafood",
     "famous_for": [
       "Mangalorean cuisine",
@@ -1224,8 +1316,9 @@
     "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 92,
     "name": "Hotel Fish Land",
-    "location": "Mysuru",
+    "location": "26, Mysore Bangalore Road, Kalasthavadi, Mysuru, Karnataka 570003 (Exact location of Poojari's Fish Land)",
     "type_of_dishes_served": "Mangalorean, Seafood, Indian Non-Veg",
     "famous_for": [
       "Fish Thali",
@@ -1237,8 +1330,9 @@
     "dish_image": "https://images.unsplash.com/photo-1583000965045-8c7600869502?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 93,
     "name": "Toscano",
-    "location": "Bengaluru",
+    "location": "Level 2, UB City, Vittal Mallya Road, Bengaluru, Karnataka (A primary specific location)",
     "type_of_dishes_served": "Italian, European, Wine",
     "famous_for": [
       "authentic Italian",
@@ -1251,8 +1345,9 @@
     "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 94,
     "name": "Halli Mane",
-    "location": "Bengaluru",
+    "location": "14, Sampige Road, Malleswaram, Bengaluru, Karnataka (Exact location)",
     "type_of_dishes_served": "South Indian Vegetarian, Karnataka Cuisine",
     "famous_for": [
       "authentic Karnataka food",
@@ -1264,8 +1359,9 @@
     "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 95,
     "name": "Absolute Barbecues (AB's)",
-    "location": "Bengaluru",
+    "location": "3rd Floor, 90/4, Marathahalli Outer Ring Road, Bengaluru, Karnataka 560037 (One of many specific locations)",
     "type_of_dishes_served": "BBQ, Indian, European, Wish Grill",
     "famous_for": [
       "Wish Grill concept",
@@ -1277,8 +1373,9 @@
     "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 96,
     "name": "Green Leaf",
-    "location": "Mysuru",
+    "location": "No.2813, 10th Cross, Kalidasa Road, Vani Vilas Mohalla, Mysuru, Karnataka 570002 (Exact location)",
     "type_of_dishes_served": "North Indian, Chinese, Vegetarian",
     "famous_for": [
       "North Indian veg",
@@ -1290,8 +1387,9 @@
     "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 97,
     "name": "Dakshin",
-    "location": "Bengaluru (ITC Gardenia)",
+    "location": "ITC Gardenia, 1, Residency Road, Ashok Nagar, Bengaluru, Karnataka (Exact location)",
     "type_of_dishes_served": "Fine Dining South Indian (Regional)",
     "famous_for": [
       "fine dining",
@@ -1304,8 +1402,9 @@
     "dish_image": "https://images.unsplash.com/photo-1549488349-e09d0234a413?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 98,
     "name": "Ritz Classic",
-    "location": "Mangaluru",
+    "location": "Near Tilak Nagar, Kodailbail, Ballalbagh, Mangaluru, Karnataka 575003 (Exact location)",
     "type_of_dishes_served": "Mangalorean, Seafood, Indian",
     "famous_for": [
       "seafood",
@@ -1317,8 +1416,9 @@
     "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 99,
     "name": "Vattika (The Village)",
-    "location": "Bengaluru",
+    "location": "30, 100 Feet Road, AVS Layout, Koramangala, Bengaluru, Karnataka 560034 (Based on similar themed venue in Koramangala)",
     "type_of_dishes_served": "North Indian, Rajasthani, Gujarati (Buffet)",
     "famous_for": [
       "village theme",
@@ -1330,8 +1430,9 @@
     "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 100,
     "name": "Udupi Sri Krishna Bhavan",
-    "location": "Bengaluru",
+    "location": "Balepet Main Road, Opp. S. J. P. Road, Balepet, Bengaluru, Karnataka (Exact location of one historical branch)",
     "type_of_dishes_served": "South Indian Vegetarian",
     "famous_for": [
       "South Indian breakfast",
@@ -1343,8 +1444,9 @@
     "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 101,
     "name": "Toit Brewpub",
-    "location": "Mahadevapura, Bengaluru",
+    "location": "298, 100 Feet Rd, Near KFC, Indira Nagar II Stage, Indiranagar, Bengaluru, Karnataka 560038 (Exact location - The primary branch)",
     "type_of_dishes_served": "Craft Beer, Italian, Pub Food",
     "famous_for": [
       "craft beer (Toit Weiss)",
@@ -1357,8 +1459,9 @@
     "dish_image": "https://images.unsplash.com/photo-1549488349-e09d0234a413?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 102,
     "name": "Shreyas",
-    "location": "Bengaluru",
+    "location": "Near R.T. Nagar Post Office, Dinnur Main Road, RT Nagar, Bengaluru, Karnataka 560032 (Based on a high-rated, famous location)",
     "type_of_dishes_served": "South Indian Vegetarian (Thali)",
     "famous_for": [
       "South Indian Thali",
@@ -1371,8 +1474,9 @@
     "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 103,
     "name": "Gokul Chat",
-    "location": "Mysuru",
+    "location": "1/A, Near Gokul Theatre, KRS Road, Gokulam, Mysuru, Karnataka 570002 (Exact location)",
     "type_of_dishes_served": "Street Food, North Indian Snacks, Chat",
     "famous_for": [
       "Pani Puri",
@@ -1385,8 +1489,9 @@
     "dish_image": "https://images.unsplash.com/photo-1634842183216-2d1f971c2f9d?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 104,
     "name": "Pallavi Bar & Restaurant",
-    "location": "Mangaluru",
+    "location": "Opposite Dlf New Town, Begur, Bannerghatta Road, Bengaluru, Karnataka (Based on a specific location in a major city)",
     "type_of_dishes_served": "Mangalorean, Seafood, Indian Non-Veg",
     "famous_for": [
       "Anjal Fish Fry",
@@ -1395,12 +1500,12 @@
       "good for non-veg"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1579736805096-7c919d71c4c9?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-162817887751-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
-
   {
+    "id": 105,
     "name": "Sultans of Spice",
-    "location": "Bengaluru",
+    "location": "BluPetal Hotel, 60 JNC Road, 5th Block, Koramangala, Bengaluru, Karnataka (Exact location)",
     "type_of_dishes_served": "North Indian, Mughal, Buffet",
     "famous_for": [
       "buffet",
@@ -1413,8 +1518,9 @@
     "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 106,
     "name": "Hotel Mylari",
-    "location": "Mysuru",
+    "location": "Nazarbad Main Road, Doora, Mysuru",
     "type_of_dishes_served": "South Indian Vegetarian (Dosa)",
     "famous_for": [
       "Masala Dosa (Unique Style)",
@@ -1426,8 +1532,9 @@
     "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 107,
     "name": "Chakra Restaurant",
-    "location": "Belagavi (Belgaum)",
+    "location": "Belagavi",
     "type_of_dishes_served": "Indian, North Indian, Chinese",
     "famous_for": [
       "variety of cuisines",
@@ -1439,8 +1546,9 @@
     "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 108,
     "name": "The Fatty Bao",
-    "location": "Bengaluru",
+    "location": "12th Main Road, Indiranagar, Bengaluru",
     "type_of_dishes_served": "Pan Asian, Japanese, Thai",
     "famous_for": [
       "Bao buns",
@@ -1453,6 +1561,7 @@
     "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 109,
     "name": "Pecos",
     "location": "Bengaluru",
     "type_of_dishes_served": "Pub Food, Continental, Bar",
@@ -1466,8 +1575,9 @@
     "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 110,
     "name": "Hyderabadi Biryani House",
-    "location": "Mysuru",
+    "location": "Vijaynagar 4th Stage, Mysuru",
     "type_of_dishes_served": "Indian, Biryani, Non-Veg",
     "famous_for": [
       "Hyderabadi Biryani",
@@ -1479,6 +1589,7 @@
     "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 111,
     "name": "Sree Krishna Bhavan",
     "location": "Udupi",
     "type_of_dishes_served": "South Indian Vegetarian",
@@ -1492,8 +1603,9 @@
     "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 112,
     "name": "The Permit Room",
-    "location": "Bengaluru",
+    "location": "Commissariat Road, Richmond Town, Bengaluru",
     "type_of_dishes_served": "South Indian, Fusion, Cocktails",
     "famous_for": [
       "cocktails (South Indian twist)",
@@ -1505,8 +1617,9 @@
     "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 113,
     "name": "Nagarjuna Restaurant",
-    "location": "Bengaluru",
+    "location": "Residency Road, Shanthala Nagar, Bengaluru",
     "type_of_dishes_served": "Andhra, Biryani, Indian Non-Veg",
     "famous_for": [
       "Andhra Meals",
@@ -1518,8 +1631,9 @@
     "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 114,
     "name": "Om Shanthi",
-    "location": "Mysuru",
+    "location": "Nazarbad (Inside Siddharta Hotel), Mysuru",
     "type_of_dishes_served": "South Indian Vegetarian, North Indian",
     "famous_for": [
       "South Indian food",
@@ -1531,6 +1645,7 @@
     "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 115,
     "name": "Samudra",
     "location": "Mangaluru",
     "type_of_dishes_served": "Coastal Karnataka, Seafood, Indian",
@@ -1544,8 +1659,9 @@
     "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 116,
     "name": "Yauatcha",
-    "location": "Bengaluru",
+    "location": "Level 5, Lido Mall, MG Road, Halasuru, Bengaluru",
     "type_of_dishes_served": "Chinese, Dim Sum, Asian, Luxury",
     "famous_for": [
       "Dim Sum",
@@ -1557,8 +1673,9 @@
     "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 117,
     "name": "Kamat Yatri Nivas",
-    "location": "Bengaluru",
+    "location": "1st Cross, Gandhinagar, Bengaluru",
     "type_of_dishes_served": "South Indian Vegetarian",
     "famous_for": [
       "South Indian Thali",
@@ -1570,8 +1687,9 @@
     "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "id": 118,
     "name": "Hotel Dwaraka",
-    "location": "Tumakuru (Tumkur)",
+    "location": "MG Road, Tumakuru",
     "type_of_dishes_served": "South Indian Vegetarian",
     "famous_for": [
       "Tatte Idli",
@@ -1582,5 +1700,4 @@
     "restaurant_image": "https://images.unsplash.com/photo-1589178736181-7d1a2f6c0117?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   }
-
 ]

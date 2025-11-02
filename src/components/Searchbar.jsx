@@ -3,6 +3,7 @@ import restaurantData from '../data.json'
 import RestaurantCard from './RestaurantCard';
 
 
+
 const Searchbar = () => {
     const restaurantImages = [
         '/restaurant_images/rest1.jpg',
@@ -28,6 +29,7 @@ const Searchbar = () => {
     const [currentFoodImage, setCurrentFoodImage] = useState(foodImages[0])
     const [searchQuery, setSearchQuery] = useState('');
     const [filtered, setFiltered] = useState([])
+    const [selectedRestaurant, setSelectedRestaurant] = useState([])
 
     const getRandomRestaurantImage = () =>{
         const randomIndex = Math.floor(Math.random() * restaurantImages.length)
@@ -37,7 +39,10 @@ const Searchbar = () => {
         const shuffled = [...foodImages].sort(() => 0.5 - Math.random());
         const selected = shuffled.slice(0, 3);
         setCurrentFoodImage(selected);
-  };
+    };
+
+    const handleRestaurantClick = (restaurant) =>{
+    }
 
     const searchRestaurants = () =>{
         const restaurant = restaurantData.filter(restaurants =>{
@@ -121,8 +126,8 @@ const Searchbar = () => {
                         {filtered.map((restaurant, index) => (
                             <div 
                                 key={index} 
-                                className='bg-gray-600 p-4 sm:p-6 rounded-2xl border-2 border-gray-400 hover:border-gray-500 transition duration-200 hover:cursor-pointer flex flex-col items-center' onClick={()=>{
-                                    <RestaurantCard/>
+                                className='bg-gray-600 p-4 sm:p-6 rounded-2xl border-2 border-gray-400 hover:border-gray-500 transition duration-200 hover:cursor-pointer flex flex-col items-center' onClick={(restaurant)=>{
+                                    handleRestaurantClick(restaurant)
                                 }}
                             >
                                 <h4 className='text-white text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-center'>
@@ -169,8 +174,6 @@ const Searchbar = () => {
             )}
         </div>
 
-
-        {1 == 2 && <RestaurantCard query={searchQuery} />}
     </>
   )
 }
