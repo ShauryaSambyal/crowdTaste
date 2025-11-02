@@ -8,9 +8,12 @@ import RestaurantCard from './components/RestaurantCard'
 const App = () => {
   return (
     <>
+    <Navbar />
       <BrowserRouter>
           <Routes>
-            <Route path='/' element= {<Searchbar />}/>
+            <Route path='/' element= {
+              <Searchbar />
+            }/>
 
             <Route path='/restaurant/:id' element={<RestaurantCard />} />
           </Routes>

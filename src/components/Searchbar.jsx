@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import restaurantData from '../data.json'
 import RestaurantCard from './RestaurantCard';
+import { Link } from 'react-router-dom';
 
 
 
@@ -124,50 +125,36 @@ const Searchbar = () => {
                     </h3>
                     <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6'>
                         {filtered.map((restaurant, index) => (
-                            <div 
+                            <Link
+                                to={`/restaurant/${restaurant.id}`}
+                                key={restaurant.id}
+                                state={{ restaurant }}
+                            >
+                                <div 
                                 key={index} 
                                 className='bg-gray-600 p-4 sm:p-6 rounded-2xl border-2 border-gray-400 hover:border-gray-500 transition duration-200 hover:cursor-pointer flex flex-col items-center' onClick={(restaurant)=>{
                                     handleRestaurantClick(restaurant)
                                 }}
-                            >
-                                <h4 className='text-white text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-center'>
-                                    {restaurant.name}
-                                </h4>
-                                <img 
-                                    src={currentRestaurantImage} 
-                                    alt="Restaurant_image" 
-                                    className='rounded-2xl mb-4 sm:mb-5 w-full h-40 sm:h-48 object-cover' 
-                                />
-                                <div className='text-center mb-3 sm:mb-4 w-full'>
-                                    <p className='text-xs sm:text-sm text-gray-300 font-bold mb-1'>
-                                        Restaurant famous for:
-                                    </p>
-                                    <h4 className='text-blue-200 text-xs sm:text-sm'>
-                                        {restaurant.type_of_food || restaurant.type_of_dishes_served}
+                                >
+                                    <h4 className='text-white text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-center'>
+                                        {restaurant.name}
                                     </h4>
-                                </div>
-                                {currentFoodImage.length > 0 && (
-                                    <div className="grid grid-cols-3 gap-1.5 sm:gap-2 mb-3 sm:mb-4 w-full">
-                                        {currentFoodImage.map((img, idx) => (
-                                            <div key={idx} className="rounded-lg overflow-hidden shadow-lg">
-                                                <img 
-                                                    src={img} 
-                                                    alt={`Food ${idx + 1}`} 
-                                                    className="w-full h-20 sm:h-24 object-cover"
-                                                />
-                                            </div>
-                                        ))}
+                                    <img 
+                                        src={currentRestaurantImage} 
+                                        alt="Restaurant_image" 
+                                        className='rounded-2xl mb-4 sm:mb-5 w-full h-40 sm:h-48 object-cover' 
+                                    />
+                                    <div className='text-center w-full'>
+                                        <p className='text-xs sm:text-sm text-gray-300 font-bold mb-1'>
+                                            Location:
+                                        </p>
+                                        <h4 className='text-blue-200 text-xs sm:text-sm'>
+                                            {restaurant.location || restaurant.location_example}
+                                        </h4>
                                     </div>
-                                )}
-                                <div className='text-center w-full'>
-                                    <p className='text-xs sm:text-sm text-gray-300 font-bold mb-1'>
-                                        Location:
-                                    </p>
-                                    <h4 className='text-blue-200 text-xs sm:text-sm'>
-                                        {restaurant.location || restaurant.location_example}
-                                    </h4>
                                 </div>
-                            </div>
+                            </Link>
+                            
                         ))}
                     </div>
                 </div>
