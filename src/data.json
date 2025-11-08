@@ -12,7 +12,14 @@
       "affordable"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1598512217743-41c19b222f67?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1598512217743-41c19b222f67?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The Rava Idli is a must-try! Truly a piece of Bangalore's history.",
+      "Classic South Indian tiffins that never disappoint. Expect a queue!",
+      "Simple, authentic, and incredibly affordable. Best filter coffee.",
+      "Great taste and quality, though the service is a bit rushed.",
+      "Worth the hype. The Masala Dosa is perfectly crisp."
+    ]
   },
   {
     "id": 2,
@@ -27,7 +34,14 @@
       "luxury dining"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1616421455364-db08620e234c?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Exceptional seafood and a beautiful setting. Perfect for a special occasion.",
+      "Luxury dining at its best. The coastal curries are phenomenal.",
+      "The Prawn Ghee Roast was divine! Impeccable service.",
+      "A culinary journey through the South Indian coast. Highly recommended.",
+      "Pricy, but the ambiance and food quality justify the cost."
+    ]
   },
   {
     "id": 3,
@@ -42,7 +56,14 @@
       "high rating"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1589178736181-7d1a2f6c0117?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The melt-in-your-mouth Masala Dosa is legendary. A true Mysore gem.",
+      "Incredibly soft dosas and simple, delicious chutney. Small place, huge taste.",
+      "A historic and affordable breakfast spot. Be ready to stand in line.",
+      "Only serves a few items, but everything is perfect. Pure authentic food.",
+      "Best dosa I've ever had, hands down. Must visit when in Mysuru."
+    ]
   },
   {
     "id": 4,
@@ -57,7 +78,14 @@
       "high rating"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1596756627571-70097c02c019?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1634842183216-2d1f971c2f9d?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1634842183216-2d1f971c2f9d?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The Neer Dosa here is exceptionally light and soft. Authentic Mangalorean flavors.",
+      "Loved the Goli Bajji, perfectly fried and fluffy. Great affordable tiffins.",
+      "A go-to spot for simple, delicious Coastal Karnataka breakfast.",
+      "Quick service and high quality, local vegetarian food.",
+      "Great value for money. The Sajjige-Bajji combo is classic."
+    ]
   },
   {
     "id": 5,
@@ -72,7 +100,14 @@
       "nightlife"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1517248135460-4c311c80f3f2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Fantastic craft beer selection, especially the Basmati Blonde.",
+      "The vibe is energetic, and the pub food is great, especially the pizzas.",
+      "The heart of Bangalore's nightlife. Always packed, book in advance.",
+      "Excellent place to hang out with friends. Good music and ambiance.",
+      "Tried their steak and it was surprisingly good for a brewpub!"
+    ]
   },
   {
     "id": 6,
@@ -87,7 +122,14 @@
       "good for non-veg"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1555562060-6b62762a4d3f?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The Andhra meals and Biryani are intensely spicy and delicious. Not for the faint-hearted!",
+      "Guntur Chicken is a fiery delight. Consistently great non-veg options.",
+      "A Bengaluru institution for authentic, piping hot Andhra food.",
+      "The chilli factor is real, but the flavor is addictive. Excellent value.",
+      "Fast service, great for a quick, hearty and spicy lunch."
+    ]
   },
   {
     "id": 7,
@@ -102,7 +144,14 @@
       "simple vibe"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1594916964177-d42f534125b0?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Authentic and soul-satisfying Jolada Rotti meals. A taste of North Karnataka.",
+      "Simple, no-frills setting, but the food is bursting with traditional flavour.",
+      "The different side curries and chutneys with the Rotti are amazing.",
+      "Extremely affordable and a very filling, wholesome meal.",
+      "If you want real, rustic Karnataka food, a Khanavali is the place to be."
+    ]
   },
   {
     "id": 8,
@@ -116,7 +165,14 @@
       "Mangalorean cuisine"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1579736805096-7c919d71c4c9?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1583000965045-8c7600869502?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1583000965045-8c7600869502?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Some of the freshest seafood in the region. The Fish Fry is excellent.",
+      "A classic spot for authentic Mangalorean non-veg dishes.",
+      "Good atmosphere and consistently high-quality, spicy coastal food.",
+      "Tried the prawn curry and it was spiced just right. Highly recommend.",
+      "Reliable place for a good, non-vegetarian meal near the coast."
+    ]
   },
   {
     "id": 9,
@@ -131,7 +187,14 @@
       "high rating"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1586518174786-e0f6f272c444?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1594916964177-d42f534125b0?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1594916964177-d42f534125b0?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The crispest, butteriest Masala Dosa in Bangalore. An absolute must-visit!",
+      "An iconic, historic tiffin room. The waiters carry stacks of dosas!",
+      "Don't expect fancy ambiance, but expect incredible, authentic food.",
+      "The crowds are a testament to their fantastic quality and value.",
+      "Best breakfast experience in Basavanagudi. Filter coffee is also great."
+    ]
   },
   {
     "id": 10,
@@ -145,8 +208,15 @@
       "quick service",
       "street food"
     ],
-    "restaurant_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1563273398-316887570884?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "restaurant_image": "https://images.unsplash.com/photo-162796338954-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dish_image": "https://images.unsplash.com/photo-1563273398-316887570884?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Amazing Pav Bhaji and other fast food favorites at street-food prices.",
+      "Great for a quick and satisfying evening snack or casual meal.",
+      "Very affordable and the North Indian options are quite tasty.",
+      "Quick service and consistently good chaat items. Local favorite spot.",
+      "Perfect place to grab a quick, cheap, and cheerful bite."
+    ]
   },
   {
     "id": 11,
@@ -161,7 +231,14 @@
       "filter coffee"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1541701570778-578d65a8e0f6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1601362770851-240a5a67f08c?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1601362770851-240a5a67f08c?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Stepping into Koshy's is like stepping back in time. Great old-world charm.",
+      "The classic omelets and cutlets are superb. Must have the filter coffee.",
+      "A true Bangalore institution, perfect for a relaxed breakfast or tea.",
+      "Simple, comforting food and an unhurried, good vibe. Highly recommended.",
+      "A great meeting point. Continental dishes are quite satisfying."
+    ]
   },
   {
     "id": 12,
@@ -176,7 +253,14 @@
       "fast service"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1589178736181-7d1a2f6c0117?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The best Biryani in Bangalore, perfectly spiced and flavourful.",
+      "Quick service, affordable prices, and delicious Andhra-style Biryani.",
+      "Warning: the food is spicy, but totally worth the heat!",
+      "Always crowded, which speaks volumes about the quality.",
+      "Great spot for a satisfying and non-vegetarian friendly meal."
+    ]
   },
   {
     "id": 13,
@@ -191,7 +275,14 @@
       "high rating"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1582236528751-b0e9a3b9f3a6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The Butter Dosa here is truly divine—crispy and loaded with flavor.",
+      "Classic, old-school tiffin room experience. Very affordable and authentic.",
+      "Fantastic breakfast spot in Mysuru. A true local secret.",
+      "Simple menu, but everything is cooked to perfection. High quality food.",
+      "Be prepared for a small, crowded space, but the taste makes it worthwhile."
+    ]
   },
   {
     "id": 14,
@@ -206,7 +297,14 @@
       "high rating"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1565431326402-9a008e3b4a20?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The Prawn Ghee Roast is the best I've ever tasted. Rich and spicy.",
+      "Excellent place for authentic Mangalorean seafood.",
+      "High-quality, fresh fish and prompt service. Great overall experience.",
+      "Must try the fish curries; they are packed with coastal flavor.",
+      "A bit on the pricier side, but the food is worth every penny."
+    ]
   },
   {
     "id": 15,
@@ -221,7 +319,14 @@
       "authentic Karnataka food"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1596756627571-70097c02c019?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The Benne Masala Dosa is legendary, dripping with butter and perfectly crisp.",
+      "A classic and historic spot in Malleshwaram. Expect a long wait.",
+      "Incredibly affordable and authentic Bangalore tiffin experience.",
+      "Tried the Mangalore Bajji and it was great too. Must end with Filter Coffee.",
+      "Fantastic food quality that remains consistent despite the crowds."
+    ]
   },
   {
     "id": 16,
@@ -236,7 +341,14 @@
       "bar/pub"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1517248135460-4c311c80f3f2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1563273398-316887570884?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1563273398-316887570884?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The best Chicken Wings in the city, especially the spicy ones.",
+      "A chilled-out bar vibe with great American comfort food.",
+      "Affordable drinks and decent pub grub. Perfect for a casual evening.",
+      "Great place to catch a game and have some juicy burgers.",
+      "The portions are generous and the food is consistently good."
+    ]
   },
   {
     "id": 17,
@@ -251,7 +363,14 @@
       "multicuisine"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1549488349-e09d0234a413?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1563273398-316887570884?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1563273398-316887570884?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Excellent microbrewery with a great selection of fresh craft beers.",
+      "The ambiance is sophisticated, making it a perfect luxury dining spot.",
+      "Impressive range of multicuisine dishes, all prepared well.",
+      "Good for a group outing. Enjoyed the rooftop seating area.",
+      "High quality experience, though definitely on the expensive side for Mysuru."
+    ]
   },
   {
     "id": 18,
@@ -266,7 +385,14 @@
       "authentic food"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1579736805096-7c919d71c4c9?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The Fish Thali is a fantastic, affordable, and filling non-veg meal.",
+      "Authentic Mangalorean seafood experience in a simple setting.",
+      "Great place for a hearty lunch. The Fish Curry is spicy and delicious.",
+      "Very popular among locals for its reliable quality and taste.",
+      "Tried the Anjal (Kingfish) Fry, and it was perfectly cooked."
+    ]
   },
   {
     "id": 19,
@@ -281,7 +407,14 @@
       "high rating"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1586518174786-e0f6f272c444?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": ""
+    "dish_image": "",
+    "reviews": [
+      "Their Idli and Vada, dipped in their signature chutney, is bliss.",
+      "A standing-only, no-frills, historic gem. Incredibly fast service.",
+      "Best place for a quick, authentic, and dirt-cheap South Indian breakfast.",
+      "The Khara Bath is equally amazing. Everything is fresh and hot.",
+      "A must-visit for any South Indian food lover in Bangalore."
+    ]
   },
   {
     "id": 20,
@@ -296,7 +429,14 @@
       "historic institution"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1541701570778-578d65a8e0f6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The Thatte Idli is a fluffy, large-sized treat. Very soft and satisfying.",
+      "Reliable and authentic Karnataka vegetarian food. Good for family dining.",
+      "Affordable prices and quick, friendly service. A historic Bangalore spot.",
+      "Their Bisibele Bath is also excellent. Tried and tested quality.",
+      "Classic South Indian staples served well. A great place for a quick meal."
+    ]
   },
   {
     "id": 21,
@@ -311,7 +451,14 @@
       "fusion dishes"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1596756627571-70097c02c019?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Stunning glass architecture and fantastic, upscale ambiance.",
+      "Great cocktails and inventive fusion European dishes.",
+      "Perfect for a date night or a luxurious evening out. High-end dining.",
+      "The service is attentive, and the presentation of food is top-notch.",
+      "Expensive, but the unique setting and food quality are worth the splurge."
+    ]
   },
   {
     "id": 22,
@@ -325,7 +472,14 @@
       "authentic food"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1582236528751-b0e9a3b9f3a6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Incredible Mutton Biryani, truly rich and aromatic.",
+      "Affordable prices for high-quality, authentic non-vegetarian food.",
+      "A no-fuss place that serves delicious and satisfying Indian meals.",
+      "Tried their Chicken Kebab and it was perfectly marinated and fried.",
+      "Great local spot, especially famous for its Biryani variants."
+    ]
   },
   {
     "id": 23,
@@ -339,7 +493,14 @@
       "authentic food"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1579736805096-7c919d71c4c9?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Classic Udupi tiffins done right. The Masala Dosa is great.",
+      "Very affordable and perfect for students. Quick and authentic breakfast.",
+      "The quality of the tiffins is reliably good. Loved the Upma.",
+      "Great place to experience traditional Udupi vegetarian food.",
+      "Simple setup, but great taste and value for money."
+    ]
   },
   {
     "id": 24,
@@ -353,7 +514,14 @@
       "innovative dishes"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1565431326402-9a008e3b4a20?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Very innovative menu with delicious fusion dishes. A welcome change.",
+      "The ambiance is stylish and contemporary. Great place for a young crowd.",
+      "High rating is deserved. Tried their signature cocktail and loved it.",
+      "Excellent Continental fare, well-prepared and presented.",
+      "A bit expensive but worth it for the modern, unique dining experience."
+    ]
   },
   {
     "id": 25,
@@ -367,7 +535,14 @@
       "high rating"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1589178736181-7d1a2f6c0117?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Consistently great and authentic Chinese food. Good portion sizes.",
+      "Very reliable spot, especially for home delivery. Quick and efficient.",
+      "The chili chicken is a must-try. Affordable compared to other Chinese places.",
+      "A pleasant surprise for good quality Asian cuisine in the area.",
+      "Enjoyed the Hakka Noodles and the overall value for money."
+    ]
   },
   {
     "id": 26,
@@ -382,7 +557,14 @@
       "filter coffee"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1555562060-6b62762a4d3f?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The crispest, butteriest Masala Dosa in Bangalore. An absolute must-visit!",
+      "An iconic, historic tiffin room. The waiters carry stacks of dosas!",
+      "Don't expect fancy ambiance, but expect incredible, authentic food.",
+      "The crowds are a testament to their fantastic quality and value.",
+      "Best breakfast experience in Basavanagudi. Filter coffee is also great."
+    ]
   },
   {
     "id": 27,
@@ -396,7 +578,14 @@
       "good for non-veg"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1582236528751-b0e9a3b9f3a6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Fantastic Mutton Biryani and other spicy local mutton preparations.",
+      "A classic, no-frills local favorite for non-vegetarian food.",
+      "Very affordable prices for hearty, flavor-packed meals.",
+      "Tried the Chicken Kebab and it was quite good. Great for a casual non-veg meal.",
+      "Popular spot, especially in the evenings. Authentic local taste."
+    ]
   },
   {
     "id": 28,
@@ -410,7 +599,14 @@
       "good ambiance"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1594916964177-d42f534125b0?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "A great option for family dining with a wide variety of cuisines.",
+      "North Indian curries are their strong suit, rich and creamy.",
+      "Affordable prices and pleasant ambiance for a comfortable meal.",
+      "The Chinese section is decent, good for satisfying different palates.",
+      "Reliable place for a multi-cuisine fix in Hubballi."
+    ]
   },
   {
     "id": 29,
@@ -425,7 +621,14 @@
       "good vibe"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1517248135460-4c311c80f3f2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Stunning rooftop view of Bangalore's city lights. Highly romantic.",
+      "Fine dining experience with excellent North Indian and Thai options.",
+      "Great cocktails and a sophisticated, upscale atmosphere.",
+      "Perfect for a special occasion. The service is impeccable.",
+      "The food is delicious, but the view is what truly sets it apart."
+    ]
   },
   {
     "id": 30,
@@ -439,7 +642,14 @@
       "good for non-veg"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1589178736181-7d1a2f6c0117?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Old-school, authentic Chinese food that Bangaloreans grew up with.",
+      "Reliably tasty and affordable. The Chili Garlic Noodles are a favourite.",
+      "A historic restaurant that still delivers great quality and value.",
+      "Good for non-vegetarian Chinese, especially the pork dishes.",
+      "Simple ambiance but delicious, comforting Asian food."
+    ]
   },
   {
     "id": 31,
@@ -453,7 +663,14 @@
       "quick service"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1582236528751-b0e9a3b9f3a6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Excellent traditional South Indian breakfast and meals. Very authentic.",
+      "Affordable prices and incredibly fast service. Great for a quick stop.",
+      "The dosas and idlis are simple but made perfectly. Local favorite.",
+      "Good, clean vegetarian food. Ideal for family dining.",
+      "Consistently high quality tiffins. Recommended for early risers."
+    ]
   },
   {
     "id": 32,
@@ -467,7 +684,14 @@
       "fine dining"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1555562060-6b62762a4d3f?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The Kebabs are incredibly succulent and flavorful. True fine dining experience.",
+      "Excellent, rich North Indian curries and Mughlai dishes.",
+      "Perfect ambiance for a formal dinner on MG Road.",
+      "High quality ingredients and great service. Worth the price.",
+      "Tried the Dal Makhani and it was one of the best I've had."
+    ]
   },
   {
     "id": 33,
@@ -481,7 +705,14 @@
       "good for non-veg"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1579736805096-7c919d71c4c9?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Outstanding fresh seafood, cooked in authentic Coastal Karnataka style.",
+      "Great value for money, high quality fish at affordable prices.",
+      "Simple setting, but the taste of the fish dishes is unparalleled.",
+      "Must try their Fish Curry Rice. Very good non-vegetarian option.",
+      "Reliable and popular spot for local seafood lovers."
+    ]
   },
   {
     "id": 34,
@@ -495,7 +726,14 @@
       "filter coffee"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1549488349-e09d0234a413?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "A Tumkur classic for quick, delicious, and cheap South Indian breakfast.",
+      "Great filter coffee and fluffy idlis. Perfect way to start the day.",
+      "Very affordable and the service is incredibly fast and efficient.",
+      "Simple, authentic vegetarian fare with consistent quality.",
+      "The Masala Dosa is crispy and tasty. Highly recommended local eatery."
+    ]
   },
   {
     "id": 35,
@@ -509,7 +747,14 @@
       "quick bites"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1586518174786-e0f6f272c444?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The mini-burgers are fantastic! Great for quick, affordable fast food.",
+      "A youth favorite with a vibrant, casual cafe atmosphere.",
+      "Very pocket-friendly and the food is surprisingly good for the price.",
+      "Tried the spicy fries and they were excellent. Good for quick bites.",
+      "Decent shakes and American-style snacks. Reliable hangout spot."
+    ]
   },
   {
     "id": 36,
@@ -523,7 +768,14 @@
       "hotel dining"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1565431326402-9a008e3b4a20?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Absolutely top-notch luxury dining experience with impeccable service.",
+      "The international buffet spread is lavish and high-quality.",
+      "Stunning ambiance and a refined atmosphere, perfect for formal occasions.",
+      "Tried their Indian fine dining and it was delicious and elegantly presented.",
+      "Expensive, but worth it for the high-class hotel dining standard."
+    ]
   },
   {
     "id": 37,
@@ -537,7 +789,14 @@
       "local favourite"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1541701570778-578d65a8e0f6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Affordable and surprisingly good quality pastries and puffs.",
+      "A great local spot for quick, sweet and savory fast-food fixes.",
+      "The cakes are reasonably priced and popular for birthdays.",
+      "Tried their vegetable puff and it was fresh and flaky. Local favorite.",
+      "Quick service, perfect for grabbing a snack or dessert on the go."
+    ]
   },
   {
     "id": 38,
@@ -551,7 +810,14 @@
       "family dining"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1582236528751-b0e9a3b9f3a6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "One of the best places for Mutton and Chicken Biryani in Mysuru.",
+      "A great, reliable, and affordable option for non-vegetarian family dining.",
+      "Their Guntur Chicken is famously spicy and delicious. Good flavor.",
+      "Quick service and generous portions. Always busy at meal times.",
+      "Authentic South Indian non-veg curries and meals. Highly recommended."
+    ]
   },
   {
     "id": 39,
@@ -566,7 +832,14 @@
       "bar/pub"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1517248135460-4c311c80f3f2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Amazing craft beer selection, especially the wheat ale! The ambiance is fantastic, perfect for a weekend outing.",
+      "Plenty of space and great music. The pub food is good, but the **vibe** and the **beer** are the real highlights.",
+      "High rating is well deserved. Service was prompt even on a crowded Saturday night. Loved the Continental snacks.",
+      "My go-to pub in JP Nagar. The staff are friendly and the seating is comfortable. Must try their seasonal brews!",
+      "A proper bar with a lively crowd. A little expensive but worth it for the overall experience."
+    ]
   },
   {
     "id": 40,
@@ -581,7 +854,14 @@
       "high rating"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1549488349-e09d0234a413?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The best **burgers** in Bangalore, hands down! Super affordable and quick service. Always packed with college kids.",
+      "A true youth favourite. The food is fast, delicious, and perfectly priced. Try the T-Bone Steak Burger.",
+      "Reliable fast food joint with a high rating for a reason. Great place for a quick American fix.",
+      "Affordable and high quality. The cafe selection is decent too, but everyone comes here for the juicy burgers.",
+      "Be prepared for a small wait, but it moves fast! Definitely worth it for the money."
+    ]
   },
   {
     "id": 41,
@@ -596,7 +876,14 @@
       "good vibe"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1596756627571-70097c02c019?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Truly **authentic Italian** fine dining experience. The pasta was perfectly al dente and the ambiance is romantic.",
+      "Excellent service and a good wine list. The high rating is justified. A great place for a special occasion.",
+      "The food is incredible; it tastes like a little piece of Italy in Indiranagar. Their Tiramisu is a must-try!",
+      "Pricey, but worth it for the quality of the ingredients and the fine dining experience. Great continental options as well.",
+      "Loved the good vibe and quiet atmosphere. Perfect for date night. The ravioli was exceptional."
+    ]
   },
   {
     "id": 42,
@@ -611,7 +898,14 @@
       "hookah lounge"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1589178736181-7d1a2f6c0117?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1616421455364-db08620e234c?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1616421455364-db08620e234c?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The best **late night dining** spot on the highway! The spacious seating is great for large groups.",
+      "Perfect stop on a road trip. The cafe menu has some nice continental bites, and the hookah lounge is well set up.",
+      "The good vibe here is undeniable, especially late in the evening. Service is surprisingly quick for the volume of people.",
+      "It's a huge place, never feels too crowded. Great for a casual hangout with friends. Highly recommend their shakes.",
+      "Good spot to chill. Wish the food was a bit faster but the ambiance makes up for it."
+    ]
   },
   {
     "id": 43,
@@ -626,7 +920,14 @@
       "filter coffee"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1586518174786-e0f6f272c444?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Excellent **South Indian food** that is incredibly affordable. Perfect for a quick, wholesome breakfast.",
+      "You cannot beat their **filter coffee**. It's strong, aromatic, and the perfect start to the day.",
+      "Fast, efficient service. No-frills dining but the quality of the food is consistently high. A local institution.",
+      "Tried their masala dosa and vada – simply delicious! The Indian sweets section is also worth a visit.",
+      "Always a reliable choice for authentic, pocket-friendly South Indian fare in Mysuru."
+    ]
   },
   {
     "id": 44,
@@ -640,7 +941,14 @@
       "good for non-veg"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1565431326402-9a008e3b4a20?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The legendary **Chicken Ghee Roast** lives up to the hype! Spicy, rich, and full of flavour.",
+      "A must-visit for authentic **Mangalorean cuisine**, especially for non-vegetarians. High quality seafood too.",
+      "The high rating is well deserved. Excellent for a family dinner. Be prepared for a rustic dining experience.",
+      "Super tasty food and very reasonably priced for the quality of meat and fish. A true Mangaluru gem.",
+      "Good for non-veg lovers. The Indian dishes are also quite spicy and flavourful."
+    ]
   },
   {
     "id": 45,
@@ -654,7 +962,14 @@
       "good for non-veg"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1555562060-6b62762a4d3f?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1583000965045-8c7600869502?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1583000965045-8c7600869502?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The classic **steaks** are perfect every time. This place is a Bengaluru institution for authentic Western food.",
+      "A trip back in time! The ambiance is charmingly old-school and the American dishes are hearty and delicious.",
+      "Great choice for non-veg eaters. The Tenderloin Steak with pepper sauce is simply divine.",
+      "Old-school charm and amazing food. The desserts are also top-notch. It's truly 'The Only Place' for steaks.",
+      "Good for a fulfilling, meaty meal. Highly recommend the burgers as well."
+    ]
   },
   {
     "id": 46,
@@ -669,7 +984,14 @@
       "good for non-veg"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1594916964177-d42f534125b0?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The ultimate **late night dining** spot in the city. Their roll parottas and shawarma are lifesavers after a late movie.",
+      "Affordable, tasty, and open late—what more could you ask for? The Ghee Rice & Chicken Kebab is a classic combo.",
+      "Love the Arabian selections, especially the Chicken Shawarma. Always busy, which is a testament to their food.",
+      "A no-nonsense, good-for-non-veg restaurant. Quick service and consistent taste across all their branches.",
+      "A staple for any Bangalorean. The affordability factor is a huge plus."
+    ]
   },
   {
     "id": 47,
@@ -683,7 +1005,14 @@
       "good for non-veg"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1582236528751-b0e9a3b9f3a6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Fantastic **Biryani**! The aroma and flavour are perfect. Great for non-veg lovers in Mysuru.",
+      "Truly **pocket friendly** without compromising on quality. A great option for family dining.",
+      "Generous portions and very tasty Indian dishes. The chicken starters are also quite good.",
+      "The service is quick and the dining hall is comfortable for families. Highly recommend the mutton biryani.",
+      "Simple, yet delicious food. A go-to spot when you're craving some spicy Indian non-veg."
+    ]
   },
   {
     "id": 48,
@@ -697,7 +1026,14 @@
       "good vibe"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1517248135460-4c311c80f3f2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1563273398-316887570884?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1563273398-316887570884?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Love the **variety of cuisines**—something for everyone in the family! The Chinese food is surprisingly good.",
+      "Great place for family dining. Good vibe and consistently high rating. The Continental breakfast items are nice.",
+      "The Indian main courses are their strongest point. Prompt service and a clean atmosphere.",
+      "A reliable spot for a diverse group. Everyone leaves happy. The staff are very attentive.",
+      "Excellent multi-cuisine restaurant. The portions are good and the food quality is consistent."
+    ]
   },
   {
     "id": 49,
@@ -711,7 +1047,14 @@
       "authentic food"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1579736805096-7c919d71c4c9?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1634842183216-2d1f971c2f9d?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1634842183216-2d1f971c2f9d?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Their **Goli Bajji** is legendary! Fluffy and perfectly spiced. A must-try Mangalorean snack.",
+      "Excellent, authentic coastal vegetarian food. The service is quick and the prices are very affordable.",
+      "A classic Udupi-style restaurant. Everything on the South Indian menu is good, especially the local specials.",
+      "Very pocket-friendly and the taste is unparalleled. Always crowded for a reason.",
+      "If you're in Mangaluru and want quick, authentic veg food, this is the place to be."
+    ]
   },
   {
     "id": 50,
@@ -726,7 +1069,14 @@
       "high rating"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1517248135460-4c311c80f3f2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Always a fantastic **vibe**! Great music, cool decor, and the cocktails are truly innovative.",
+      "Love their unique presentation of food. It's a perfect blend of pub, cafe, and workspace during the day.",
+      "High rating is well-deserved. The North Indian and Continental fusion dishes are surprisingly good.",
+      "The Church Street location is electric. Pricey, but the atmosphere and drinks selection make it worth the visit.",
+      "Great spot for pre-gaming or a casual hang. Try their legendary Longest Long Island Iced Tea."
+    ]
   },
   {
     "id": 51,
@@ -741,7 +1091,14 @@
       "high rating"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1565431326402-9a008e3b4a20?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Best **sushi** I've had in a mall setting. True fine dining experience with a lovely, calm vibe.",
+      "Fantastic **Pan Asian** spread. Their Thai curries and dim sum are also excellent. Great for a date.",
+      "The high rating is accurate. The staff are very knowledgeable about the menu and offer great suggestions.",
+      "A little on the expensive side, but the quality of the seafood and ingredients is worth every penny.",
+      "Loved the decor and the general peaceful atmosphere. A great escape from the busy city."
+    ]
   },
   {
     "id": 52,
@@ -756,7 +1113,14 @@
       "good for non-veg"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1589178736181-7d1a2f6c0117?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The quintessential Bengaluru **Donne Biryani** experience! Spices are just right and the meat is tender.",
+      "A true taste of **authentic Karnataka food**. Don't expect fancy decor, just incredibly delicious non-veg.",
+      "Very affordable and the Mutton Curry is a spicy delight. Gets crowded fast, so arrive early!",
+      "Simple menu, but everything is cooked perfectly. A must-try for any biryani enthusiast.",
+      "Good for non-veg lovers. The **Nati style** preparation is unique and super flavorful."
+    ]
   },
   {
     "id": 53,
@@ -771,7 +1135,14 @@
       "high rating"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1582236528751-b0e9a3b9f3a6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The best **Andhra style Biryani** in Mysuru! Very spicy and flavorful, served with a delicious curry.",
+      "Excellent value for money and the food is consistently amazing. The high rating is spot on.",
+      "A heaven for non-veg lovers. The Chicken Fry is a fantastic starter. Quick and efficient service.",
+      "A simple, no-frills place focusing only on great food. Always a long queue, but it's worth the wait.",
+      "Try the meals! Proper, satisfying, and authentic **Andhra style food**."
+    ]
   },
   {
     "id": 54,
@@ -785,7 +1156,14 @@
       "quick bites"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1579736805096-7c919d71c4c9?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1634842183216-2d1f971c2f9d?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1634842183216-2d1f971c2f9d?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Great concept! Love the **drive-in experience**. Perfect for a quick stop and a relaxed meal in your car.",
+      "Very affordable and the atmosphere is always lively. Good for a casual evening hang with friends.",
+      "The South Indian snacks are perfect quick bites. Try the filter coffee for a caffeine fix.",
+      "A good vibe and a varied menu of fast food and cafe options. Parking is ample.",
+      "Consistent quality and service. It's a popular spot for a reason!"
+    ]
   },
   {
     "id": 55,
@@ -800,7 +1178,14 @@
       "late night dining"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1541701570778-578d65a8e0f6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Unmatched **Shawarma** in Bengaluru! The meat is juicy and the pita is soft. A must-try.",
+      "Great spot for **late night dining**. Their Arabic cuisine is quite authentic and the quantity is generous.",
+      "Excellent place for non-veg enthusiasts. The alfam chicken and kuboos are delicious.",
+      "Very affordable prices for the portion size and quality. Gets crowded late at night.",
+      "The Indian dishes are decent, but come here for the Middle Eastern specialities."
+    ]
   },
   {
     "id": 56,
@@ -814,7 +1199,14 @@
       "authentic cuisine"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1586518174786-e0f6f272c444?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The **Rajasthani/Gujarati Thali** is exceptional. Unlimited portions of authentic, home-style North Indian veg food.",
+      "Great value for money. Perfect for when you crave a wholesome Indian meal with variety.",
+      "The service is incredibly warm and fast. It feels like eating at a relative's home. Pure vegetarian delight.",
+      "The different curries and sweets served in the thali are delicious. Authentic cuisine at affordable rates.",
+      "Always a reliable choice for a filling and satisfying vegetarian lunch or dinner."
+    ]
   },
   {
     "id": 57,
@@ -829,7 +1221,14 @@
       "high rating"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1517248135460-4c311c80f3f2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Massive **buffet** spread with live grill on the table. Excellent for large family gatherings.",
+      "Great value proposition—affordable price for so much variety in Indian, Chinese, and BBQ.",
+      "The live grill starters are the highlight. High rating for their extensive dessert and main course selection too.",
+      "Perfect for families with kids. The staff is attentive, and the atmosphere is lively.",
+      "Wish the BBQ marinades were a bit more unique, but overall a great all-you-can-eat experience."
+    ]
   },
   {
     "id": 58,
@@ -843,7 +1242,14 @@
       "high rating"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1549488349-e09d0234a413?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The legendary **Davanagere Benne Dosa** is pure heaven. Melt-in-your-mouth soft with a generous amount of butter (benne).",
+      "True **authentic Karnataka food**. Simple, yet profoundly delicious South Indian vegetarian breakfast/snack.",
+      "Incredibly affordable and the service is lightning fast. A high rating is an understatement for this delicacy.",
+      "Worth the drive to Davanagere just for this dosa! The saagu (curry) is also a perfect accompaniment.",
+      "Don't miss the Benne Kali Dosa—a must-try if you're a dosa lover."
+    ]
   },
   {
     "id": 59,
@@ -857,7 +1263,14 @@
       "high rating"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1579736805096-7c919d71c4c9?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Fresh, exquisite **seafood** right from the coast! The fish curries are spicy and perfect with red rice.",
+      "Amazing **coastal vibe** and excellent view. True Mangalorean cuisine at its finest. High rating is warranted.",
+      "The Pomfret Tawa Fry is a must-have. A bit expensive, but the freshness of the catch is worth it.",
+      "A great place for a hearty non-vegetarian meal. The local preparations are authentic and delicious.",
+      "Good service, and the location is lovely. Definitely one of the better seafood restaurants in Udupi."
+    ]
   },
   {
     "id": 60,
@@ -871,7 +1284,14 @@
       "affordable"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1586518174786-e0f6f272c444?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1549488349-e09d0234a413?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1549488349-e09d0234a413?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The ultimate **English Breakfast** spot! Huge portions, affordable prices, and delicious food.",
+      "Come early on weekends or be prepared to wait! The **pancakes** are fluffy and amazing.",
+      "Love the cozy, casual cafe vibe. Great spot for a relaxed morning with friends.",
+      "Good for quick bites and American-style breakfast. The omelettes are also a must-try.",
+      "Highly affordable for the quality and quantity of food. A perennial Koramangala favourite."
+    ]
   },
   {
     "id": 61,
@@ -886,7 +1306,14 @@
       "affordable"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1517248135460-4c311c80f3f2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The go-to place on Brigade Road for **affordable drinks**. Excellent value for money for a night out.",
+      "Lively atmosphere and a fantastic **nightlife** scene. The pub food is basic but hits the spot.",
+      "Always a good vibe, especially during happy hours. Gets packed, which adds to the energy.",
+      "The Continental and Indian snacks pair well with the cheap drinks. A student favorite.",
+      "Great music and a fun crowd. Don't expect a quiet evening, but it's perfect for a lively time."
+    ]
   },
   {
     "id": 62,
@@ -901,7 +1328,14 @@
       "quick service"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1589178736181-7d1a2f6c0117?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "A fantastic food joint, a must-visit on the way to Mysore. The food is delicious and fresh.",
+      "Good spot for local south Indian stuff on Mysore road. Famous as a highway stop near Janpad Loka.",
+      "The Filtered Coffee and Maddur Vada are excellent. Highly recommend for authentic Karnataka breakfast.",
+      "The rustic ambiance and traditional cooking (over wood fire for some items) really make the flavours authentic.",
+      "Quick service and very good taste. An excellent, long-standing highway eatery."
+    ]
   },
   {
     "id": 63,
@@ -916,7 +1350,14 @@
       "luxury dining"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1586518174786-e0f6f272c444?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Amazing ambience! The pondside setting and the sheer size of the place are breathtaking. Great place to unwind.",
+      "Consistently delicious food and in-house brews. Definitely worth the time and money for a premium experience.",
+      "The craft beer selection is fantastic, especially with 16 taps. Top-notch service and a lively, vibrant atmosphere.",
+      "Try the Spice-Dusted Garlic Bread and Karari Roti. The food menu is curated by a celebrity chef and is diverse.",
+      "A perfect venue for a night out with friends; the live music and general vibe are unmatched in Bengaluru."
+    ]
   },
   {
     "id": 64,
@@ -1211,7 +1652,14 @@
       "high rating"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1555562060-6b62762a4d3f?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The Donne Chicken Biryani is fantastic! Perfectly cooked seeraga samba rice and tender chicken chunks with the right amount of spice.",
+      "Authentic Namma Donne Biryani with a nostalgic 'taste of 1953'. The packaging is great for delivery.",
+      "I loved the Mutton Donne Biryani, the meat was properly cooked. Their bread halwa sweet treat is a nice touch.",
+      "The RNR Special Boneless Biryani is highly recommended. Rich flavors and aromatic spices.",
+      "A great option for cloud kitchen biryani, though a couple of reviewers mentioned the quantity could be less sometimes."
+    ]
   },
   {
     "id": 85,
@@ -1225,7 +1673,14 @@
       "high rating"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1582236528751-b0e9a3b9f3a6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Had a fantastic dinner here. So many delicious dishes and the service was exceptionally good. Very child-friendly.",
+      "The ambiance and decor are great, making it a suitable place for family dinners. Good choice of various cuisines.",
+      "I recently tried the Tandoori Chilli Chicken and it was juicy and tender with a flavourful marinade. Highly recommend!",
+      "Their Mutton Biryani was exceptional! The premium quality was evident from the first bite and the meat was tender.",
+      "Note: A few older reviews mention issues with quality/service, but recent ones praise the food and attentive staff."
+    ]
   },
   {
     "id": 86,
@@ -1240,7 +1695,14 @@
       "family friendly"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1596756627571-70097c02c019?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The ambience is lovely, and the food is simply excellent and hygienic. Short wait time for the fresh, tasty food.",
+      "Fantastic pure vegetarian restaurant. The quality of their South Indian and North Indian dishes is outstanding.",
+      "Good spacious restaurant with a cozy and inviting atmosphere. Staff is prompt and friendly.",
+      "I loved the wide range of antique items displayed and the fact they serve food very quickly.",
+      "Good presentation and tasty food with ample quantity. A delightful and recommended dining experience for families."
+    ]
   },
   {
     "id": 87,
@@ -1255,7 +1717,14 @@
       "nightlife"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1549488349-e09d0234a413?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The place has a great ambiance and good seating space, including a rooftop area. The staff is friendly and attentive.",
+      "Tasty and fresh food at a reasonable price. Service is quick and the vibe is perfect for a night out.",
+      "Enjoyed the live music on the amphi-structured floor. It's a nice place to hang out with friends.",
+      "Good variety of food and drink options, and the general cleanliness is appreciated.",
+      "While the service can sometimes be slow, the overall experience, especially the atmosphere, is highly rated."
+    ]
   },
   {
     "id": 88,
@@ -1270,7 +1739,14 @@
       "authentic Karnataka food"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1586518174786-e0f6f272c444?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "A fantastic place to eat! The management is great, service is quick, and the food is delicious.",
+      "Their Masala Dosa and Rava Idli are superb. I love the variety of South Indian food available.",
+      "The Paper Masala Dosa is paper-thin and super crispy, served with chutney pudi - it tastes absolutely yum.",
+      "Affordable prices and the staff are always friendly and ready to help. Definitely a place to visit again.",
+      "The service in the dining hall is good, and it’s a great spot for a satisfying South Indian tiffin."
+    ]
   },
   {
     "id": 89,
@@ -1284,7 +1760,14 @@
       "high rating"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1594916964177-d42f534125b0?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Though specific reviews are hard to find, the local Jowar Roti makers in Hubballi (a primary highlight of North Karnataka cuisine) are highly rated for quality and authenticity.",
+      "The pure Jowar Roti, both 'Kadak' (crispy) and soft, is a regional staple and a must-try here.",
+      "Kadli is known for providing an authentic taste of North Karnataka cuisine, favored by locals.",
+      "The food is generally considered simple, delicious, and very affordable, true to its local roots.",
+      "It is a highly-rated local establishment focusing on traditional preparations like Roti and various chutneys/sabzis."
+    ]
   },
   {
     "id": 90,
@@ -1313,7 +1796,14 @@
       "authentic cuisine"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1565431326402-9a008e3b4a20?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The perfect place for seafood lovers. I ordered the Fish Biryani and it was exceptional.",
+      "If you're looking for authentic Mangalorean cuisine, this is the place. The Seer Fish (tawa fry) and Chicken Ghee Roast are mandatory.",
+      "The waiters are humble and very helpful if you are new to Mangalorean food. Service is excellent.",
+      "You have not tasted the best dish ever until you've tried the Crab and Neer Dosa from Kudla. Just awesome!",
+      "I am a native of Mangalore, and the Anjal fish preparation was exactly how it's prepared at home. Highly recommended."
+    ]
   },
   {
     "id": 92,
@@ -1327,7 +1817,14 @@
       "good for non-veg"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1582236528751-b0e9a3b9f3a6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1583000965045-8c7600869502?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1583000965045-8c7600869502?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The Fish Thali here is excellent and very reasonably priced for the quality of seafood you get.",
+      "Tried the Bangude Rava Fry and Anjal Masala Fry; both were 10/10. Authentic Mangalore food.",
+      "Many customers praise the Prawn Ghee Roast and Fish Curry as exceptional. Highly satisfying dining experience.",
+      "The staff is friendly and attentive, and the general ambiance is warm, making it great for family outings.",
+      "A must-visit for non-veg lovers in Mysuru who appreciate fresh and authentic coastal preparations."
+    ]
   },
   {
     "id": 93,
@@ -1342,7 +1839,14 @@
       "good vibe"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1596756627571-70097c02c019?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "A true fine-dining Italian experience. The **wine list is extensive**, and the outdoor seating at UB City is perfect.",
+      "The service is impeccable, and the food quality is consistently high. Their **wood-fired pizzas** are a must-try.",
+      "We loved the ambiance and the authentic flavors. The **Tiramisu** is one of the best I've had in the city.",
+      "Great spot for a special occasion. It's expensive, but the quality of ingredients and preparation justify the price.",
+      "Tried the **Lamb Shank Ragu** and it was outstanding—tender, flavorful, and perfectly paired with a red wine."
+    ]
   },
   {
     "id": 94,
@@ -1356,7 +1860,14 @@
       "traditional ambiance"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1589178736181-7d1a2f6c0117?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "This place is an institution for **authentic Karnataka village food**. The rustic ambiance is charming.",
+      "Loved the **Akki Rotti** and the variety of **different rotis and curries** they offer. Very healthy and delicious.",
+      "The service is fast, and the prices are very affordable. Come here for a true taste of Malleswaram.",
+      "Expect a crowd, especially during breakfast/lunch, but the wait is worth it for their traditional dishes.",
+      "Their special meals and **Holige** (sweet flatbread) are excellent. A very traditional and satisfying vegetarian experience."
+    ]
   },
   {
     "id": 95,
@@ -1370,7 +1881,14 @@
       "high rating"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1517248135460-4c311c80f3f2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Great value for money! The **unlimited skewers** and main course buffet are packed with variety.",
+      "The **Wish Grill** is a fun concept—we got to try exotic meats prepared to our liking.",
+      "Excellent service; the staff are very attentive to your table and keep the starters coming.",
+      "Desserts are a highlight, especially the wide selection of **kulfi flavors** at the counter.",
+      "Perfect place for a **team lunch or family celebration**. Reservations are highly recommended as it gets crowded."
+    ]
   },
   {
     "id": 96,
@@ -1384,7 +1902,14 @@
       "high rating"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1582236528751-b0e9a3b9f3a6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The go-to place in Mysuru for **pure vegetarian North Indian food**. Great quality and reasonable prices.",
+      "**Paneer Butter Masala and Naan** are highly recommended. A clean, spacious, and family-friendly atmosphere.",
+      "A diverse menu including Chinese items, but their Indian food is the star. Consistent taste over the years.",
+      "Excellent service and a good option for travelers looking for a comfortable, reliable vegetarian meal.",
+      "The **vegetable biryani** is very flavorful, and the portions are generous. Highly rated by locals."
+    ]
   },
   {
     "id": 97,
@@ -1399,7 +1924,14 @@
       "good vibe"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1565431326402-9a008e3b4a20?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1549488349-e09d0234a413?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1549488349-e09d0234a413?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "An unparalleled experience in **South Indian regional cuisine**. The service is regal and the ambiance is traditional and elegant.",
+      "Must try the dishes from the **Coorg and Chettinad** sections of the menu. Every dish is a masterpiece of authentic flavors.",
+      "Perfect for hosting guests or a special occasion. The staff are knowledgeable about the history of each dish.",
+      "The **Thali options** give you a great overview of the different South Indian states' culinary styles.",
+      "A luxurious and high-end restaurant with food that truly represents the diverse culinary heritage of the South."
+    ]
   },
   {
     "id": 98,
@@ -1413,7 +1945,14 @@
       "family dining"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1579736805096-7c919d71c4c9?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "An iconic place in Mangalore for **fresh and delicious seafood**. The **Fish Curry Rice** is heavenly.",
+      "The **Kingfish Fry** is perfectly spiced and tender. This restaurant maintains its quality standards very well.",
+      "Always crowded, but the quick service ensures you don't wait too long. A non-vegetarian paradise.",
+      "Great place for a traditional Mangalorean meal. The simple **Thali** with the fish curry is all you need.",
+      "Affordable and authentic. The flavors truly capture the essence of coastal Karnataka cuisine."
+    ]
   },
   {
     "id": 99,
@@ -1427,7 +1966,14 @@
       "family dining"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1541701570778-578d65a8e0f6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The **village-themed ambiance** with games and activities is a lot of fun, especially for kids and large groups.",
+      "The buffet offers a huge spread of **North Indian, Gujarati, and Rajasthani dishes**. Plenty of variety for vegetarians.",
+      "I enjoyed the live counters and the cultural performances. It's more of an experience than just a meal.",
+      "Staff are very polite, and the service is quick. Great place for a fixed-price, unlimited buffet.",
+      "The food is generally good, comforting, and authentic to the North Indian regional styles. Perfect for a family outing."
+    ]
   },
   {
     "id": 100,
@@ -1441,7 +1987,14 @@
       "authentic Karnataka food"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1586518174786-e0f6f272c444?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "A legendary, **old-school Udupi restaurant**. The food is simple, yet incredibly tasty and satisfying.",
+      "The **Khara Bath and Kesari Bath** (Chow Chow Bath) combination is a must-have here. Authentic Bengaluru tiffin.",
+      "Very fast service and extremely affordable prices. Expect a crowd, but they manage the rush efficiently.",
+      "I love the traditional atmosphere; it feels like stepping back in time. Great place for morning breakfast.",
+      "The coffee is strong, and the **Masala Dosa** has that perfect, classic Udupi flavor."
+    ]
   },
   {
     "id": 101,
@@ -1456,7 +2009,14 @@
       "nightlife"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1586518174786-e0f6f272c444?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1549488349-e09d0234a413?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1549488349-e09d0234a413?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The heart of Indiranagar nightlife. Their **Toit Weiss** craft beer is legendary and perfectly brewed.",
+      "Fantastic ambiance—lively, energetic, and great for a casual evening out with friends.",
+      "The **pizzas and the Loaded Nachos** are the perfect accompaniment to the fresh beer. Excellent pub food menu.",
+      "Always a long waiting line, but the crowd and the vibe make it worth the wait. Very well-managed space.",
+      "A must-visit for any beer enthusiast in Bengaluru. Their seasonal brews are also always exciting."
+    ]
   },
   {
     "id": 102,
@@ -1471,7 +2031,14 @@
       "high rating"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1555562060-6b62762a4d3f?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Known for its **delicious and authentic Kannada-style meals**. A true hidden gem for local food lovers.",
+      "The **Unlimited South Indian Thali** is exceptional, offering a taste of home-cooked Karnataka food.",
+      "No-frills dining but the quality and taste of the food are consistently top-notch. Very clean and hygienic.",
+      "Excellent service; the waiters are prompt in refilling your plate. Great value for money.",
+      "Best place to go for a satisfying and traditional vegetarian lunch or dinner."
+    ]
   },
   {
     "id": 103,
@@ -1486,7 +2053,14 @@
       "high rating"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1582236528751-b0e9a3b9f3a6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1634842183216-2d1f971c2f9d?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1634842183216-2d1f971c2f9d?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Hands down the **best Pani Puri and Dahi Puri** in Mysuru. A hygienic place to enjoy street food.",
+      "Always crowded in the evenings, which tells you everything about the quality and taste.",
+      "Their chaat items are fresh, flavorful, and perfectly balanced between sweet, spicy, and tangy.",
+      "Very affordable and a great stop for a quick, authentic North Indian snack experience.",
+      "I highly recommend the **Pani Puri and the hot Jalebi** for a perfect combo."
+    ]
   },
   {
     "id": 104,
@@ -1500,7 +2074,14 @@
       "good for non-veg"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1579736805096-7c919d71c4c9?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-162817887751-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-162817887751-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "A classic Mangalorean-style bar and restaurant. The **fish is always fresh** and cooked perfectly.",
+      "The **Anjal (Seer Fish) Tawa Fry** is the highlight; perfectly marinated and cooked.",
+      "Known for its authentic coastal Karnataka flavors in its curries and fries. Great pairing with drinks.",
+      "It has a no-frills, traditional pub atmosphere, which adds to its charm. Focus is entirely on the food.",
+      "Affordable prices and generous portions of excellent non-vegetarian coastal dishes."
+    ]
   },
   {
     "id": 105,
@@ -1515,7 +2096,14 @@
       "family dining"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1596756627571-70097c02c019?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The buffet spread is massive, offering a huge variety of **North Indian and Mughlai dishes**. Something for everyone.",
+      "Their **kebabs and live counters** are fantastic. The starters alone are worth the price of the buffet.",
+      "The ambiance is warm and royal, making it a great choice for family dinners and corporate events.",
+      "Friendly and efficient service. They make sure you are well attended to despite the busy atmosphere.",
+      "I especially enjoyed the main course curries and the extensive dessert section. Good quality ingredients."
+    ]
   },
   {
     "id": 106,
@@ -1529,7 +2117,14 @@
       "authentic Karnataka food"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1582236528751-b0e9a3b9f3a6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The **softest, melt-in-your-mouth Dosas** you will ever eat. The potato filling is unique and delicious.",
+      "A tiny, legendary hotel with a very limited menu—they focus only on making the perfect dosa.",
+      "It is a historic spot in Mysore. Be prepared for a basic setup and a long queue, but the taste is worth it.",
+      "They use a lot of ghee, which makes the dosa incredibly rich and flavorful. Highly affordable breakfast spot.",
+      "If you are a Dosa connoisseur, this is a pilgrimage site. The chutney is also excellent."
+    ]
   },
   {
     "id": 107,
@@ -1543,7 +2138,14 @@
       "high rating"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1541701570778-578d65a8e0f6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "A go-to place in Belagavi for reliable and tasty **North Indian food**. The ambiance is pleasant for families.",
+      "Tried the **Chicken Malai Kebab** and it was outstanding. They maintain good quality across all cuisines.",
+      "The staff is professional, and the service is quite fast. Good location and easy parking.",
+      "A clean and well-maintained restaurant with good, **affordable portion sizes**.",
+      "Their Chinese menu is also decent, making it a good multi-cuisine option for a group with varied tastes."
+    ]
   },
   {
     "id": 108,
@@ -1558,7 +2160,14 @@
       "cocktails"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1565431326402-9a008e3b4a20?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The **Baos are simply the best**—fluffy, flavorful, and innovative fillings. A definite crowd-pleaser.",
+      "Fantastic Pan-Asian food with a creative twist. The **ramen** here is incredibly satisfying.",
+      "The ambiance is quirky, fun, and energetic. Great place for a date night or dinner with friends.",
+      "Their cocktail menu is excellent and pairs well with the spicy Asian flavors.",
+      "Highly recommend the **Pork Belly Bao** and the **Fatty Bao Signature Dessert** (often a unique take on a classic)."
+    ]
   },
   {
     "id": 109,
@@ -1572,7 +2181,14 @@
       "affordable"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1517248135460-4c311c80f3f2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The quintessential **old-school Bangalore pub**. Cheap beer, good rock music, and a laid-back crowd.",
+      "Great place to grab a drink after work. It's affordable and has a nostalgic, unpretentious vibe.",
+      "Their **Beef Chili Fry and Chicken Wings** are classic pub grub and go perfectly with the beer.",
+      "The focus is on the drinks and the atmosphere, not gourmet food, but the snacks are always reliable.",
+      "If you love 80s/90s rock and a dimly lit, friendly pub, this is your place."
+    ]
   },
   {
     "id": 110,
@@ -1586,7 +2202,14 @@
       "high rating"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1582236528751-b0e9a3b9f3a6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1589302685642-83b4009a63c6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "One of the best places in Mysuru for **authentic Hyderabadi-style Biryani**. Flavorful and aromatic.",
+      "The **Chicken Biryani** is spicy, served with excellent Raita and Mirchi ka Salan.",
+      "The meat is tender, and the rice is perfectly cooked 'dum' style. Great value for the quantity.",
+      "A busy, no-frills non-vegetarian favorite. Excellent for takeaway and casual dining.",
+      "Their G**olden Chicken** starter is also a popular item and highly recommended."
+    ]
   },
   {
     "id": 111,
@@ -1600,7 +2223,14 @@
       "historic institution"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1579736805096-7c919d71c4c9?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The original home of **Udupi cuisine**. Simple, clean, and spiritually satisfying food.",
+      "Famous for its delicious **Masala Dosa, Idli, and Sambar**. The quality and taste are traditional.",
+      "The place carries a lot of history and maintains a very authentic, no-nonsense dining atmosphere.",
+      "It is incredibly affordable and a must-visit for anyone traveling to Udupi seeking true South Indian vegetarian food.",
+      "The Filter Coffee is the perfect end to a light and delicious breakfast."
+    ]
   },
   {
     "id": 112,
@@ -1614,7 +2244,14 @@
       "high rating"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1586518174786-e0f6f272c444?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1607590494481-8b0b8c6b7d34?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The concept is brilliant—**South Indian fusion with creative cocktails**. The atmosphere is lively and chic.",
+      "Try the **Deconstructed Samosa** or the **Calamari with Chettinad Spice**. Truly innovative dishes.",
+      "The cocktails are the star, especially those with local flavor profiles like the **Filter Coffee Martini**.",
+      "A great spot for a night out. The music and decor are modern, paying homage to South Indian culture.",
+      "Excellent service and a highly recommended place for anyone looking for a unique Bangalore pub experience."
+    ]
   },
   {
     "id": 113,
@@ -1628,7 +2265,14 @@
       "high rating"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1596756627571-70097c02c019?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "The definitive place for **spicy Andhra meals in Bengaluru**. The chili chicken is fiery and fantastic.",
+      "Their **unlimited Andhra Meals (Thali)** are incredible, especially when served with the Gunpowder and Ghee.",
+      "Always crowded during lunchtime, a testament to its popularity. Quick, no-nonsense service.",
+      "If you love spice and authentic regional flavors, this is a must-try. The **Mutton Biryani** is also highly praised.",
+      "The food is consistently excellent across all their branches."
+    ]
   },
   {
     "id": 114,
@@ -1642,7 +2286,14 @@
       "high rating"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1582236528751-b0e9a3b9f3a6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "A very **reliable and high-quality vegetarian restaurant** in Mysuru, located inside a prominent hotel.",
+      "Excellent range of dishes from South Indian tiffins to rich North Indian curries.",
+      "The ambiance is neat, and the service is professional. Great for a comfortable family meal.",
+      "Their **Vegetable Pulav and the North Indian Thali** are particularly good and great value for money.",
+      "Consistently good food quality and taste across the menu."
+    ]
   },
   {
     "id": 115,
@@ -1656,7 +2307,14 @@
       "authentic food"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1579736805096-7c919d71c4c9?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1628178877521-49e3c90f8f8b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Specializes in **authentic Mangalorean seafood**. The fish is caught fresh daily.",
+      "You must try the **Prawn Ghee Roast** and the **Fish Thali**. Incredible coastal flavors.",
+      "Known for its traditional, rustic preparation styles which truly bring out the seafood's taste.",
+      "A slightly more traditional/casual setting compared to Ritz Classic, but the food quality is just as high.",
+      "Great place to experience the real, unadulterated flavors of coastal Karnataka."
+    ]
   },
   {
     "id": 116,
@@ -1670,7 +2328,14 @@
       "authentic Chinese"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1565431326402-9a008e3b4a20?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1601002573711-2ed14d026330?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Unmatched quality of **Dim Sum**; every bite is delicate and flavorful. A Michelin-starred lineage is evident.",
+      "Perfect luxury dining experience. The ambiance is sleek and elegant, and the service is top-tier.",
+      "The **Raspberry Delice** is a famous dessert and an absolute must-try to end the meal.",
+      "Excellent selection of teas and authentic Chinese main courses. A splurge that is completely worth it.",
+      "I highly recommend the **Pork Belly Cheong Fun** and the Truffle Dim Sum."
+    ]
   },
   {
     "id": 117,
@@ -1684,7 +2349,14 @@
       "authentic Karnataka food"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1541701570778-578d65a8e0f6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1629074724084-5f532a87474a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "One of the best places for an **economical and authentic South Indian Thali** in Central Bengaluru.",
+      "The food is simple, fresh, and tastes like home. Good spot for a quick, filling lunch.",
+      "They maintain excellent quality for their basic Karnataka tiffin items like Idli and Vada.",
+      "Very friendly and prompt service. A classic establishment that focuses on good, simple food.",
+      "Great for family dining or travelers looking for hygienic and reliable vegetarian food."
+    ]
   },
   {
     "id": 118,
@@ -1698,6 +2370,13 @@
       "quick service"
     ],
     "restaurant_image": "https://images.unsplash.com/photo-1589178736181-7d1a2f6c0117?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "dish_image": "https://images.unsplash.com/photo-1627963389524-74c7e6c9a3b2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "reviews": [
+      "Famous across the region for its melt-in-your-mouth **Tatte Idli** (plate idli). Extremely soft and light.",
+      "The best place to stop for a quick and satisfying breakfast on the highway near Tumakuru.",
+      "Served with a delicious, simple coconut chutney and sambar. It’s a no-frills place, but the taste is unmatched.",
+      "Very affordable and highly efficient service. They focus on turning tables quickly.",
+      "A legendary institution—the original **Tatte Idli** here is what everyone tries to copy."
+    ]
   }
 ]

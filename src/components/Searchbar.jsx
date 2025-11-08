@@ -42,8 +42,7 @@ const Searchbar = () => {
         setCurrentFoodImage(selected);
     };
 
-    const handleRestaurantClick = (restaurant) =>{
-    }
+
 
     const searchRestaurants = () =>{
         const restaurant = restaurantData.filter(restaurants =>{
