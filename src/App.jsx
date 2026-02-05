@@ -20,8 +20,12 @@ const App = () => {
               </>
             }/>
 
-            <Route path='/restaurant/:id' element={<RestaurantCard />} />
-            <Route path='/about' element={<About />} />
+            <Route path='/restaurant/:id' element={
+              <>
+                <Navbar />
+                <RestaurantCard />
+              </>
+            } />
           </Routes>
       </BrowserRouter>
 

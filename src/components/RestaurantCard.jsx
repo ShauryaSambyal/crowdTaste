@@ -31,11 +31,9 @@ const RestaurantCard = () => {
   const restaurant = location.state?.restaurant
 
   useEffect(() => {
-    // Set random restaurant image on component mount
     const randomRestIndex = Math.floor(Math.random() * restaurantImages.length)
     setCurrentRestaurantImage(restaurantImages[randomRestIndex])
     
-    // Set random food images on component mount
     const shuffled = [...foodImages].sort(() => 0.5 - Math.random())
     const selected = shuffled.slice(0, 3)
     setCurrentFoodImages(selected)
@@ -52,7 +50,6 @@ const RestaurantCard = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 pt-28 pb-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
-        {/* Restaurant Header */}
         <div className="bg-gray-800 rounded-2xl shadow-2xl overflow-hidden mb-8">
           <div className="relative">
             {currentRestaurantImage && (
@@ -71,9 +68,7 @@ const RestaurantCard = () => {
           </div>
         </div>
 
-        {/* Restaurant Details */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-          {/* Location Card */}
           <div className="bg-gray-800 rounded-xl p-6 shadow-xl hover:shadow-2xl transition-shadow duration-300">
             <div className="flex items-start space-x-4">
               <div className="bg-blue-500 rounded-full p-3 flex-shrink-0">
@@ -91,7 +86,6 @@ const RestaurantCard = () => {
             </div>
           </div>
 
-          {/* Famous For Card */}
           <div className="bg-gray-800 rounded-xl p-6 shadow-xl hover:shadow-2xl transition-shadow duration-300">
             <div className="flex items-start space-x-4">
               <div className="bg-green-500 rounded-full p-3 flex-shrink-0">
@@ -109,7 +103,6 @@ const RestaurantCard = () => {
           </div>
         </div>
 
-        {/* Food Gallery */}
         <div className="bg-gray-800 rounded-2xl p-6 sm:p-8 shadow-2xl">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Menu Highlights</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">

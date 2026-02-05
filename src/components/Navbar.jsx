@@ -12,9 +12,9 @@ const Navbar = () => {
             
             <div className="flex gap-3 bg-gradient-to-r text-blue-500 px-10">
 
-                <Link className='hover:cursor-pointer font-semibold text-xl border-2 border-transparent hover:border-b-blue-600 duration-150' to="/">Home</Link>
+                <a className='hover:cursor-pointer font-semibold text-xl border-2 border-transparent hover:border-b-blue-600 duration-150' to="/">Home</a>
 
-                <Link className='hover:cursor-pointer font-semibold text-xl border-2 border-transparent hover:border-b-blue-600 duration-150' to="/about">About</Link>
+                <a className='hover:cursor-pointer font-semibold text-xl border-2 border-transparent hover:border-b-blue-600 duration-150' to="/about">About</a>
             </div>
         </div>
     </>
