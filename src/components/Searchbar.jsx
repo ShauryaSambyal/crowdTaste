@@ -132,7 +132,7 @@ const Searchbar = () => {
                                 <div 
                                 key={index} 
                                 className='bg-gray-600 p-4 sm:p-6 rounded-2xl border-2 border-gray-400 hover:border-gray-500 transition duration-200 hover:cursor-pointer flex flex-col items-center' onClick={(restaurant)=>{
-                                    handleRestaurantClick(restaurant)
+                                    searchRestaurants(restaurant)
                                 }}
                                 >
                                     <h4 className='text-white text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-center'>
