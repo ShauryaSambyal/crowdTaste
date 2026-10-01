@@ -1,19 +1,78 @@
 @import "tailwindcss";
 
-*{
-    font-family: 'Poppins';
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Inter", sans-serif;
+    color: #1f1f1f;
+    background-color: #f6f6f4;
+    /* Dot-grid background - replaces the reference hero video */
+    background-image: radial-gradient(rgba(31, 31, 31, 0.1) 1.1px, transparent 1.1px);
+    background-size: 24px 24px;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  #root {
+    width: 100%;
+    min-height: 100svh;
+  }
+
+  /* Keep anchored sections clear of the fixed navbar pill */
+  section[id] {
+    scroll-margin-top: 96px;
+  }
+
+  /* Visible keyboard focus everywhere */
+  :focus-visible {
+    outline: 2px solid #1f1f1f;
+    outline-offset: 2px;
+  }
+
+  /* Checkbox/radio chips keep their input visually hidden, so the focus ring
+     is drawn on the label instead. */
+  .sr-only:focus-visible + label,
+  .filter-checkbox:focus-visible + label {
+    outline: 2px solid #1f1f1f;
+    outline-offset: 2px;
+  }
 }
 
-body{
-    background-color: #151514;
+/* Hero shell: fallback for browsers without dynamic viewport units */
+.hero-shell {
+  min-height: 100vh;
+  min-height: 100svh;
 }
+
+/* Loading spinner used by the search and compare forms */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .scrollbar-hide::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .scrollbar-hide {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
