@@ -6,9 +6,21 @@
 // and cached. Docs: https://nominatim.org/release-docs/develop/api/Overview/
 // and https://wiki.openstreetmap.org/wiki/Overpass_API
 
+import { isOpenNow } from './openingHours.js'
+
 const UA = 'CrowdTaste/1.0 (restaurant discovery demo; local development use)'
 const NOMINATIM_BASE = 'https://nominatim.openstreetmap.org'
-const OVERPASS_BASE = 'https://overpass-api.de/api/interpreter'
+
+// Public Overpass mirrors. The main instance regularly returns 504 under load,
+// so queries fail over across these in order and remember whichever answered.
+// See https://wiki.openstreetmap.org/wiki/Overpass_API#Public_Overpass_API_instances
+// Only mirrors that serve the whole planet belong here: overpass.osm.ch is a
+// Switzerland-only extract and quietly returns zero rows elsewhere.
+const OVERPASS_MIRRORS = [
+  'https://overpass-api.de/api/interpreter',
+  'https://overpass.kumi.systems/api/interpreter',
+  'https://maps.mail.ru/osm/tools/overpass/api/interpreter',
+]
 
 export class OsmError extends Error {
   constructor(message, { status = 502, hint = '', upstreamStatus = null } = {}) {
@@ -69,6 +81,19 @@ const PRICE_WORDS = {
   very_expensive: 'Very pricey',
 }
 
+// Great-circle distance in kilometres, or null when either side is missing.
+export const distanceKm = (fromLat, fromLng, to) => {
+  if (!to || !Number.isFinite(Number(to.lat)) || !Number.isFinite(Number(to.lng))) return null
+  const R = 6371
+  const toRad = (deg) => (deg * Math.PI) / 180
+  const dLat = toRad(Number(to.lat) - fromLat)
+  const dLng = toRad(Number(to.lng) - fromLng)
+  const a =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos(toRad(fromLat)) * Math.cos(toRad(Number(to.lat))) * Math.sin(dLng / 2) ** 2
+  return 2 * R * Math.asin(Math.min(1, Math.sqrt(a)))
+}
+
 const titleCase = (value) =>
   String(value ?? '')
     .replace(/_/g, ' ')
@@ -102,6 +127,8 @@ const websiteOf = (tags) => tags.website ?? tags['contact:website'] ?? null
 export const createOsmProvider = ({ timeoutMs = 12000, nominatimEmail = '' } = {}) => {
   const cache = new Map()
   let lastNominatimAt = 0
+  // Index into OVERPASS_MIRRORS; advances as mirrors answer or fail.
+  let preferredMirror = 0
 
   const readCache = (key) => {
     const entry = cache.get(key)
@@ -160,7 +187,7 @@ export const createOsmProvider = ({ timeoutMs = 12000, nominatimEmail = '' } = {
     }
   }
 
-  const nominatimSearch = async (query, { limit = 8 } = {}) => {
+  const nominatimSearch = async (query, { limit = 8, viewbox = '', bounded = false } = {}) => {
     const params = new URLSearchParams({
       q: query,
       format: 'jsonv2',
@@ -168,8 +195,26 @@ export const createOsmProvider = ({ timeoutMs = 12000, nominatimEmail = '' } = {
       extratags: '1',
       limit: String(limit),
     })
+    if (viewbox) {
+      params.set('viewbox', viewbox)
+      if (bounded) params.set('bounded', '1')
+    }
     if (nominatimEmail) params.set('email', nominatimEmail)
     return fetchJson(`${NOMINATIM_BASE}/search?${params.toString()}`, { gateNominatim: true })
+  }
+
+  // A Nominatim viewbox is <left>,<top>,<right>,<bottom> - west, north, east,
+  // south - so the box is built from the radius around the caller's position.
+  const viewboxAround = (lat, lng, radiusM) => {
+    const dLat = radiusM / 111320
+    const dLng = radiusM / (111320 * Math.max(0.01, Math.cos((lat * Math.PI) / 180)))
+    return {
+      west: lng - dLng,
+      north: lat + dLat,
+      east: lng + dLng,
+      south: lat - dLat,
+      text: [lng - dLng, lat + dLat, lng + dLng, lat - dLat].map((value) => value.toFixed(5)).join(','),
+    }
   }
 
   const isVenue = (result) =>
@@ -198,7 +243,8 @@ export const createOsmProvider = ({ timeoutMs = 12000, nominatimEmail = '' } = {
       priceLabel: PRICE_WORDS[priceWord] ?? null,
       cuisines: [...new Set(cuisines)].slice(0, 4),
       primaryType: result.type ? titleCase(result.type) : null,
-      openNow: null,
+      // Real, computed from the venue's own opening_hours tag - never guessed.
+      openNow: isOpenNow(tags.opening_hours),
       photos: [],
       image: null,
       googleMapsUri: `https://www.openstreetmap.org/${result.osm_type}/${result.osm_id}`,
@@ -236,49 +282,104 @@ export const createOsmProvider = ({ timeoutMs = 12000, nominatimEmail = '' } = {
     return out.slice(0, 10)
   }
 
+  const isTransient = (error) =>
+    error instanceof OsmError && (error.status === 504 || (error.upstreamStatus ?? 0) >= 500)
+
   const overpass = async (ql, { timeoutLabel = 'map query', retries = 1 } = {}) => {
-    let attempt = 0
-    for (;;) {
-      try {
-        const payload = await fetchJson(OVERPASS_BASE, {
-          method: 'POST',
-          overpass: true,
-          body: `data=${encodeURIComponent(ql)}`,
-        })
-        return payload.elements ?? []
-      } catch (error) {
-        const transient =
-          error instanceof OsmError &&
-          (error.status === 504 || (error.upstreamStatus ?? 0) >= 500)
-        if (attempt < retries && transient) {
-          attempt += 1
-          await new Promise((resolve) => setTimeout(resolve, 1500 * attempt))
-          continue
-        }
-        if (transient) {
-          throw new OsmError(`The ${timeoutLabel} timed out on the public map server.`, {
-            status: 504,
-            hint: 'Narrow the search with a more specific name, or try again in a moment.',
+    // Start from whichever mirror last answered, then walk the rest.
+    const order = OVERPASS_MIRRORS.map(
+      (_, offset) => OVERPASS_MIRRORS[(preferredMirror + offset) % OVERPASS_MIRRORS.length],
+    )
+    let lastError = null
+
+    for (const mirror of order) {
+      let attempt = 0
+      for (;;) {
+        try {
+          const payload = await fetchJson(mirror, {
+            method: 'POST',
+            overpass: true,
+            body: `data=${encodeURIComponent(ql)}`,
           })
+          preferredMirror = OVERPASS_MIRRORS.indexOf(mirror)
+          return payload.elements ?? []
+        } catch (error) {
+          lastError = error
+          if (attempt < retries && isTransient(error)) {
+            attempt += 1
+            await new Promise((resolve) => setTimeout(resolve, 1200 * attempt))
+            continue
+          }
+          // Out of retries here: move on to the next mirror.
+          break
         }
-        throw error
       }
     }
+
+    if (isTransient(lastError)) {
+      throw new OsmError(`The ${timeoutLabel} timed out on every public map mirror.`, {
+        status: 504,
+        hint: 'The public OpenStreetMap servers are busy. Narrow the search or try again in a moment.',
+      })
+    }
+    throw lastError ?? new OsmError(`The ${timeoutLabel} failed.`, { status: 502 })
   }
 
-  const withPhotos = async (places, { max = 6 } = {}) => {
+  const withPhotos = async (places, { max = 6, geotagged = true } = {}) => {
     const out = [...places]
     for (let index = 0; index < Math.min(max, out.length); index += 1) {
       const place = out[index]
       if (place.photos?.length) continue
       try {
-        const found = await commonsPhoto(`${place.name} ${place.areaHint || ''}`.trim())
+        // First: an image that actually names the place.
+        let found = await commonsPhoto(`${place.name} ${place.areaHint || ''}`.trim())
+        // Fallback: a photo geotagged at the venue's own coordinates. Labeled
+        // plainly so nobody mistakes a neighbourhood shot for the restaurant.
+        if (!found && geotagged && place.location) {
+          found = await commonsNearbyPhoto(place.location)
+        }
         if (found) out[index] = { ...place, photos: [found] }
       } catch {
         // A missing photo must never fail the whole search.
       }
     }
     return out
+  }
+
+  // Images geotagged within a short walk of a coordinate, via the Commons
+  // GeoData extension. Honest and cheap: no key, and clearly credited.
+  const commonsNearbyPhoto = async ({ lat, lng }, { radius = 250, width = 900 } = {}) => {
+    if (!Number.isFinite(Number(lat)) || !Number.isFinite(Number(lng))) return null
+    const params = new URLSearchParams({
+      action: 'query',
+      format: 'json',
+      generator: 'geosearch',
+      ggscoord: `${lat}|${lng}`,
+      ggsradius: String(Math.min(Math.max(Number(radius) || 250, 10), 10000)),
+      ggslimit: '5',
+      ggsnamespace: '6',
+      prop: 'imageinfo',
+      iiprop: 'url|size|extmetadata',
+      iiurlwidth: String(width),
+    })
+    const payload = await fetchJson(`https://commons.wikimedia.org/w/api.php?${params.toString()}`)
+    const pages = Object.values(payload.query?.pages ?? {})
+    const page = pages.find((entry) => !entry.missing && entry.imageinfo?.[0])
+    const info = page?.imageinfo?.[0]
+    if (!info) return null
+    return {
+      name: info.thumburl ?? info.url,
+      external: true,
+      width: info.thumbwidth ?? info.width ?? null,
+      height: info.thumbheight ?? info.height ?? null,
+      credit: 'Geotagged photo from this spot (Wikimedia Commons)',
+      author: info.extmetadata?.Artist?.value?.replace(/<[^>]+>/g, '') ?? null,
+      license:
+        info.extmetadata?.LicenseShortName?.value ??
+        info.extmetadata?.License?.value?.replace(/<[^>]+>/g, '') ??
+        null,
+      pageUrl: `https://commons.wikimedia.org/wiki/${encodeURIComponent(page.title)}`,
+    }
   }
 
   const commonsPhoto = async (query, { width = 800 } = {}) => {
@@ -490,5 +591,94 @@ export const createOsmProvider = ({ timeoutMs = 12000, nominatimEmail = '' } = {
     )
   }
 
-  return { searchPlaces, getPlace, geocodeArea, restaurantsInArea, withPhotos, commonsPhoto, splitLocationQuery }
+  // "What is near me?" - the realtime location path.
+  //
+  // Primary source is Nominatim bounded to a viewbox around the caller: one
+  // small, reliable request per search term that returns real venue tags. When
+  // it finds nothing we fall back to Overpass `around`, which is richer but
+  // runs on a public instance that frequently sheds load.
+  const restaurantsNear = async ({ lat, lng, radius = 1200, cuisine = '', limit = 30, photos = true } = {}) => {
+    const latNum = Number(lat)
+    const lngNum = Number(lng)
+    if (!Number.isFinite(latNum) || !Number.isFinite(lngNum)) {
+      throw new OsmError('A valid latitude and longitude are required for a nearby search.', { status: 400 })
+    }
+    const radiusM = Math.min(Math.max(Number(radius) || 1200, 150), 5000)
+    const maxResults = Math.min(Math.max(Number(limit) || 30, 1), 60)
+    const cuisineWord = escapeOverpass(cuisine)
+    const cacheKey = `osm-near:${latNum.toFixed(3)}:${lngNum.toFixed(3)}:${radiusM}:${cuisineWord.toLowerCase()}:${maxResults}`
+    const cached = readCache(cacheKey)
+    if (cached) return cached
+
+    const box = viewboxAround(latNum, lngNum, radiusM)
+    const terms = cuisineWord ? [cuisineWord, 'restaurant'] : ['restaurant', 'cafe']
+    const collected = new Map()
+
+    for (const term of terms) {
+      try {
+        const rows = await nominatimSearch(term, { limit: 40, viewbox: box.text, bounded: true })
+        for (const row of rows) {
+          if (!isVenue(row) || !row.name) continue
+          const place = normalizeVenue(row)
+          if (!collected.has(place.id)) collected.set(place.id, place)
+        }
+      } catch (error) {
+        // One bad term must not sink the whole nearby lookup.
+        console.warn('[osm] nearby term failed:', term, error?.message ?? error)
+      }
+      if (collected.size >= maxResults * 2) break
+    }
+
+    let results = [...collected.values()]
+
+    if (results.length === 0) {
+      results = await overpassAround({ lat: latNum, lng: lngNum, radiusM, cuisineWord, maxResults })
+    }
+
+    // Closest first, and drop anything that fell outside the radius.
+    results = results
+      .map((place) => ({ ...place, distanceKm: distanceKm(latNum, lngNum, place.location) }))
+      .filter((place) => place.distanceKm === null || place.distanceKm <= radiusM / 1000 + 0.2)
+      .sort(
+        (a, b) => (a.distanceKm ?? Infinity) - (b.distanceKm ?? Infinity) || a.name.localeCompare(b.name),
+      )
+      .slice(0, maxResults)
+
+    if (photos && results.length > 0) {
+      results = await withPhotos(results.slice(0, 12), { max: 8 })
+    }
+    return writeCache(cacheKey, results, 5 * 60 * 1000)
+  }
+
+  const overpassAround = async ({ lat, lng, radiusM, cuisineWord = '', maxResults = 30 }) => {
+    const cuisineFilter = cuisineWord ? `[cuisine~"${cuisineWord}",i]` : ''
+    const selector = `["amenity"~"^(restaurant|fast_food|cafe|pub|bar|ice_cream)$"]["name"]${cuisineFilter}(around:${radiusM},${lat},${lng})`
+    const ql = `[out:json][timeout:25];(node${selector};way${selector};);out center tags ${maxResults};`
+    const elements = await overpass(ql, { timeoutLabel: 'nearby search' })
+    return elements.map((element) =>
+      normalizeVenue({
+        osm_type: element.type,
+        osm_id: element.id,
+        name: element.tags?.name,
+        type: element.tags?.amenity,
+        lat: element.lat ?? element.center?.lat,
+        lon: element.lon ?? element.center?.lon,
+        display_name: '',
+        extratags: element.tags ?? {},
+        address: {},
+      }),
+    )
+  }
+
+  return {
+    searchPlaces,
+    getPlace,
+    geocodeArea,
+    restaurantsInArea,
+    restaurantsNear,
+    withPhotos,
+    commonsPhoto,
+    commonsNearbyPhoto,
+    splitLocationQuery,
+  }
 }

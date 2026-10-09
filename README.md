@@ -1,16 +1,20 @@
 # CrowdTaste
 
-Restaurant discovery for Bengaluru: live ratings, real diner reviews, photos, an indicative menu with prices,
-and a Compare tool that scores two restaurants head to head - or ranks every restaurant in an area.
+Restaurant discovery for Bengaluru: live venues, realtime opening hours, real photos, diner reviews and a Compare
+tool that scores two restaurants head to head - or ranks every restaurant in an area.
+
+It runs with **no API keys at all**: venues, opening hours, contact details and photos come from OpenStreetMap,
+Nominatim, Overpass and Wikimedia Commons, dish photos from TheMealDB. One optional key adds written reviews.
 
 ## Quick start
 
 1. `npm install`
-2. `Copy-Item .env.example .env`, then paste your API keys into `.env` (see [Get the API keys](#get-the-api-keys))
-3. `npm run dev` and open the printed local URL
+2. `npm run dev` and open the printed local URL - that is the whole setup; nothing is required in `.env`
+3. Optionally copy `.env.example` to `.env` and add keys (see [Get the API keys](#get-the-api-keys))
 
-Without any keys the app still runs in **sample mode**: search and browsing fall back to the bundled list of 118
-Bengaluru restaurants in `src/data.json`, and Compare asks for a key before it scores anything.
+With no keys you get live OpenStreetMap venues, realtime open/closed, distance-ranked Nearby results, photos and
+Compare. The bundled list of 118 Bengaluru restaurants in `src/data.json` remains as an offline fallback when the
+public map services cannot be reached.
 
 ## Get the API keys
 
@@ -33,18 +37,17 @@ so an IP restriction to your machine also works and keeps browser users from eve
 SKU - India-specific pricing has higher allowances. Ratings, review counts and written reviews sit in the higher tiers,
 so a search that returns ratings costs more than a bare lookup. Check the current pricing before heavy use.
 
-### 2. Spoonacular Food API - `SPOONACULAR_API_KEY`
+### 2. Yelp Fusion - `YELP_API_KEY` (written reviews)
 
-Powers the menu section: menu items with estimated prices and dish photos, used as a price guide for the cuisine a
-restaurant serves.
+OpenStreetMap carries **no review data at all**, so this is the only route to written reviews for mapped venues.
 
-1. Open https://spoonacular.com/food-api and click **Get Started** / **Start Now** (free plan: 50 points per day, no
-   credit card; the free plan requires a backlink to spoonacular.com, which this app renders automatically).
-2. Open the console: https://spoonacular.com/food-api/console
-3. Copy the API key and paste it into `.env` as `SPOONACULAR_API_KEY=...`, then restart `npm run dev`.
+1. Open https://docs.developer.yelp.com/docs/places-intro and create an app in the developer portal.
+2. Copy the API key and paste it into `.env` as `YELP_API_KEY=...`, then restart `npm run dev`.
+3. A venue card then matches its Yelp listing and shows up to three review excerpts, a rating and a review count.
 
-**Note:** their menu database is mostly US chains and the prices are estimates, so the UI labels the section as an
-indicative price guide rather than the venue own menu card. (RapidAPI is an alternative route to a Spoonacular key.)
+**Cost warning, checked 2026:** Yelp ended its free tier in 2024, and Foursquare's tips, ratings and photos sit
+behind paid *Premium* endpoints. There is currently no free-of-charge reviews source, so the app shows no review
+text rather than inventing any.
 
 ## How the keys are wired in
 
@@ -54,19 +57,35 @@ preview server:
 
 | Endpoint | Purpose | Provider |
 | --- | --- | --- |
-| `GET /api/live/status` | which keys are configured (UI notices) | - |
-| `GET /api/live/search?q=&limit=` | restaurant search, max 20 results | Places Text Search (New) |
-| `GET /api/live/place/:id` | full details incl. reviews and hours | Places Place Details (New) |
+| `GET /api/live/status` | which sources are configured (UI notices) | - |
+| `GET /api/live/search?q=&limit=` | restaurant search by name, dish, cuisine or area | Nominatim (or Google) |
+| `GET /api/live/nearby?lat=&lng=&radius=&cuisine=` | **realtime**: what is around a position, closest first | Nominatim bounded viewbox, Overpass `around` as fallback |
+| `GET /api/live/place/:id` | full details incl. hours, contacts and photos | Nominatim + Overpass (or Google) |
 | `GET /api/live/photo?name=&w=` | streams Google photo media (hides the key) | Places Photo Media |
-| `GET /api/live/menu?q=&number=` | menu items with prices + images | Spoonacular `/food/menuItems/search` |
-| `GET /api/live/compare?left=&right=&city=` | head-to-head score, verdict and reasons | Places + local scoring |
-| `GET /api/live/compare/area?location=&cuisine=` | area leaderboard with the best pick | Places + local scoring |
+| `GET /api/live/dishes?q=&number=` | dish photos + ingredients for a cuisine | TheMealDB |
+| `GET /api/live/reviews?name=&city=&lat=&lng=` | written reviews for a mapped venue | Yelp Fusion (501 without a key) |
+| `GET /api/live/compare?left=&right=&city=` | head-to-head score, verdict and reasons | local scoring |
+| `GET /api/live/compare/area?location=&cuisine=` | area leaderboard with the best pick | local scoring |
 
-Caching keeps the request count (and the bill) sane: search 5 minutes, place details 15 minutes, photos 1 day, and menu
-items 1 hour - the maximum Spoonacular allows.
+Caching keeps the request count sane: search and nearby 5 minutes, place details 15 minutes, reviews 30 minutes,
+dish photos 1 hour. Nominatim is throttled to one request per second as its usage policy requires.
 
-Files: `server/placesClient.js` (Google), `server/spoonacular.js` (menus), `server/compare.js` (scoring),
+Files: `server/osmProvider.js` (OpenStreetMap: search, nearby, details, photos), `server/openingHours.js` (the
+`opening_hours` parser behind realtime open/closed), `server/reviewsProvider.js` (Yelp), `server/placesClient.js`
+(optional Google), `server/mealsProvider.js` (TheMealDB), `server/compare.js` and `server/keylessRank.js` (scoring),
 `server/liveDataPlugin.js` (routes). To swap providers, change the client files only.
+
+### Realtime behaviour
+
+- **Location**: the browser's Geolocation API supplies the diner's coordinates on request; the server never sees
+  them until the Nearby button is pressed. Distances are straight-line and computed in the browser.
+- **Open now**: computed from each venue's own `opening_hours` tag against the clock. The parser handles the common
+  shapes (`24/7`, `Mo-Su 11:00-23:00`, day lists, multiple ranges, ranges crossing midnight) and reports *unknown*
+  rather than guessing for anything it cannot parse.
+- **Map reliability**: public Overpass mirrors regularly return 504 under load, so queries fail over across mirrors
+  and remember whichever answered. Mirror lists must stay planet-wide - regional extracts silently return zero rows.
+- **Resilience**: the nearby lookup uses a reliable bounded Nominatim viewbox first and only falls back to Overpass
+  `around` when it finds nothing. The geolocation promise has a hard watchdog, so the UI never sticks on "Locating".
 
 ## How Compare scores restaurants
 
@@ -79,6 +98,10 @@ Files: `server/placesClient.js` (Google), `server/spoonacular.js` (menus), `serv
 A pair comparison returns the winner, the point margin, the sub-scores and plain-language reasons (higher rating, far
 more reviews, lower spend, open right now, different kitchens). The area mode ranks the places Google returns for
 `best rated restaurants in <area>` and repeats the methodology on the page.
+
+**Without a Google key** the app does not pretend to rank taste. `server/keylessRank.js` scores what OpenStreetMap
+actually knows - cuisine listed 22%, opening hours 18%, phone or website 16%, menu link 14%, listing richness 16%,
+photos 14% - and every verdict says out loud that it is ranking how complete a listing is, not how good the food is.
 
 ## Routes
 
@@ -102,12 +125,28 @@ switch is a native radio group, and verdict metrics are a real `table`. Keyboard
 
 ## Attribution
 
-Google Maps Platform requires a "Powered by Google" credit wherever Places data is displayed, and the Spoonacular free
-plan requires a link back to spoonacular.com - both are rendered in the UI via `src/components/Attribution.jsx`.
+OpenStreetMap asks to credit its contributors (ODbL) wherever its data is shown, Wikimedia Commons images carry
+per-file attribution, TheMealDB asks for a mention, Google requires "Powered by Google", and Yelp requires
+"Powered by Yelp" for its content. `src/components/Attribution.jsx` renders exactly the set in use on each screen.
 
 ## Tech stack
 
-Vite 7, React 19, Tailwind CSS v4, framer-motion, react-router-dom 7. Design tokens live in `src/theme.js`.
+Vite 7, React 19, Tailwind CSS v4, framer-motion, react-router-dom 7.
+
+Design tokens live in `src/theme.js` and are the single source of truth for the palette and typography:
+
+| Token | Hex | Role |
+| --- | --- | --- |
+| `INDIGO` | `#3A0CA3` | headings and body ink |
+| `VIOLET` | `#6A00F4` | primary actions, links, focus ring |
+| `GREEN` | `#064E3B` | success, "open now" |
+| `YELLOW` | `#FFF275` | highlight, rating pills, eyebrow chips |
+| `CREAM` | `#F8E7C9` | page surface |
+| `PEACH` | `#FFD6A5` | secondary surfaces, borders, hover rows |
+
+Everything is set in **Bricolage Grotesque** (variable, 200-800) with weights chosen per role: 800 display, 700
+headlines, 600 buttons and subheads, 500 body, 400 fine print. The sort menu is a custom accessible listbox
+(`src/components/SortDropdown.jsx`) rather than a native `<select>`, so it matches the rest of the interface.
 
 ## Other providers you could swap in
 

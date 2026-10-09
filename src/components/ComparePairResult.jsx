@@ -1,6 +1,20 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import { FONT, INK, INK_40, INK_55, INK_70, bodyText, card, sectionHeadline } from '../theme'
+import {
+  FONT,
+  GREEN,
+  INK,
+  INK_40,
+  INK_55,
+  INK_70,
+  PEACH,
+  VIOLET,
+  YELLOW,
+  bodyText,
+  card,
+  hexToRgba,
+  sectionHeadline,
+} from '../theme'
 import Attribution from './Attribution'
 import RatingBadge from './RatingBadge'
 
@@ -8,9 +22,10 @@ const formatCount = (value) => new Intl.NumberFormat('en-IN').format(Number(valu
 
 const cellStyle = {
   padding: '10px 12px',
-  borderTop: '1px solid rgba(31,31,31,0.08)',
+  borderTop: '1px solid rgba(58,12,163,0.1)',
   fontFamily: FONT,
   fontSize: '13px',
+  fontWeight: 500,
   color: INK_70,
   verticalAlign: 'top',
   textAlign: 'left',
@@ -47,7 +62,7 @@ const ScoreBar = ({ score }) => (
         display: 'block',
         height: '8px',
         borderRadius: '999px',
-        background: 'rgba(31,31,31,0.1)',
+        background: hexToRgba(PEACH, 0.55),
         overflow: 'hidden',
       }}
     >
@@ -55,7 +70,7 @@ const ScoreBar = ({ score }) => (
         initial={{ width: 0 }}
         animate={{ width: `${score}%` }}
         transition={{ duration: 0.8, ease: 'easeOut' }}
-        style={{ display: 'block', height: '100%', background: '#1a1a1a' }}
+        style={{ display: 'block', height: '100%', background: VIOLET }}
       />
     </span>
     <span className="sr-only">{`Score ${score} out of 100`}</span>
@@ -75,7 +90,7 @@ const SignalIcon = ({ hit }) => (
   <i
     className={hit ? 'ri-check-line' : 'ri-close-line'}
     aria-hidden="true"
-    style={{ fontSize: '15px', color: hit ? '#1a7f43' : INK_40 }}
+    style={{ fontSize: '15px', color: hit ? GREEN : INK_40 }}
   />
 )
 
@@ -101,16 +116,16 @@ const SidePanel = ({ side, isWinner, method }) => {
       initial={{ opacity: 0, y: 18 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
-      style={{ ...card, padding: '22px', border: isWinner ? '2px solid #1a1a1a' : card.border }}
+      style={{ ...card, padding: '22px', border: isWinner ? `2px solid ${VIOLET}` : card.border }}
     >
       <p
         style={{
           fontFamily: FONT,
           fontSize: '11px',
-          fontWeight: 600,
+          fontWeight: 700,
           letterSpacing: '0.14em',
           textTransform: 'uppercase',
-          color: INK_55,
+          color: isWinner ? GREEN : INK_55,
         }}
       >
         {isWinner ? 'Winner' : 'Runner up'}
@@ -119,8 +134,8 @@ const SidePanel = ({ side, isWinner, method }) => {
         style={{
           fontFamily: FONT,
           fontSize: '17px',
-          fontWeight: 600,
-          letterSpacing: '-0.01em',
+          fontWeight: 700,
+          letterSpacing: '-0.02em',
           color: INK,
           marginTop: '8px',
         }}
@@ -132,13 +147,13 @@ const SidePanel = ({ side, isWinner, method }) => {
         <p style={{ ...bodyText, marginTop: '8px', fontSize: '12.5px' }}>{side.place.address}</p>
       ) : null}
       <p style={{ display: 'flex', alignItems: 'baseline', gap: '8px', marginTop: '16px' }}>
-        <span style={{ fontFamily: FONT, fontSize: '30px', fontWeight: 600, letterSpacing: '-0.03em', color: INK }}>
+        <span style={{ fontFamily: FONT, fontSize: '30px', fontWeight: 800, letterSpacing: '-0.04em', color: INK }}>
           {side.score.total}
         </span>
         <span style={{ fontFamily: FONT, fontSize: '12px', color: INK_55 }}>out of 100</span>
       </p>
       <ScoreBar score={side.score.total} />
-      <h4 style={{ fontFamily: FONT, fontSize: '12px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: INK_55, marginTop: '18px' }}>
+      <h4 style={{ fontFamily: FONT, fontSize: '12px', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: INK_55, marginTop: '18px' }}>
         {keyless ? 'What the public listing shows' : 'What the score weighs'}
       </h4>
       <ul role="list" className="list-none" style={{ margin: '10px 0 0', display: 'grid', gap: '8px' }}>
@@ -149,13 +164,15 @@ const SidePanel = ({ side, isWinner, method }) => {
             <li key={row.id} style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
               <SignalIcon hit={hit} />
               <div>
-                <p style={{ fontFamily: FONT, fontSize: '12.5px', fontWeight: 500, color: INK }}>
+                <p style={{ fontFamily: FONT, fontSize: '12.5px', fontWeight: 600, color: INK }}>
                   {row.label}{' '}
                   <span style={{ color: INK_40 }}>({row.weight})</span>
                   <span className="sr-only">{hit ? ' - signal present' : ' - signal missing'}</span>
                 </p>
                 {!keyless ? (
-                  <p style={{ fontFamily: FONT, fontSize: '12px', color: INK_70 }}>{entry?.score} points</p>
+                  <p style={{ fontFamily: FONT, fontSize: '12px', fontWeight: 500, color: INK_70 }}>
+                    {entry?.score} points
+                  </p>
                 ) : null}
               </div>
             </li>
@@ -252,7 +269,7 @@ const ComparePairResult = ({ result }) => {
           style={{
             fontFamily: FONT,
             fontSize: '11px',
-            fontWeight: 600,
+            fontWeight: 700,
             letterSpacing: '0.14em',
             textTransform: 'uppercase',
             color: INK_55,
@@ -332,7 +349,7 @@ const ComparePairResult = ({ result }) => {
               <i
                 className="ri-checkbox-blank-circle-fill"
                 aria-hidden="true"
-                style={{ fontSize: '5px', marginTop: '8px', color: INK_40 }}
+                style={{ fontSize: '5px', marginTop: '8px', color: YELLOW, WebkitTextStroke: '1px rgba(58,12,163,0.5)' }}
               />
               <p style={{ ...bodyText, fontSize: '13px' }}>{reason.text}</p>
             </li>

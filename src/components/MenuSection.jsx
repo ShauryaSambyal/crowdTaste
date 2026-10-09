@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { FONT, INK, INK_55, bodyText, card, sectionHeadline } from '../theme'
+import { FONT, INK, INK_55, PEACH, bodyText, card, hexToRgba, sectionHeadline } from '../theme'
 import Attribution from './Attribution'
 
 const sectionTitle = { ...sectionHeadline, fontSize: 'clamp(1.3rem, 2.4vw, 1.7rem)' }
@@ -53,7 +53,7 @@ const MenuSection = ({ items = [], state = 'idle', query = '', problem = null })
               style={{
                 height: '168px',
                 borderRadius: '18px',
-                background: 'rgba(31,31,31,0.08)',
+                background: 'rgba(255,214,165,0.55)',
                 animation: 'pulse 1.4s ease-in-out infinite',
               }}
             />
@@ -78,7 +78,7 @@ const MenuSection = ({ items = [], state = 'idle', query = '', problem = null })
                         height: '132px',
                         objectFit: 'cover',
                         borderRadius: '12px',
-                        background: 'rgba(31,31,31,0.06)',
+                        background: hexToRgba(PEACH, 0.35),
                       }}
                     />
                   ) : null}
@@ -109,9 +109,10 @@ const MenuSection = ({ items = [], state = 'idle', query = '', problem = null })
                           style={{
                             padding: '2px 8px',
                             borderRadius: '999px',
-                            background: 'rgba(31,31,31,0.06)',
+                            background: hexToRgba(PEACH, 0.45),
                             fontFamily: FONT,
                             fontSize: '11px',
+                            fontWeight: 500,
                             color: INK_55,
                           }}
                         >

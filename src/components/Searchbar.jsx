@@ -1,13 +1,65 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Link, useSearchParams } from 'react-router-dom'
-import { getLiveStatus, resolvePhoto, searchRestaurants } from '../lib/api'
+import { getLiveStatus, nearbyRestaurants, resolvePhoto, searchRestaurants } from '../lib/api'
+import { currentPosition, distanceKm, formatDistance } from '../lib/geo'
 import { FILTERS, SORTS, applyFilters, applySort } from '../lib/searchOptions'
-import { FONT, INK, INK_40, INK_55, INK_70, INK_72, bodyText, card, frost, primaryButton, PILL_SHADOW, tinyLabel } from '../theme'
+import {
+  FONT,
+  GREEN,
+  INK,
+  INK_40,
+  INK_55,
+  INK_70,
+  INK_72,
+  PEACH,
+  VIOLET,
+  bodyText,
+  card,
+  frost,
+  hexToRgba,
+  primaryButton,
+  PILL_SHADOW,
+  tinyLabel,
+} from '../theme'
 import Attribution from './Attribution'
 import RatingBadge from './RatingBadge'
+import SortDropdown from './SortDropdown'
 
 const SUGGESTIONS = ['biryani in Jayanagar', 'dosa in Basavanagudi', 'cafe in Indiranagar', 'Toit']
+
+// A comfortable walk; also what the server scans for a nearby lookup.
+const NEAR_RADIUS_M = 1200
+
+const ghostButton = {
+  display: 'inline-flex',
+  alignItems: 'center',
+  gap: '7px',
+  padding: '9px 14px',
+  borderRadius: '999px',
+  border: '1px solid rgba(58,12,163,0.16)',
+  background: 'rgba(255,253,247,0.7)',
+  fontFamily: FONT,
+  fontSize: '12.5px',
+  fontWeight: 600,
+  color: INK,
+  cursor: 'pointer',
+  whiteSpace: 'nowrap',
+}
+
+const distanceChip = {
+  display: 'inline-flex',
+  alignItems: 'center',
+  gap: '5px',
+  padding: '3px 10px',
+  borderRadius: '999px',
+  background: hexToRgba(VIOLET, 0.1),
+  border: '1px solid rgba(106,0,244,0.24)',
+  fontFamily: FONT,
+  fontSize: '12.5px',
+  fontWeight: 600,
+  color: VIOLET,
+}
 
 const chipBase = {
   display: 'inline-flex',
@@ -15,13 +67,13 @@ const chipBase = {
   gap: '8px',
   padding: '8px 14px',
   borderRadius: '999px',
-  background: 'rgba(255,255,255,0.6)',
-  border: '1px solid rgba(255,255,255,0.7)',
+  background: 'rgba(255,253,247,0.72)',
+  border: '1px solid rgba(58,12,163,0.14)',
   backdropFilter: 'blur(8px)',
   WebkitBackdropFilter: 'blur(8px)',
   fontFamily: FONT,
   fontSize: '12.5px',
-  fontWeight: 500,
+  fontWeight: 600,
   color: INK_72,
   cursor: 'pointer',
   whiteSpace: 'nowrap',
@@ -39,6 +91,18 @@ const methodHint = {
   fontWeight: 500,
 }
 
+// Placeholder tile shown when a result has no photo yet.
+const imageFallback = {
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  height: '172px',
+  borderRadius: '12px',
+  background: hexToRgba(PEACH, 0.4),
+  color: INK_40,
+  fontSize: '20px',
+}
+
 const Searchbar = () => {
   const [searchParams, setSearchParams] = useSearchParams()
   const [query, setQuery] = useState(() => searchParams.get('q') ?? '')
@@ -50,6 +114,12 @@ const Searchbar = () => {
   const [activeFilters, setActiveFilters] = useState([])
   const [sortId, setSortId] = useState('relevance')
   const [live, setLive] = useState(null)
+  // Realtime location: `here` is the diner's own position, set only after they
+  // ask for nearby results and allow the browser to share it.
+  const [here, setHere] = useState(null)
+  const [nearMode, setNearMode] = useState(false)
+  const [geoState, setGeoState] = useState('idle')
+  const [geoProblem, setGeoProblem] = useState(null)
   const resultsHeadingRef = useRef(null)
   const ranFromUrl = useRef(false)
 
@@ -73,6 +143,7 @@ const Searchbar = () => {
       setQuery(clean)
       setSearchParams(clean ? { q: clean } : {}, { replace: true })
       setActiveFilters([])
+      setNearMode(false)
 
       if (!clean) {
         setResults([])
@@ -102,13 +173,61 @@ const Searchbar = () => {
     [setSearchParams],
   )
 
+  // "Near me": read the live position, then ask the server what is around it.
+  const findNearby = useCallback(async () => {
+    setGeoState('locating')
+    setGeoProblem(null)
+    setActiveFilters([])
+    setNearMode(true)
+    setQuery('')
+    setSearchParams({ near: '1' }, { replace: true })
+
+    let spot
+    try {
+      spot = await currentPosition()
+    } catch (error) {
+      setGeoState('idle')
+      setNearMode(false)
+      setState('idle')
+      setResults([])
+      setGeoProblem(error.message)
+      return
+    }
+
+    setHere(spot)
+    setGeoState('ready')
+    setState('loading')
+    setProblem(null)
+
+    try {
+      const outcome = await nearbyRestaurants({ lat: spot.lat, lng: spot.lng, radius: NEAR_RADIUS_M })
+      setSource(outcome.source)
+      setResults(outcome.results)
+      setNotice(null)
+      setState('ready')
+      window.requestAnimationFrame(() => resultsHeadingRef.current?.focus())
+    } catch (error) {
+      setResults([])
+      setState('error')
+      setProblem({ message: error.message, hint: error.hint })
+    }
+  }, [setSearchParams])
+
+  // Deep links survive a refresh: /discover?q=... searches, /discover?near=1
+  // re-runs the nearby lookup (the browser asks for location again if needed).
   useEffect(() => {
+    if (ranFromUrl.current) return
     const deepLinked = searchParams.get('q')
-    if (deepLinked && !ranFromUrl.current) {
+    if (deepLinked) {
       ranFromUrl.current = true
       runSearch(deepLinked)
+      return
     }
-  }, [searchParams, runSearch])
+    if (searchParams.get('near')) {
+      ranFromUrl.current = true
+      findNearby()
+    }
+  }, [searchParams, runSearch, findNearby])
 
   const handleSubmit = (event) => {
     event.preventDefault()
@@ -121,21 +240,44 @@ const Searchbar = () => {
     )
   }
 
-  const visibleResults = useMemo(
-    () => applySort(applyFilters(results, activeFilters), sortId),
-    [results, activeFilters, sortId],
+  // Once the diner's position is known, every result gains a real distance and
+  // "Nearest first" becomes available.
+  const withDistance = useMemo(() => {
+    if (!here) return results
+    return results.map((place) => ({ ...place, distanceKm: distanceKm(here, place.location) }))
+  }, [results, here])
+
+  const sortOptions = useMemo(
+    () => (here ? SORTS : SORTS.filter((option) => option.id !== 'nearest')),
+    [here],
   )
+
+  const visibleResults = useMemo(() => {
+    const filtered = applyFilters(withDistance, activeFilters)
+    if (sortId === 'nearest') {
+      return [...filtered].sort(
+        (a, b) => (a.distanceKm ?? Infinity) - (b.distanceKm ?? Infinity) || a.name.localeCompare(b.name),
+      )
+    }
+    return applySort(filtered, sortId)
+  }, [withDistance, activeFilters, sortId])
 
   const hiddenByFilters = results.length - visibleResults.length
   const isLive = source === 'google'
 
+  const nearbyLabel = `${(NEAR_RADIUS_M / 1000).toFixed(1)} km`
+
   const statusMessage =
     state === 'loading'
-      ? `Searching for ${query}`
+      ? nearMode
+        ? 'Finding restaurants near you'
+        : `Searching for ${query}`
       : state === 'error'
-        ? `Search failed. ${problem?.message ?? ''}`
+        ? `${nearMode ? 'Nearby lookup' : 'Search'} failed. ${problem?.message ?? ''}`
         : state === 'ready'
-          ? `${visibleResults.length} restaurants found for ${query}`
+          ? nearMode
+            ? `${visibleResults.length} restaurants within ${nearbyLabel} of you`
+            : `${visibleResults.length} restaurants found for ${query}`
           : ''
 
   const suggestionChips = (
@@ -145,7 +287,7 @@ const Searchbar = () => {
           key={suggestion}
           type="button"
           onClick={() => runSearch(suggestion)}
-          whileHover={{ scale: 1.05, backgroundColor: 'rgba(255,255,255,0.92)' }}
+          whileHover={{ scale: 1.05, backgroundColor: 'rgba(255,253,247,0.96)' }}
           whileTap={{ scale: 0.96 }}
           style={{ ...chipBase, color: INK, fontWeight: 600 }}
         >
@@ -174,7 +316,7 @@ const Searchbar = () => {
           marginTop: '30px',
           padding: '7px 7px 7px 18px',
           borderRadius: '999px',
-          ...frost('rgba(255,255,255,0.7)', 'rgba(255,255,255,0.8)', 14),
+          ...frost('rgba(255,253,247,0.8)', 'rgba(255,214,165,0.9)', 14),
           boxShadow: PILL_SHADOW,
         }}
       >
@@ -205,6 +347,25 @@ const Searchbar = () => {
           }}
         />
         <motion.button
+          type="button"
+          onClick={findNearby}
+          disabled={geoState === 'locating'}
+          whileHover={{ scale: 1.04 }}
+          whileTap={{ scale: 0.97 }}
+          aria-label={`Find restaurants within ${nearbyLabel} of my current location`}
+          style={{ ...ghostButton, opacity: geoState === 'locating' ? 0.7 : 1 }}
+        >
+          <i
+            className={geoState === 'locating' ? 'ri-loader-4-line' : 'ri-focus-3-line'}
+            aria-hidden="true"
+            style={{
+              fontSize: '15px',
+              animation: geoState === 'locating' ? 'spin 1s linear infinite' : undefined,
+            }}
+          />
+          <span className="hidden sm:inline">{geoState === 'locating' ? 'Locating' : 'Near me'}</span>
+        </motion.button>
+        <motion.button
           type="submit"
           whileHover={{ scale: 1.04 }}
           whileTap={{ scale: 0.97 }}
@@ -233,9 +394,9 @@ const Searchbar = () => {
                   htmlFor={`filter-${filter.id}`}
                   style={{
                     ...chipBase,
-                    background: active ? '#1a1a1a' : chipBase.background,
-                    borderColor: active ? '#1a1a1a' : chipBase.border,
-                    color: active ? '#fff' : INK_72,
+                    background: active ? VIOLET : chipBase.background,
+                    borderColor: active ? VIOLET : chipBase.border,
+                    color: active ? '#FFFDF7' : INK_72,
                   }}
                 >
                   <i className={filter.icon} aria-hidden="true" style={{ fontSize: '14px' }} />
@@ -250,13 +411,13 @@ const Searchbar = () => {
         </p>
       </fieldset>
 
-      {live && !live.google && (
+      {live ? (
         <p style={{ ...methodHint, justifyContent: 'center', marginTop: '14px' }} role="note">
-          <i className="ri-information-line" aria-hidden="true" />
-          Live data is off, so results come from the bundled sample list. Add GOOGLE_PLACES_API_KEY to .env and
-          restart the dev server to search real restaurants.
+          <i className="ri-map-pin-line" aria-hidden="true" />
+          Live venues, opening hours and photos come from OpenStreetMap (no key needed).
+          {live.reviews ? ' Reviews are on.' : ' Written reviews need a YELP_API_KEY.'}
         </p>
-      )}
+      ) : null}
 
       <p role="status" aria-live="polite" className="sr-only">
         {statusMessage}
@@ -264,6 +425,12 @@ const Searchbar = () => {
 
       {state === 'idle' && (
         <div style={{ marginTop: '26px', textAlign: 'center' }}>
+          {geoProblem ? (
+            <p style={{ ...methodHint, justifyContent: 'center', color: VIOLET }} role="alert">
+              <i className="ri-map-pin-off-line" aria-hidden="true" />
+              {geoProblem} You can still search by name, dish or area.
+            </p>
+          ) : null}
           <p style={tinyLabel}>Try a search like</p>
           {suggestionChips}
         </div>
@@ -272,7 +439,7 @@ const Searchbar = () => {
       {state === 'loading' && (
         <p role="status" style={{ ...methodHint, justifyContent: 'center', marginTop: '26px', fontSize: '13.5px' }}>
           <i className="ri-refresh-line" aria-hidden="true" style={{ animation: 'spin 1s linear infinite' }} />
-          Searching live restaurant data...
+          {nearMode ? 'Reading venues around your location...' : 'Searching live restaurant data...'}
         </p>
       )}
 
@@ -282,7 +449,7 @@ const Searchbar = () => {
           style={{ ...card, maxWidth: '620px', margin: '30px auto 0', padding: '26px 24px', textAlign: 'center' }}
         >
           <i className="ri-error-warning-line" aria-hidden="true" style={{ fontSize: '22px', color: INK_55 }} />
-          <p style={{ fontFamily: FONT, fontSize: '15px', fontWeight: 600, color: INK, marginTop: '12px' }}>
+          <p style={{ fontFamily: FONT, fontSize: '15px', fontWeight: 700, color: INK, marginTop: '12px' }}>
             That search could not be completed
           </p>
           <p style={{ ...bodyText, marginTop: '8px', fontSize: '13.5px' }}>{problem?.message}</p>
@@ -308,36 +475,27 @@ const Searchbar = () => {
               id="results-heading"
               ref={resultsHeadingRef}
               tabIndex={-1}
-              style={{ fontFamily: FONT, fontSize: '17px', fontWeight: 600, color: INK, letterSpacing: '-0.01em' }}
+              style={{ fontFamily: FONT, fontSize: '17px', fontWeight: 700, color: INK, letterSpacing: '-0.02em' }}
             >
-              {visibleResults.length} {visibleResults.length === 1 ? 'restaurant' : 'restaurants'} for &ldquo;
-              {query}&rdquo;
+              {nearMode ? (
+                <>
+                  {visibleResults.length} {visibleResults.length === 1 ? 'restaurant' : 'restaurants'} within{' '}
+                  {nearbyLabel} of you
+                </>
+              ) : (
+                <>
+                  {visibleResults.length} {visibleResults.length === 1 ? 'restaurant' : 'restaurants'} for &ldquo;
+                  {query}&rdquo;
+                </>
+              )}
             </h3>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-              <label htmlFor="results-sort" style={{ fontFamily: FONT, fontSize: '12.5px', color: INK_70 }}>
-                Sort by
-              </label>
-              <select
-                id="results-sort"
-                value={sortId}
-                onChange={(event) => setSortId(event.target.value)}
-                style={{
-                  padding: '8px 12px',
-                  borderRadius: '999px',
-                  border: '1px solid rgba(255,255,255,0.8)',
-                  background: 'rgba(255,255,255,0.75)',
-                  fontFamily: FONT,
-                  fontSize: '12.5px',
-                  color: INK,
-                }}
-              >
-                {SORTS.map((sort) => (
-                  <option key={sort.id} value={sort.id}>
-                    {sort.label}
-                  </option>
-                ))}
-              </select>
-            </div>
+            <SortDropdown
+              id="results-sort"
+              label="Sort by"
+              value={sortId}
+              options={sortOptions}
+              onChange={setSortId}
+            />
           </div>
 
           {hiddenByFilters > 0 && (
@@ -347,14 +505,23 @@ const Searchbar = () => {
             </p>
           )}
 
+          {nearMode && here && results.length > 0 ? (
+            <p style={{ ...methodHint, marginTop: 0 }} role="note">
+              <i className="ri-map-pin-user-line" aria-hidden="true" />
+              Distance is straight-line from the location you shared. Closest places first.
+            </p>
+          ) : null}
+
           {visibleResults.length === 0 ? (
             <div style={{ ...card, maxWidth: '560px', margin: '10px auto 0', padding: '32px 28px', textAlign: 'center' }}>
-              <p style={{ fontFamily: FONT, fontSize: '15px', fontWeight: 600, color: INK }}>
+              <p style={{ fontFamily: FONT, fontSize: '15px', fontWeight: 700, color: INK }}>
                 {results.length === 0 ? 'No restaurants matched' : 'Nothing left after filtering'}
               </p>
               <p style={{ ...bodyText, marginTop: '8px', fontSize: '13.5px' }}>
                 {results.length === 0
-                  ? 'Google Places returned nothing for that search. Try a dish, a cuisine or add an area - or tap an example below.'
+                  ? nearMode
+                    ? `OpenStreetMap listed no restaurants within ${nearbyLabel} of you. Try a wider search, a dish or a neighbourhood.`
+                    : 'That search came back empty. Try a dish, a cuisine or add an area - or tap an example below.'
                   : 'Clear a filter, or try a different search.'}
               </p>
               {suggestionChips}
@@ -395,23 +562,11 @@ const Searchbar = () => {
                                 height: '172px',
                                 objectFit: 'cover',
                                 borderRadius: '12px',
-                                background: 'rgba(31,31,31,0.06)',
+                                background: hexToRgba(PEACH, 0.4),
                               }}
                             />
                           ) : (
-                            <div
-                              aria-hidden="true"
-                              style={{
-                                height: '172px',
-                                borderRadius: '12px',
-                                background: 'rgba(31,31,31,0.06)',
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                color: INK_40,
-                                fontSize: '20px',
-                              }}
-                            >
+                            <div aria-hidden="true" style={imageFallback}>
                               <i className="ri-image-line" />
                             </div>
                           )}
@@ -419,9 +574,9 @@ const Searchbar = () => {
                           <h4
                             style={{
                               fontFamily: FONT,
-                              fontSize: '16.5px',
-                              fontWeight: 600,
-                              letterSpacing: '-0.01em',
+                              fontSize: '17px',
+                              fontWeight: 700,
+                              letterSpacing: '-0.02em',
                               color: INK,
                               marginTop: '14px',
                             }}
@@ -450,8 +605,25 @@ const Searchbar = () => {
                           ) : null}
 
                           <p style={{ ...methodHint, marginTop: '10px', gap: '8px' }}>
+                            {typeof place.distanceKm === 'number' ? (
+                              <span style={distanceChip}>
+                                <i className="ri-walk-line" aria-hidden="true" style={{ fontSize: '12px' }} />
+                                {formatDistance(place.distanceKm)}
+                              </span>
+                            ) : null}
                             {place.openNow === true ? (
-                              <span style={{ ...chipBase, cursor: 'default', padding: '3px 10px', color: INK }}>Open now</span>
+                              <span
+                                style={{
+                                  ...chipBase,
+                                  cursor: 'default',
+                                  padding: '3px 10px',
+                                  background: hexToRgba(GREEN, 0.12),
+                                  borderColor: hexToRgba(GREEN, 0.3),
+                                  color: GREEN,
+                                }}
+                              >
+                                Open now
+                              </span>
                             ) : null}
                             {place.priceLabel ? (
                               <span style={{ ...chipBase, cursor: 'default', padding: '3px 10px' }}>{place.priceLabel}</span>

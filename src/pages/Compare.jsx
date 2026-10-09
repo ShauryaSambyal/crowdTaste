@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import { useSearchParams } from 'react-router-dom'
 import { compareBestInArea, compareRestaurantPair, getLiveStatus } from '../lib/api'
-import { FONT, INK, INK_55, INK_70, PILL_SHADOW, bodyText, card, eyebrowPill, frost, heroHeadline, primaryButton } from '../theme'
+import { FONT, INK, INK_55, INK_70, PILL_SHADOW, PEACH, bodyText, card, eyebrowPill, frost, heroHeadline, hexToRgba, primaryButton } from '../theme'
 import CompareAreaResult from '../components/CompareAreaResult'
 import ComparePairResult from '../components/ComparePairResult'
 import ProviderNotice from '../components/ProviderNotice'
@@ -16,27 +16,28 @@ const inputStyle = {
   width: '100%',
   padding: '11px 14px',
   borderRadius: '12px',
-  border: '1px solid rgba(31,31,31,0.12)',
-  background: 'rgba(255,255,255,0.85)',
+  border: '1px solid rgba(58,12,163,0.16)',
+  background: 'rgba(255,253,247,0.9)',
   fontFamily: FONT,
   fontSize: '14px',
+  fontWeight: 500,
   color: INK,
 }
 
-const labelStyle = { display: 'block', fontFamily: FONT, fontSize: '12.5px', fontWeight: 500, color: INK_70, marginBottom: '6px' }
+const labelStyle = { display: 'block', fontFamily: FONT, fontSize: '12.5px', fontWeight: 600, color: INK_70, marginBottom: '6px' }
 
 const modeChip = {
   display: 'inline-flex',
   alignItems: 'center',
   padding: '9px 16px',
   borderRadius: '999px',
-  border: '1px solid rgba(255,255,255,0.7)',
-  background: 'rgba(255,255,255,0.6)',
+  border: '1px solid rgba(58,12,163,0.14)',
+  background: 'rgba(255,253,247,0.7)',
   backdropFilter: 'blur(8px)',
   WebkitBackdropFilter: 'blur(8px)',
   fontFamily: FONT,
   fontSize: '13px',
-  fontWeight: 500,
+  fontWeight: 600,
   color: INK_70,
   cursor: 'pointer',
 }
@@ -193,9 +194,9 @@ const Compare = () => {
                   htmlFor={`compare-mode-${item.id}`}
                   style={{
                     ...modeChip,
-                    background: active ? '#1a1a1a' : modeChip.background,
-                    borderColor: active ? '#1a1a1a' : modeChip.border,
-                    color: active ? '#fff' : INK_70,
+                    background: active ? hexToRgba(PEACH, 0.9) : modeChip.background,
+                    borderColor: active ? 'rgba(58,12,163,0.35)' : modeChip.border,
+                    color: active ? INK : INK_70,
                   }}
                 >
                   {item.label}
@@ -214,7 +215,7 @@ const Compare = () => {
             marginTop: '26px',
             padding: '22px',
             borderRadius: '20px',
-            ...frost('rgba(255,255,255,0.7)', 'rgba(255,255,255,0.8)', 14),
+            ...frost('rgba(255,253,247,0.8)', 'rgba(255,214,165,0.9)', 14),
             boxShadow: PILL_SHADOW,
           }}
         >
@@ -284,7 +285,7 @@ const Compare = () => {
             marginTop: '26px',
             padding: '22px',
             borderRadius: '20px',
-            ...frost('rgba(255,255,255,0.7)', 'rgba(255,255,255,0.8)', 14),
+            ...frost('rgba(255,253,247,0.8)', 'rgba(255,214,165,0.9)', 14),
             boxShadow: PILL_SHADOW,
           }}
         >
@@ -349,7 +350,7 @@ const Compare = () => {
           style={{ ...card, maxWidth: '620px', margin: '30px auto 0', padding: '26px 24px', textAlign: 'center' }}
         >
           <i className="ri-error-warning-line" aria-hidden="true" style={{ fontSize: '22px', color: INK_55 }} />
-          <p style={{ fontFamily: FONT, fontSize: '15px', fontWeight: 600, color: INK, marginTop: '12px' }}>
+          <p style={{ fontFamily: FONT, fontSize: '15px', fontWeight: 700, color: INK, marginTop: '12px' }}>
             That comparison could not be completed
           </p>
           <p style={{ ...bodyText, marginTop: '8px', fontSize: '13.5px' }}>{problem?.message}</p>

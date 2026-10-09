@@ -32,6 +32,9 @@ export const FILTERS = [
 
 export const SORTS = [
   { id: 'relevance', label: 'Best match' },
+  // Only offered once the diner has shared a location; the comparison itself is
+  // done in the results view, which is where the coordinates live.
+  { id: 'nearest', label: 'Nearest first' },
   { id: 'rating', label: 'Highest rated', compare: (a, b) => (b.rating ?? -1) - (a.rating ?? -1) },
   {
     id: 'reviews',

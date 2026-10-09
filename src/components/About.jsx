@@ -6,26 +6,34 @@ import {
   INK,
   INK_55,
   INK_70,
+  PEACH,
   bodyText,
   card,
   eyebrowPill,
   heroHeadline,
+  hexToRgba,
   primaryButton,
   secondaryButton,
   sectionHeadline,
 } from '../theme'
 
-// Built-in, no keys, no signup: OpenStreetMap for venues, TheMealDB for dish photos.
+// Built-in, no keys, no signup: OpenStreetMap for venues + live hours,
+// Wikimedia Commons for photos, TheMealDB for dish photos.
 const values = [
   {
     icon: 'ri-database-2-line',
     title: 'Open by default',
-    copy: 'Every search, card and comparison already works on live OpenStreetMap data - no keys, no signup, no card.',
+    copy: 'Search, nearby, hours, photos and Compare all run on live OpenStreetMap data - no keys, no signup, no card.',
+  },
+  {
+    icon: 'ri-map-pin-user-line',
+    title: 'Genuinely realtime',
+    copy: 'Share your location once and Nearby ranks what is around you by walking distance, with open/closed worked out from each venue own opening hours.',
   },
   {
     icon: 'ri-filter-3-line',
     title: 'Scored in the open',
-    copy: 'Compare shows its maths and its limits: completeness scoring on open data, rating scoring when a Google key exists.',
+    copy: 'Compare shows its maths and its limits: completeness scoring on open data, rating scoring when a ratings key exists.',
   },
   {
     icon: 'ri-map-pin-2-line',
@@ -61,11 +69,27 @@ const providerList = [
     cost: 'Free for development and education. Photo credit goes to TheMealDB on every gallery.',
   },
   {
+    id: 'yelp',
+    icon: 'ri-chat-quote-line',
+    title: 'Yelp Fusion (optional)',
+    provides:
+      'Written diner reviews, a rating and a review count for venues that come from OpenStreetMap. This is the only way mapped venues get review text, because OpenStreetMap has none.',
+    keyName: 'YELP_API_KEY',
+    signup: 'https://docs.developer.yelp.com/docs/places-intro',
+    signupLabel: 'Create a Yelp app',
+    steps: [
+      'Create an app in the Yelp developer portal and copy its API key.',
+      'Paste the key into .env as YELP_API_KEY and restart npm run dev.',
+      'A venue card then matches its listing and shows up to three review excerpts.',
+    ],
+    cost: 'Yelp ended its free tier in 2024, so a Yelp plan is required. Foursquare tips and ratings are paid too - the app stays honest and shows no review text until a key is set.',
+  },
+  {
     id: 'google',
     icon: 'ri-star-line',
     title: 'Google Places (optional)',
     provides:
-      'Adds ratings, review counts, written diner reviews and extra venue photos. Without it, search, details and Compare already work on open data.',
+      'Switches search and Compare to Google: ratings, review counts, written reviews and extra venue photos instead of open map data.',
     keyName: 'GOOGLE_PLACES_API_KEY',
     signup: 'https://developers.google.com/maps/demo-key',
     signupLabel: 'Get a card-free demo key',
@@ -81,15 +105,16 @@ const providerList = [
 const codeChip = {
   fontFamily: 'ui-monospace, SFMono-Regular, Menlo, monospace',
   fontSize: '12px',
+  fontWeight: 500,
   padding: '2px 8px',
   borderRadius: '8px',
-  background: 'rgba(31,31,31,0.06)',
+  background: hexToRgba(PEACH, 0.7),
   color: INK,
 }
 
 const About = () => {
   const stats = [
-    { value: '0', label: 'keys or signups needed to run the app' },
+    { value: '0', label: 'keys or signups needed for live venues, hours and photos' },
     { value: '20', label: 'places ranked per area in Compare' },
     { value: String(sampleCount), label: 'sample entries for the offline fallback' },
   ]
@@ -134,7 +159,7 @@ const About = () => {
       >
         {stats.map((stat) => (
           <div key={stat.label} style={{ ...card, minWidth: '210px', padding: '22px 26px', textAlign: 'center' }}>
-            <p style={{ fontFamily: FONT, fontSize: '30px', fontWeight: 600, letterSpacing: '-0.03em', color: INK }}>
+            <p style={{ fontFamily: FONT, fontSize: '30px', fontWeight: 800, letterSpacing: '-0.04em', color: INK }}>
               {stat.value}
             </p>
             <p style={{ ...bodyText, marginTop: '6px', fontSize: '12.5px' }}>{stat.label}</p>
@@ -146,7 +171,7 @@ const About = () => {
         <h2 id="values-heading" style={{ ...sectionHeadline, maxWidth: '520px', margin: '0 auto', textAlign: 'center' }}>
           What we care about
         </h2>
-        <div className="grid gap-5 md:grid-cols-3" style={{ marginTop: '38px' }}>
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4" style={{ marginTop: '38px' }}>
           {values.map((value, index) => (
             <motion.div
               key={value.title}
@@ -165,8 +190,8 @@ const About = () => {
                   width: '40px',
                   height: '40px',
                   borderRadius: '12px',
-                  background: 'rgba(31,31,31,0.06)',
-                  border: '1px solid rgba(31,31,31,0.05)',
+                  background: hexToRgba(PEACH, 0.65),
+                  border: '1px solid rgba(58,12,163,0.1)',
                   color: INK,
                   fontSize: '17px',
                   marginBottom: '18px',
@@ -174,7 +199,7 @@ const About = () => {
               >
                 <i className={value.icon} aria-hidden="true" />
               </span>
-              <h3 style={{ fontFamily: FONT, fontSize: '17px', fontWeight: 600, letterSpacing: '-0.01em', color: INK, marginBottom: '10px' }}>
+              <h3 style={{ fontFamily: FONT, fontSize: '17px', fontWeight: 700, letterSpacing: '-0.02em', color: INK, marginBottom: '10px' }}>
                 {value.title}
               </h3>
               <p style={{ ...bodyText, fontSize: '13.5px' }}>{value.copy}</p>
@@ -188,8 +213,8 @@ const About = () => {
           Where the data comes from
         </h2>
         <p style={{ ...bodyText, maxWidth: '620px', margin: '16px auto 0', textAlign: 'center' }}>
-          Two data sources power the app out of the box with no signup at all - the local
-          API layer talks to them directly. Only ratings and written reviews need an optional Google key.
+          Three services power the app out of the box with no signup at all - the local API layer talks to them
+          directly. Ratings and written reviews are the one thing that still needs an optional key.
         </p>
 
         <div className="grid gap-5 md:grid-cols-2" style={{ marginTop: '34px' }}>
@@ -211,7 +236,7 @@ const About = () => {
                     width: '38px',
                     height: '38px',
                     borderRadius: '12px',
-                    background: 'rgba(31,31,31,0.06)',
+                    background: hexToRgba(PEACH, 0.65),
                     color: INK,
                     fontSize: '16px',
                   }}

@@ -9,6 +9,7 @@
 import { LiveDataError, createPlacesClient, hasGoogleKey } from './placesClient.js'
 import { createOsmProvider, OsmError } from './osmProvider.js'
 import { createMealsProvider } from './mealsProvider.js'
+import { createReviewsProvider, hasYelpKey } from './reviewsProvider.js'
 import { compareArea, comparePair } from './compare.js'
 import { keylessAreaCompare, keylessPairCompare } from './keylessRank.js'
 
@@ -56,11 +57,18 @@ export default function liveDataPlugin(env = {}) {
   const places = createPlacesClient({ apiKey: googleKey, timeoutMs })
   const osm = createOsmProvider({ timeoutMs, nominatimEmail })
   const meals = createMealsProvider({ timeoutMs })
+  const reviews = createReviewsProvider({ apiKey: env.YELP_API_KEY ?? '', timeoutMs })
+
+  // Which source can actually answer for written reviews. Google-sourced venues
+  // carry their own reviews; Yelp fills them in for mapped (OSM) venues.
+  const reviewsSource = hasYelpKey(env.YELP_API_KEY) ? 'yelp' : null
 
   const status = {
     osm: true,
     google: hasGoogleKey(googleKey),
     meals: true,
+    reviews: reviewsSource,
+    nearby: true,
   }
 
   const missingPair = (left, right, label) => {
@@ -159,11 +167,53 @@ export default function liveDataPlugin(env = {}) {
         mode: status.google ? 'live' : 'open',
         providers: {
           openStreetMap: 'https://wiki.openstreetmap.org/wiki/Overpass_API',
+          nominatim: 'https://nominatim.org/release-docs/develop/api/Overview/',
           theMealDB: 'https://www.themealdb.com/api.php',
           googlePlaces: 'https://developers.google.com/maps/documentation/places/web-service/op-overview',
+          yelp: 'https://docs.developer.yelp.com/docs/places-intro',
         },
-        endpoints: ['/search', '/place/:id', '/photo', '/dishes', '/compare', '/compare/area'],
+        endpoints: ['/search', '/nearby', '/place/:id', '/photo', '/dishes', '/reviews', '/compare', '/compare/area'],
       })
+    }
+
+    if (pathname === '/nearby') {
+      const lat = Number(params.get('lat'))
+      const lng = Number(params.get('lng'))
+      if (!Number.isFinite(lat) || !Number.isFinite(lng)) {
+        throw new OsmError('A latitude and longitude are required for a nearby search.', { status: 400 })
+      }
+      const results = await osm.restaurantsNear({
+        lat,
+        lng,
+        radius: params.get('radius') ?? 1200,
+        cuisine: params.get('cuisine') ?? '',
+        limit: params.get('limit') ?? 30,
+      })
+      return sendJson(res, 200, { source: 'osm', results })
+    }
+
+    if (pathname === '/reviews') {
+      const name = (params.get('name') ?? '').trim()
+      if (name.length < 2) {
+        throw new LiveDataError('A venue name is required to look up reviews.', { status: 400 })
+      }
+      if (reviewsSource !== 'yelp') {
+        throw new LiveDataError('No reviews provider is configured.', {
+          status: 501,
+          hint: 'OpenStreetMap has no review data. Add YELP_API_KEY to .env and restart the dev server to pull real written reviews for mapped venues.',
+        })
+      }
+      const outcome = await reviews.lookup(
+        {
+          name,
+          city: (params.get('city') ?? '').trim(),
+          address: (params.get('address') ?? '').trim(),
+          lat: params.get('lat') ? Number(params.get('lat')) : null,
+          lng: params.get('lng') ? Number(params.get('lng')) : null,
+        },
+        { limit: params.get('limit') ?? 3 },
+      )
+      return sendJson(res, 200, outcome)
     }
 
     if (pathname === '/search') {

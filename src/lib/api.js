@@ -51,10 +51,40 @@ export const getLiveStatus = () => request('/api/live/status')
 // OpenStreetMap ids look like "osm:node/1234567" and always go live.
 export const isSampleId = (id) => /^\d+$/.test(String(id ?? '')) || /^sample-\d+$/.test(String(id ?? ''))
 
+// Realtime: what is actually around the diner right now. Nominatim/Overpass
+// answer on the server, keyless, so this works with zero configuration.
+export const nearbyRestaurants = async ({ lat, lng, radius = 1200, cuisine = '', limit = 30 } = {}) => {
+  const payload = await request('/api/live/nearby', { lat, lng, radius, cuisine, limit })
+  return { source: payload.source ?? 'osm', results: payload.results ?? [] }
+}
+
+// Written reviews for a mapped venue. OpenStreetMap has none, so this needs a
+// configured reviews provider; the thrown ApiError carries a readable hint when
+// there is not one.
+export const getReviews = async ({ name, city = '', address = '', lat = null, lng = null, limit = 3 } = {}) =>
+  request('/api/live/reviews', { name, city, address, lat, lng, limit })
+
 export const searchRestaurants = async (query) => {
   try {
     const payload = await request('/api/live/search', { q: query, limit: 20 })
-    return { source: payload.source ?? 'osm', results: payload.results ?? [], notice: payload.notice ?? null }
+    const results = payload.results ?? []
+
+    // OpenStreetMap only knows a venue when someone has mapped and tagged it, so
+    // dish-and-area searches like "biryani in Jayanagar" can legitimately come
+    // back empty. Rather than dead-end on the app's own suggested searches, fall
+    // back to the bundled list and label it as such.
+    if (results.length === 0 && (payload.source ?? 'osm') === 'osm') {
+      const bundled = searchSampleRestaurants(query)
+      if (bundled.length > 0) {
+        return {
+          source: 'sample',
+          results: bundled,
+          notice: `Nothing on the map is tagged for "${query}" yet, so this ran against the bundled list of ${sampleCount} Bengaluru restaurants instead.`,
+        }
+      }
+    }
+
+    return { source: payload.source ?? 'osm', results, notice: payload.notice ?? null }
   } catch (error) {
     // A bad query should surface (it is the user typing); anything else means
     // the map service is down, throttled, offline or misconfigured.

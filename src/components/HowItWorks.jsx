@@ -81,7 +81,7 @@ const HowItWorks = () => {
               style={{
                 fontFamily: FONT,
                 fontSize: '12px',
-                fontWeight: 600,
+                fontWeight: 700,
                 letterSpacing: '0.12em',
                 color: INK_40,
                 marginBottom: '18px',
@@ -93,8 +93,8 @@ const HowItWorks = () => {
               style={{
                 fontFamily: FONT,
                 fontSize: '17px',
-                fontWeight: 600,
-                letterSpacing: '-0.01em',
+                fontWeight: 700,
+                letterSpacing: '-0.02em',
                 color: INK,
                 marginBottom: '10px',
               }}

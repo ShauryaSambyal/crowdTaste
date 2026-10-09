@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { bodyText, sectionHeadline } from '../theme'
+import { PEACH, bodyText, hexToRgba, sectionHeadline } from '../theme'
 
 const sectionTitle = { ...sectionHeadline, fontSize: 'clamp(1.3rem, 2.4vw, 1.7rem)' }
 
@@ -30,9 +30,9 @@ const PhotoGallery = ({ images = [], title = 'Photos', hint = '', headingId = 'g
                 margin: 0,
                 borderRadius: '18px',
                 overflow: 'hidden',
-                border: '1px solid rgba(255,255,255,0.8)',
-                boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
-                background: 'rgba(31,31,31,0.05)',
+                border: '1px solid rgba(255,214,165,0.9)',
+                boxShadow: '0 12px 30px rgba(58,12,163,0.14)',
+                background: hexToRgba(PEACH, 0.3),
               }}
             >
               <img

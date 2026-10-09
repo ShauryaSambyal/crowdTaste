@@ -31,13 +31,13 @@ const Navbar = () => {
         style={{
           padding: '11px 20px',
           borderRadius: '999px',
-          ...frost('rgba(255,255,255,0.55)', 'rgba(255,255,255,0.65)', 16),
+          ...frost('rgba(255,253,247,0.72)', 'rgba(58,12,163,0.12)', 16),
           boxShadow: PILL_SHADOW,
         }}
       >
         <Link
           to="/"
-          style={{ fontFamily: FONT, fontSize: '17px', fontWeight: 700, color: INK, letterSpacing: '-0.01em', textDecoration: 'none', whiteSpace: 'nowrap' }}
+          style={{ fontFamily: FONT, fontSize: '18px', fontWeight: 800, color: INK, letterSpacing: '-0.03em', textDecoration: 'none', whiteSpace: 'nowrap' }}
         >
           CrowdTaste
         </Link>

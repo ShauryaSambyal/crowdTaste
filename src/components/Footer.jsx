@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { FONT, INK, INK_55, INK_72, bodyText } from '../theme'
+import { FONT, INK, INK_10, INK_55, INK_72, bodyText } from '../theme'
 
 const footerLinks = [
   { label: 'Home', to: '/' },
@@ -11,10 +11,10 @@ const footerLinks = [
 
 const Footer = () => {
   return (
-    <footer style={{ position: 'relative', zIndex: 10, borderTop: '1px solid rgba(31,31,31,0.1)' }}>
+    <footer style={{ position: 'relative', zIndex: 10, borderTop: `1px solid ${INK_10}` }}>
       <div className="mx-auto flex flex-wrap items-center justify-between gap-4 px-6 py-7" style={{ maxWidth: '1100px' }}>
         <div>
-          <p style={{ fontFamily: FONT, fontSize: '15px', fontWeight: 700, color: INK, letterSpacing: '-0.01em' }}>
+          <p style={{ fontFamily: FONT, fontSize: '15px', fontWeight: 800, color: INK, letterSpacing: '-0.03em' }}>
             CrowdTaste
           </p>
           <p style={{ ...bodyText, fontSize: '12.5px', marginTop: '4px' }}>
@@ -45,10 +45,10 @@ const Footer = () => {
         </nav>
       </div>
 
-      <div className="mx-auto px-6 pb-8" style={{ maxWidth: '1100px' }}>
-        <p style={{ fontFamily: FONT, fontSize: '12px', color: INK_55 }}>
+      <div className="mx-auto px-6 pb-8" style={{ maxWidth: '1100px' }}>          <p style={{ fontFamily: FONT, fontSize: '12px', fontWeight: 400, color: INK_55 }}>
           {'(c) '}
-          {new Date().getFullYear()} CrowdTaste. Restaurant data by Google Places, menu data by Spoonacular.
+          {new Date().getFullYear()} CrowdTaste. Venues, hours and photos by OpenStreetMap and Wikimedia Commons,
+          dish photos by TheMealDB.
         </p>
       </div>
     </footer>

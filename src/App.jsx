@@ -5,6 +5,7 @@ import Hero from './components/Hero'
 import HowItWorks from './components/HowItWorks'
 import Footer from './components/Footer'
 import About from './components/About'
+import { FONT, GREEN, INDIGO, INK, INK_70, hexToRgba } from './theme'
 import Discover from './pages/Discover'
 import Compare from './pages/Compare'
 import RestaurantDetail from './pages/RestaurantDetail'
@@ -41,26 +42,26 @@ const NotFound = () => (
       <h1
         style={{
           margin: 0,
-          fontFamily: "'Inter', sans-serif",
-          fontWeight: 600,
+          fontFamily: FONT,
+          fontWeight: 700,
           fontSize: 'clamp(1.6rem, 3vw, 2.2rem)',
-          letterSpacing: '-0.025em',
-          color: '#1f1f1f',
+          letterSpacing: '-0.03em',
+          color: INK,
         }}
       >
         Page not found
       </h1>
-      <p style={{ marginTop: '12px', fontFamily: "'Inter', sans-serif", fontSize: '14px', color: 'rgba(40,40,40,0.7)' }}>
+      <p style={{ marginTop: '12px', fontFamily: FONT, fontSize: '14px', fontWeight: 500, color: INK_70 }}>
         That page does not exist. Try Discover to search restaurants, or Compare to settle an argument.
       </p>
       <p style={{ marginTop: '20px' }}>
         <Link
           to="/discover"
           style={{
-            fontFamily: "'Inter', sans-serif",
+            fontFamily: FONT,
             fontSize: '14px',
             fontWeight: 600,
-            color: '#1f1f1f',
+            color: INK,
           }}
         >
           Go to Discover
@@ -75,7 +76,7 @@ const App = () => {
     <BrowserRouter>
       <ScrollToHash />
 
-      {/* Bright misty wash over the dot grid, keeping the dark ink legible */}
+      {/* Warm misty wash over the dot grid, keeping the indigo ink legible */}
       <div
         aria-hidden="true"
         style={{
@@ -84,9 +85,9 @@ const App = () => {
           zIndex: 0,
           pointerEvents: 'none',
           background: [
-            'radial-gradient(ellipse 80% 55% at 50% -10%, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.42) 45%, rgba(255,255,255,0) 74%)',
-            'radial-gradient(ellipse 60% 45% at 92% 104%, rgba(55,48,163,0.05) 0%, rgba(55,48,163,0) 70%)',
-            'radial-gradient(ellipse 50% 40% at 4% 72%, rgba(15,118,110,0.04) 0%, rgba(15,118,110,0) 70%)',
+            'radial-gradient(ellipse 80% 55% at 50% -10%, rgba(248,231,201,0.95) 0%, rgba(248,231,201,0.45) 45%, rgba(248,231,201,0) 74%)',
+            `radial-gradient(ellipse 60% 45% at 92% 104%, ${hexToRgba(INDIGO, 0.07)} 0%, ${hexToRgba(INDIGO, 0)} 70%)`,
+            `radial-gradient(ellipse 50% 40% at 4% 72%, ${hexToRgba(GREEN, 0.06)} 0%, ${hexToRgba(GREEN, 0)} 70%)`,
           ].join(', '),
         }}
       />

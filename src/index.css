@@ -14,11 +14,14 @@
   }
 
   body {
-    font-family: "Inter", sans-serif;
-    color: #1f1f1f;
-    background-color: #f6f6f4;
-    /* Dot-grid background - replaces the reference hero video */
-    background-image: radial-gradient(rgba(31, 31, 31, 0.1) 1.1px, transparent 1.1px);
+    /* Bricolage Grotesque everywhere; 500 is the working body weight. */
+    font-family: "Bricolage Grotesque", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    color: #3A0CA3;
+    background-color: #F8E7C9;
+    /* Warm dot-grid in indigo over the cream surface. */
+    background-image: radial-gradient(rgba(58, 12, 163, 0.12) 1.1px, transparent 1.1px);
     background-size: 24px 24px;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
@@ -37,7 +40,7 @@
 
   /* Visible keyboard focus everywhere */
   :focus-visible {
-    outline: 2px solid #1f1f1f;
+    outline: 2px solid #6A00F4;
     outline-offset: 2px;
   }
 
@@ -45,8 +48,17 @@
      is drawn on the label instead. */
   .sr-only:focus-visible + label,
   .filter-checkbox:focus-visible + label {
-    outline: 2px solid #1f1f1f;
+    outline: 2px solid #6A00F4;
     outline-offset: 2px;
+  }
+
+  /* Bricolage has a tall x-height; give headings a touch more weight by
+     default so they read as intentional rather than default. */
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Bricolage Grotesque", "Inter", system-ui, sans-serif;
   }
 }
 

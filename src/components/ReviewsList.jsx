@@ -13,8 +13,7 @@ const ReviewsList = ({ reviews = [], placeName = 'this place', reviewCount = nul
           What people say
         </h2>
         <p style={{ ...bodyText, marginTop: '10px', fontSize: '13.5px' }}>
-          {note ||
-            `Google Places shares up to five of the most relevant reviews per place. None were returned for ${placeName}.`}
+          {note || `No written reviews were returned for ${placeName} yet.`}
         </p>
       </section>
     )
@@ -27,8 +26,8 @@ const ReviewsList = ({ reviews = [], placeName = 'this place', reviewCount = nul
       </h2>
       <p style={{ ...bodyText, marginTop: '10px', fontSize: '13.5px' }}>
         {typeof reviewCount === 'number' && reviewCount > reviews.length
-          ? `Showing ${reviews.length} of ${formatCount(reviewCount)} Google reviews for ${placeName}.`
-          : `Condensed from ${reviews.length} diner reviews for ${placeName}.`}
+          ? `Showing ${reviews.length} of ${formatCount(reviewCount)} diner reviews for ${placeName}.`
+          : `Condensed from ${reviews.length} diner ${reviews.length === 1 ? 'review' : 'reviews'} for ${placeName}.`}
       </p>
       <ul role="list" className="grid list-none gap-4 md:grid-cols-2" style={{ marginTop: '22px' }}>
         {reviews.map((review, index) => (
@@ -54,13 +53,13 @@ const ReviewsList = ({ reviews = [], placeName = 'this place', reviewCount = nul
                   {review.author}
                 </cite>
                 {typeof review.rating === 'number' ? (
-                  <span style={{ fontSize: '12.5px', color: INK_55 }}>
+                  <span style={{ fontFamily: FONT, fontSize: '12.5px', fontWeight: 600, color: INK_55 }}>
                     <span aria-hidden="true">{review.rating} / 5</span>
                     <span className="sr-only">{`Rated ${review.rating} out of 5`}</span>
                   </span>
                 ) : null}
                 {review.relativeTime ? (
-                  <time style={{ fontFamily: FONT, fontSize: '12px', color: INK_55, marginLeft: 'auto' }}>
+                  <time style={{ fontFamily: FONT, fontSize: '12px', fontWeight: 500, color: INK_55, marginLeft: 'auto' }}>
                     {review.relativeTime}
                   </time>
                 ) : null}

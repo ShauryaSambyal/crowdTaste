@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { FONT, INK, INK_70, card } from '../theme'
+import { FONT, INK, INK_55, INK_70, YELLOW, card, frost } from '../theme'
 
 // Only the optional Google Places key can be missing now; everything else runs
 // keyless on OpenStreetMap. The notice tells the user exactly what they gain.
@@ -23,9 +23,25 @@ const ProviderNotice = ({ live }) => {
         textAlign: 'left',
       }}
     >
-      <i className="ri-star-line" aria-hidden="true" style={{ fontSize: '18px', color: INK }} />
+      <span
+        aria-hidden="true"
+        style={{
+          display: 'inline-flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          flexShrink: 0,
+          width: '34px',
+          height: '34px',
+          borderRadius: '11px',
+          background: YELLOW,
+          color: INK,
+          fontSize: '17px',
+        }}
+      >
+        <i className="ri-star-line" />
+      </span>
       <div style={{ flex: 1, minWidth: '240px' }}>
-        <p style={{ fontFamily: FONT, fontSize: '13.5px', fontWeight: 600, color: INK }}>
+        <p style={{ fontFamily: FONT, fontSize: '13.5px', fontWeight: 700, color: INK }}>
           Ratings and reviews are switched off
         </p>
         <ul
@@ -34,6 +50,7 @@ const ProviderNotice = ({ live }) => {
             paddingLeft: '18px',
             fontFamily: FONT,
             fontSize: '12.5px',
+            fontWeight: 500,
             lineHeight: 1.7,
             color: INK_70,
           }}
@@ -57,13 +74,12 @@ const ProviderNotice = ({ live }) => {
           alignItems: 'center',
           padding: '7px 14px',
           borderRadius: '999px',
-          border: '1px solid rgba(31,31,31,0.12)',
-          background: 'rgba(255,255,255,0.7)',
           fontFamily: FONT,
           fontSize: '12px',
-          fontWeight: 500,
+          fontWeight: 600,
           color: INK,
           cursor: 'pointer',
+          ...frost('rgba(255,253,247,0.8)', 'rgba(58,12,163,0.16)', 8),
         }}
       >
         <span aria-hidden="true">Dismiss</span>

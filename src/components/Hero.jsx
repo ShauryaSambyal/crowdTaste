@@ -2,10 +2,13 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import {
   FONT,
+  INDIGO,
   INK,
+  INK_55,
   bodyText,
   eyebrowPill,
   heroHeadline,
+  hexToRgba,
   primaryButton,
   secondaryButton,
   tinyLabel,
@@ -25,7 +28,7 @@ const Hero = () => {
           position: 'absolute',
           inset: 0,
           background:
-            'radial-gradient(ellipse 75% 52% at 50% 16%, rgba(255,255,255,0.88) 0%, rgba(255,255,255,0) 72%)',
+            'radial-gradient(ellipse 75% 52% at 50% 16%, rgba(248,231,201,0.92) 0%, rgba(248,231,201,0) 72%)',
         }}
       />
       <div
@@ -33,7 +36,7 @@ const Hero = () => {
           position: 'absolute',
           inset: 0,
           background:
-            'linear-gradient(to bottom, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 30%, rgba(255,255,255,0) 62%, rgba(255,255,255,0.5) 100%)',
+            'linear-gradient(to bottom, rgba(248,231,201,0.5) 0%, rgba(248,231,201,0) 30%, rgba(248,231,201,0) 62%, rgba(248,231,201,0.6) 100%)',
         }}
       />
       <div
@@ -44,7 +47,7 @@ const Hero = () => {
           transform: 'translateX(-50%)',
           width: '1000px',
           height: '720px',
-          background: 'radial-gradient(ellipse at 50% 30%, rgba(55,48,163,0.05) 0%, transparent 68%)',
+          background: `radial-gradient(ellipse at 50% 30%, ${hexToRgba(INDIGO, 0.08)} 0%, transparent 68%)`,
           pointerEvents: 'none',
         }}
       />
@@ -101,7 +104,7 @@ const Hero = () => {
             </Link>
           </motion.div>
           <motion.div
-            whileHover={{ scale: 1.04, backgroundColor: 'rgba(255,255,255,0.85)' }}
+            whileHover={{ scale: 1.04, backgroundColor: 'rgba(255,253,247,0.92)' }}
             whileTap={{ scale: 0.97 }}
             style={{ display: 'inline-flex', borderRadius: '9px' }}
           >
@@ -131,14 +134,14 @@ const Hero = () => {
                 fontFamily: FONT,
                 fontSize: '18px',
                 fontWeight: 700,
-                letterSpacing: '0.02em',
-                color: 'rgba(31,31,31,0.5)',
+                letterSpacing: '-0.01em',
+                color: INK_55,
                 transition: 'color 0.25s ease',
                 cursor: 'default',
                 whiteSpace: 'nowrap',
               }}
               onMouseEnter={(event) => { event.currentTarget.style.color = INK }}
-              onMouseLeave={(event) => { event.currentTarget.style.color = 'rgba(31,31,31,0.5)' }}
+              onMouseLeave={(event) => { event.currentTarget.style.color = INK_55 }}
             >
               {name}
             </span>

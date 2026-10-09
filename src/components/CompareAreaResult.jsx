@@ -1,17 +1,17 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import { FONT, INK, INK_40, INK_55, INK_70, bodyText, card, sectionHeadline } from '../theme'
+import { FONT, INK, INK_55, INK_70, PEACH, VIOLET, bodyText, card, hexToRgba, sectionHeadline } from '../theme'
 import Attribution from './Attribution'
 import RatingBadge from './RatingBadge'
 
 const chipStyle = {
   padding: '6px 12px',
   borderRadius: '999px',
-  background: 'rgba(255,255,255,0.8)',
-  border: '1px solid rgba(31,31,31,0.08)',
+  background: hexToRgba(PEACH, 0.5),
+  border: '1px solid rgba(58,12,163,0.12)',
   fontFamily: FONT,
   fontSize: '12px',
-  fontWeight: 500,
+  fontWeight: 600,
   color: INK_70,
 }
 
@@ -59,13 +59,13 @@ const CompareAreaResult = ({ result }) => {
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
-          style={{ ...card, padding: '28px 24px', textAlign: 'center', border: '2px solid #1a1a1a' }}
+          style={{ ...card, padding: '28px 24px', textAlign: 'center', border: `2px solid ${VIOLET}` }}
         >
           <p
             style={{
               fontFamily: FONT,
               fontSize: '11px',
-              fontWeight: 600,
+              fontWeight: 700,
               letterSpacing: '0.14em',
               textTransform: 'uppercase',
               color: INK_55,
@@ -138,10 +138,10 @@ const CompareAreaResult = ({ result }) => {
                     width: '30px',
                     height: '30px',
                     borderRadius: '10px',
-                    background: 'rgba(31,31,31,0.06)',
+                    background: hexToRgba(PEACH, 0.6),
                     fontFamily: FONT,
                     fontSize: '12.5px',
-                    fontWeight: 600,
+                    fontWeight: 700,
                     color: INK,
                   }}
                 >
@@ -149,13 +149,13 @@ const CompareAreaResult = ({ result }) => {
                 </span>
                 <span className="sr-only">{`Rank ${entry.rank} of ${result.ranking.length}`}</span>
                 <div style={{ flex: '1 1 220px', minWidth: '200px' }}>
-                  <h3 style={{ fontFamily: FONT, fontSize: '15px', fontWeight: 600, color: INK }}>{entry.place.name}</h3>
+                  <h3 style={{ fontFamily: FONT, fontSize: '15px', fontWeight: 700, color: INK }}>{entry.place.name}</h3>
                   <p style={{ ...bodyText, marginTop: '4px', fontSize: '12.5px' }}>
                     {entry.highlights.join(' | ')}
                   </p>
                 </div>
                 <span style={{ display: 'inline-flex', alignItems: 'baseline', gap: '6px' }}>
-                  <span style={{ fontFamily: FONT, fontSize: '20px', fontWeight: 600, color: INK }}>
+                  <span style={{ fontFamily: FONT, fontSize: '20px', fontWeight: 800, color: INK }}>
                     {entry.score.total}
                   </span>
                   <span style={{ fontFamily: FONT, fontSize: '11.5px', color: INK_55 }}>/ 100</span>

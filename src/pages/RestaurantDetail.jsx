@@ -1,18 +1,21 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Link, useLocation, useParams } from 'react-router-dom'
-import { getDishes, getLiveStatus, getRestaurant, menuQueryFor, resolvePhoto } from '../lib/api'
+import { getDishes, getLiveStatus, getRestaurant, getReviews, menuQueryFor, resolvePhoto } from '../lib/api'
 import {
   FONT,
+  GREEN,
   INK,
   INK_40,
   INK_55,
   INK_70,
   INK_72,
+  PEACH,
   bodyText,
   card,
   eyebrowPill,
   heroHeadline,
+  hexToRgba,
   primaryButton,
   secondaryButton,
   sectionHeadline,
@@ -34,15 +37,15 @@ const iconChip = {
   width: '36px',
   height: '36px',
   borderRadius: '11px',
-  background: 'rgba(31,31,31,0.06)',
-  border: '1px solid rgba(31,31,31,0.05)',
+  background: hexToRgba(PEACH, 0.6),
+  border: '1px solid rgba(58,12,163,0.1)',
   color: INK,
   fontSize: '15px',
 }
 
-const cardTitle = { fontFamily: FONT, fontSize: '15px', fontWeight: 600, letterSpacing: '-0.01em', color: INK }
+const cardTitle = { fontFamily: FONT, fontSize: '15px', fontWeight: 700, letterSpacing: '-0.02em', color: INK }
 
-const factLabel = { fontFamily: FONT, fontSize: '12px', fontWeight: 500, color: INK_55 }
+const factLabel = { fontFamily: FONT, fontSize: '12px', fontWeight: 600, color: INK_55 }
 const factValue = { margin: '2px 0 0', fontFamily: FONT, fontSize: '13.5px', fontWeight: 500, color: INK }
 
 const tagChip = {
@@ -51,11 +54,11 @@ const tagChip = {
   gap: '7px',
   padding: '6px 13px',
   borderRadius: '999px',
-  background: 'rgba(255,255,255,0.78)',
-  border: '1px solid rgba(31,31,31,0.08)',
+  background: hexToRgba(PEACH, 0.5),
+  border: '1px solid rgba(58,12,163,0.12)',
   fontFamily: FONT,
   fontSize: '12.5px',
-  fontWeight: 500,
+  fontWeight: 600,
   color: INK_72,
 }
 
@@ -65,13 +68,13 @@ const backLinkStyle = {
   gap: '8px',
   padding: '8px 16px',
   borderRadius: '999px',
-  background: 'rgba(255,255,255,0.6)',
-  border: '1px solid rgba(255,255,255,0.7)',
+  background: 'rgba(255,253,247,0.72)',
+  border: '1px solid rgba(58,12,163,0.16)',
   backdropFilter: 'blur(8px)',
   WebkitBackdropFilter: 'blur(8px)',
   fontFamily: FONT,
   fontSize: '12.5px',
-  fontWeight: 500,
+  fontWeight: 600,
   color: INK_72,
   textDecoration: 'none',
 }
@@ -109,6 +112,11 @@ const RestaurantDetail = () => {
   const [menuItems, setMenuItems] = useState([])
   const [menuState, setMenuState] = useState('idle')
   const [menuProblem, setMenuProblem] = useState(null)
+  // OpenStreetMap has no reviews, so written reviews arrive from the configured
+  // reviews provider (none, and we say so plainly).
+  const [providerReviews, setProviderReviews] = useState(null)
+  const [reviewsState, setReviewsState] = useState('idle')
+  const [reviewsNote, setReviewsNote] = useState('')
 
   useEffect(() => {
     let cancelled = false
@@ -153,6 +161,43 @@ const RestaurantDetail = () => {
       cancelled = true
     }
   }, [id, statePlace])
+
+  useEffect(() => {
+    if (!place || state !== 'ready') return undefined
+    if (source !== 'osm') return undefined
+    if (place.reviews?.length) return undefined
+    // Wait for the status check, then skip the request entirely when no reviews
+    // provider is configured - no point asking for something we know is absent.
+    if (!live) return undefined
+    if (!live.reviews) {
+      setReviewsState('unavailable')
+      return undefined
+    }
+
+    let cancelled = false
+    setReviewsState('loading')
+    setReviewsNote('')
+    getReviews({
+      name: place.name,
+      city: place.areaHint ?? '',
+      lat: place.location?.lat ?? null,
+      lng: place.location?.lng ?? null,
+    })
+      .then((payload) => {
+        if (cancelled) return
+        setProviderReviews(payload)
+        setReviewsState(payload.reviews?.length ? 'ready' : 'empty')
+      })
+      .catch((error) => {
+        if (cancelled) return
+        setReviewsState(error.status === 501 ? 'unavailable' : 'error')
+        setReviewsNote(error.hint || error.message)
+      })
+
+    return () => {
+      cancelled = true
+    }
+  }, [place, state, source, live])
 
   useEffect(() => {
     if (!place || state !== 'ready') return undefined
@@ -212,13 +257,12 @@ const RestaurantDetail = () => {
   }
 
   const isLive = source === 'google'
-  const heroImage = isLive
-    ? place.photos?.length
-      ? resolvePhoto(place.photos[0], 1600)
-      : null
-    : place.image ?? null
+  // Photos arrive from Google (proxied) and from Wikimedia Commons (direct
+  // URLs), so both sources feed the hero and the gallery.
+  const hasPhotos = Boolean(place.photos?.length)
+  const heroImage = hasPhotos ? resolvePhoto(place.photos[0], 1600) : (place.image ?? null)
 
-  const galleryImages = isLive
+  const galleryImages = hasPhotos
     ? (place.photos ?? [])
         .slice(1, 7)
         .map((photo, index) => ({ src: resolvePhoto(photo, 900), alt: `Photo ${index + 2} of ${place.name}`, credit: photo.credit, pageUrl: photo.pageUrl }))
@@ -226,6 +270,21 @@ const RestaurantDetail = () => {
 
   const menuQuery = menuQueryFor(place)
   const menuReady = menuState === 'ready' && menuItems.length > 0
+
+  // Prefer reviews that came with the place itself; fall back to the provider.
+  const shownReviews = place.reviews?.length ? place.reviews : (providerReviews?.reviews ?? [])
+  const shownReviewCount = place.reviewCount ?? providerReviews?.reviewCount ?? null
+  const reviewNote = isLive
+    ? ''
+    : source === 'sample'
+      ? 'This is a bundled sample entry, so only the short review snippets from data.json are shown.'
+      : reviewsState === 'loading'
+        ? `Looking up written reviews for ${place.name}...`
+        : reviewsState === 'unavailable'
+          ? 'OpenStreetMap carries no review data. Add a YELP_API_KEY to .env and restart the dev server to pull real written reviews for mapped venues.'
+          : reviewsState === 'error'
+            ? reviewsNote || 'The reviews provider could not be reached just now.'
+            : `No written reviews were found for ${place.name} yet.`
 
   return (
     <div style={{ position: 'relative', zIndex: 10, maxWidth: '1100px', margin: '0 auto', padding: '124px 24px 88px' }}>
@@ -246,8 +305,8 @@ const RestaurantDetail = () => {
             marginTop: '18px',
             borderRadius: '24px',
             overflow: 'hidden',
-            background: 'rgba(31,31,31,0.05)',
-            boxShadow: '0 18px 44px rgba(0,0,0,0.16)',
+            background: hexToRgba(PEACH, 0.3),
+            boxShadow: '0 18px 44px rgba(58,12,163,0.2)',
           }}
         >
           <img
@@ -270,7 +329,7 @@ const RestaurantDetail = () => {
                 position: 'absolute',
                 bottom: '18px',
                 left: '18px',
-                background: 'rgba(255,255,255,0.9)',
+                background: 'rgba(255,253,247,0.94)',
                 color: INK,
               }}
             >
@@ -287,7 +346,10 @@ const RestaurantDetail = () => {
         style={{ marginTop: '26px' }}
       >
         <h1 style={{ ...heroHeadline, maxWidth: '880px' }}>{place.name}</h1>
-        <RatingBadge rating={place.rating} reviewCount={place.reviewCount} />
+        <RatingBadge
+          rating={place.rating ?? providerReviews?.rating ?? null}
+          reviewCount={place.reviewCount ?? providerReviews?.reviewCount ?? null}
+        />
         {place.address ? (
           <p
             style={{
@@ -304,11 +366,17 @@ const RestaurantDetail = () => {
           </p>
         ) : null}
         <p style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginTop: '16px' }}>
-          <span style={tagChip}>{isLive ? 'Live Google data' : 'Sample data'}</span>
-          {place.openNow === true ? <span style={tagChip}>Open now</span> : null}
+          <span style={tagChip}>
+            {isLive ? 'Live Google data' : source === 'osm' ? 'Live OpenStreetMap data' : 'Sample data'}
+          </span>
+          {place.openNow === true ? (
+            <span style={{ ...tagChip, background: hexToRgba(GREEN, 0.12), borderColor: hexToRgba(GREEN, 0.28), color: GREEN }}>
+              Open now
+            </span>
+          ) : null}
           {place.priceLabel ? <span style={tagChip}>{place.priceLabel}</span> : null}
           {place.businessStatus === 'CLOSED_PERMANENTLY' ? (
-            <span style={{ ...tagChip, color: '#8a1f1f' }}>Permanently closed</span>
+            <span style={{ ...tagChip, color: '#9b1c1c' }}>Permanently closed</span>
           ) : null}
         </p>
       </motion.header>
@@ -331,13 +399,17 @@ const RestaurantDetail = () => {
             <div>
               <dt style={factLabel}>Rating</dt>
               <dd style={factValue}>
-                {typeof place.rating === 'number' ? `${place.rating.toFixed(1)} / 5` : 'Not listed'}
+                {typeof (place.rating ?? providerReviews?.rating) === 'number'
+                  ? `${(place.rating ?? providerReviews.rating).toFixed(1)} / 5`
+                  : 'Not listed'}
               </dd>
             </div>
             <div>
               <dt style={factLabel}>Reviews</dt>
               <dd style={factValue}>
-                {typeof place.reviewCount === 'number' ? formatCount(place.reviewCount) : 'Not listed'}
+                {typeof (place.reviewCount ?? providerReviews?.reviewCount) === 'number'
+                  ? formatCount(place.reviewCount ?? providerReviews.reviewCount)
+                  : 'Not listed'}
               </dd>
             </div>
             <div>
@@ -382,10 +454,9 @@ const RestaurantDetail = () => {
           </div>
           <p style={{ ...bodyText, marginTop: '16px', fontSize: '13.5px' }}>
             {place.address || 'Address not listed.'}
-          </p>
-          {place.googleMapsUri ? (
+          </p>            {place.googleMapsUri ? (
             <a href={place.googleMapsUri} target="_blank" rel="noreferrer" style={smallLink}>
-              <span aria-hidden="true">Open in Google Maps</span>
+              <span aria-hidden="true">{isLive ? 'Open in Google Maps' : 'View on OpenStreetMap'}</span>
               <i className="ri-external-link-line" aria-hidden="true" style={{ fontSize: '13px' }} />
             </a>
           ) : null}
@@ -419,18 +490,24 @@ const RestaurantDetail = () => {
       ) : null}
 
       <ReviewsList
-        reviews={place.reviews ?? []}
+        reviews={shownReviews}
         placeName={place.name}
-        reviewCount={place.reviewCount}
-        note={isLive ? '' : 'This is a bundled sample entry, so only the short review snippets from data.json are shown.'}
+        reviewCount={shownReviewCount}
+        note={reviewNote}
       />
 
       <MenuSection items={menuItems} state={menuState} query={menuQuery} problem={menuProblem} />
 
       <PhotoGallery
         images={galleryImages}
-        title={isLive ? 'More photos' : 'On the plate'}
-        hint={isLive ? (place.photos?.length ? '' : 'Google returned no photos for this place yet.') : ''}
+        title={hasPhotos ? 'More photos' : 'On the plate'}
+        hint={
+          hasPhotos
+            ? ''
+            : source === 'osm'
+              ? 'No Wikimedia Commons photo has been geotagged here yet.'
+              : ''
+        }
       />
 
       <div
@@ -453,7 +530,13 @@ const RestaurantDetail = () => {
         </div>
       </div>
 
-      <Attribution google={isLive} osm={!isLive} meals={menuReady} />
+      <Attribution
+        google={isLive}
+        osm={source === 'osm'}
+        sample={source === 'sample'}
+        meals={menuReady}
+        yelp={Boolean(providerReviews?.reviews?.length)}
+      />
     </div>
   )
 }

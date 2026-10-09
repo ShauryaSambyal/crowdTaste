@@ -1,4 +1,4 @@
-import { FONT, INK, INK_55 } from '../theme'
+import { FONT, INDIGO, INK_55, YELLOW } from '../theme'
 
 const formatCount = (value) => new Intl.NumberFormat('en-IN').format(Number(value) || 0)
 
@@ -7,13 +7,16 @@ const RatingBadge = ({ rating, reviewCount = null, style = null }) => {
     return (
       <p
         style={{
-          display: 'flex',
+          display: 'inline-flex',
           alignItems: 'center',
           gap: '6px',
-          marginTop: '6px',
+          marginTop: '8px',
+          padding: '4px 11px',
+          borderRadius: '999px',
+          background: 'rgba(255,214,165,0.55)',
           fontFamily: FONT,
           fontSize: '12.5px',
-          fontWeight: 500,
+          fontWeight: 600,
           color: INK_55,
           ...style,
         }}
@@ -30,18 +33,22 @@ const RatingBadge = ({ rating, reviewCount = null, style = null }) => {
   return (
     <p
       style={{
-        display: 'flex',
+        display: 'inline-flex',
         alignItems: 'center',
         gap: '6px',
-        marginTop: '6px',
+        marginTop: '8px',
+        padding: '4px 12px',
+        borderRadius: '999px',
+        background: YELLOW,
+        border: '1px solid rgba(58,12,163,0.12)',
         fontFamily: FONT,
         fontSize: '13px',
-        fontWeight: 600,
-        color: INK,
+        fontWeight: 700,
+        color: INDIGO,
         ...style,
       }}
     >
-      <i className="ri-star-fill" aria-hidden="true" style={{ color: '#1a1a1a' }} />
+      <i className="ri-star-fill" aria-hidden="true" style={{ fontSize: '13px' }} />
       <span aria-hidden="true">
         {rounded}
         {hasCount ? ` | ${formatCount(reviewCount)} reviews` : ''}
