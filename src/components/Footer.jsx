@@ -48,7 +48,7 @@ const Footer = () => {
       <div className="mx-auto px-6 pb-8" style={{ maxWidth: '1100px' }}>          <p style={{ fontFamily: FONT, fontSize: '12px', fontWeight: 400, color: INK_55 }}>
           {'(c) '}
           {new Date().getFullYear()} CrowdTaste. Venues, hours and photos by OpenStreetMap and Wikimedia Commons,
-          dish photos by TheMealDB.
+          ratings and review excerpts quoted from the review sites and forums that publish them, dish photos by TheMealDB.
         </p>
       </div>
     </footer>

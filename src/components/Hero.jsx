@@ -22,13 +22,13 @@ const Hero = () => {
       className="hero-shell"
       style={{ position: 'relative', width: '100%', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}
     >
-      {/* Bright misty wash over the dot grid - stands in for the reference video */}
+      {/* Bright misty wash over the yellow surface - stands in for the reference video */}
       <div
         style={{
           position: 'absolute',
           inset: 0,
           background:
-            'radial-gradient(ellipse 75% 52% at 50% 16%, rgba(248,231,201,0.92) 0%, rgba(248,231,201,0) 72%)',
+            'radial-gradient(ellipse 75% 52% at 50% 16%, rgba(255,253,247,0.9) 0%, rgba(255,253,247,0) 72%)',
         }}
       />
       <div
@@ -36,7 +36,7 @@ const Hero = () => {
           position: 'absolute',
           inset: 0,
           background:
-            'linear-gradient(to bottom, rgba(248,231,201,0.5) 0%, rgba(248,231,201,0) 30%, rgba(248,231,201,0) 62%, rgba(248,231,201,0.6) 100%)',
+            'linear-gradient(to bottom, rgba(255,253,247,0.45) 0%, rgba(255,253,247,0) 30%, rgba(255,253,247,0) 62%, rgba(255,253,247,0.55) 100%)',
         }}
       />
       <div

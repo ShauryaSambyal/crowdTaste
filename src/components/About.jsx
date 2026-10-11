@@ -23,7 +23,7 @@ const values = [
   {
     icon: 'ri-database-2-line',
     title: 'Open by default',
-    copy: 'Search, nearby, hours, photos and Compare all run on live OpenStreetMap data - no keys, no signup, no card.',
+    copy: 'Search, nearby, hours, photos and Compare all run on live OpenStreetMap data - no keys, no signup, no card. Ratings and reviews are gathered from public sources the same way.',
   },
   {
     icon: 'ri-map-pin-user-line',
@@ -69,11 +69,25 @@ const providerList = [
     cost: 'Free for development and education. Photo credit goes to TheMealDB on every gallery.',
   },
   {
-    id: 'yelp',
+    id: 'web',
     icon: 'ri-chat-quote-line',
+    title: 'Public review sites (built in)',
+    provides:
+      'A published rating and quoted review excerpts for any venue, each one labelled with the site it came from and linked back to the original page. Nothing is generated; if a place has no coverage anywhere, the card says so.',
+    signup: 'https://html.duckduckgo.com/html/',
+    signupLabel: 'See the search endpoint',
+    steps: [
+      'Nothing to do - ratings and review excerpts are already switched on.',
+      'Throttled and cached for 30 minutes so the public search stays happy.',
+    ],
+    cost: 'Free. Review sites own their ratings and review text, so every card credits its source.',
+  },
+  {
+    id: 'yelp',
+    icon: 'ri-star-line',
     title: 'Yelp Fusion (optional)',
     provides:
-      'Written diner reviews, a rating and a review count for venues that come from OpenStreetMap. This is the only way mapped venues get review text, because OpenStreetMap has none.',
+      'Licensed Yelp review text and rating, used instead of quoted excerpts when a venue matches a Yelp listing. Without it the built-in public review sources still fill the card.',
     keyName: 'YELP_API_KEY',
     signup: 'https://docs.developer.yelp.com/docs/places-intro',
     signupLabel: 'Create a Yelp app',
@@ -82,7 +96,7 @@ const providerList = [
       'Paste the key into .env as YELP_API_KEY and restart npm run dev.',
       'A venue card then matches its listing and shows up to three review excerpts.',
     ],
-    cost: 'Yelp ended its free tier in 2024, so a Yelp plan is required. Foursquare tips and ratings are paid too - the app stays honest and shows no review text until a key is set.',
+    cost: 'Yelp ended its free tier in 2024, so a Yelp plan is required. Foursquare tips and ratings are paid too. Nothing here is locked behind either - the keyless sources cover every venue.',
   },
   {
     id: 'google',
@@ -114,7 +128,7 @@ const codeChip = {
 
 const About = () => {
   const stats = [
-    { value: '0', label: 'keys or signups needed for live venues, hours and photos' },
+    { value: '0', label: 'keys or signups needed for live venues, hours, photos, ratings and reviews' },
     { value: '20', label: 'places ranked per area in Compare' },
     { value: String(sampleCount), label: 'sample entries for the offline fallback' },
   ]
@@ -284,8 +298,8 @@ const About = () => {
         </div>
 
         <p style={{ ...bodyText, marginTop: '20px', textAlign: 'center', fontSize: '12.5px', color: INK_70 }}>
-          Want ratings too? One optional Google Places key - demo keys need no card - adds them. Until then every
-          verdict says plainly what it is and is not ranking.
+          Ratings and reviews work without any of these keys. The optional keys only change which source answers, and
+          every verdict still says plainly what it is and is not ranking.
         </p>
       </section>
 

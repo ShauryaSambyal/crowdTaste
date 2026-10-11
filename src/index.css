@@ -19,8 +19,8 @@
     font-optical-sizing: auto;
     font-weight: 500;
     color: #3A0CA3;
-    background-color: #F8E7C9;
-    /* Warm dot-grid in indigo over the cream surface. */
+    background-color: #FFF275;
+    /* Indigo dot-grid over the yellow surface. */
     background-image: radial-gradient(rgba(58, 12, 163, 0.12) 1.1px, transparent 1.1px);
     background-size: 24px 24px;
     overflow-x: hidden;

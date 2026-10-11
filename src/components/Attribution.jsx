@@ -11,7 +11,15 @@ const linkStyle = {
 // contributors (ODbL) wherever Places-style data is shown, TheMealDB needs a
 // mention wherever dish photos appear, and Google requires "Powered by Google"
 // for Places data. The app shows exactly the set it is using.
-const Attribution = ({ osm = false, meals = false, google = false, yelp = false, sample = false, align = 'center' }) => {
+const Attribution = ({
+  osm = false,
+  meals = false,
+  google = false,
+  yelp = false,
+  web = false,
+  sample = false,
+  align = 'center',
+}) => {
   const blocks = []
   if (sample) {
     blocks.push({
@@ -43,6 +51,14 @@ const Attribution = ({ osm = false, meals = false, google = false, yelp = false,
       label: 'Reviews',
       linkText: 'Powered by Yelp',
       href: 'https://www.yelp.com/',
+    })
+  }
+  if (web) {
+    blocks.push({
+      id: 'web',
+      label: 'Ratings and reviews',
+      linkText: 'quoted from public review sites',
+      href: 'https://html.duckduckgo.com/html/',
     })
   }
   if (meals) {

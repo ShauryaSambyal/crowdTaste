@@ -4,9 +4,12 @@
 //   INDIGO  #3A0CA3  deep indigo  - headings and body ink
 //   VIOLET  #6A00F4  vivid violet - primary actions, links, focus
 //   GREEN   #064E3B  deep green   - success, "open now", rating accents
-//   YELLOW  #FFF275  bright yellow- highlight, stars, active chips
-//   CREAM   #F8E7C9  warm cream   - page surface
-//   PEACH   #FFD6A5  soft peach   - secondary surfaces and gradients
+//   YELLOW  #FFF275  bright yellow- page surface
+//   CREAM   #F8E7C9  warm cream   - inset surfaces, quiet pills
+//   PEACH   #FFD6A5  soft peach   - highlight chips and rating pills
+//
+// The page sits on YELLOW, so every chip and pill that needs to stand out from
+// the surface is built from PEACH or CREAM instead: two yellows would merge.
 //
 // Typography is Bricolage Grotesque everywhere, with weights chosen per
 // role: 800 display, 700 headlines, 600 buttons and subheads, 500 body,
@@ -63,7 +66,7 @@ export const eyebrowPill = {
   gap: '7px',
   padding: '5px 13px',
   borderRadius: '999px',
-  ...frost('rgba(255,242,117,0.55)', 'rgba(58,12,163,0.14)', 8),
+  ...frost(hexToRgba(PEACH, 0.88), 'rgba(58,12,163,0.16)', 8),
   fontFamily: FONT,
   fontSize: '11px',
   fontWeight: 600,

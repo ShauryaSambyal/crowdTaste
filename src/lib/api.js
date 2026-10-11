@@ -58,11 +58,20 @@ export const nearbyRestaurants = async ({ lat, lng, radius = 1200, cuisine = '',
   return { source: payload.source ?? 'osm', results: payload.results ?? [] }
 }
 
-// Written reviews for a mapped venue. OpenStreetMap has none, so this needs a
-// configured reviews provider; the thrown ApiError carries a readable hint when
-// there is not one.
-export const getReviews = async ({ name, city = '', address = '', lat = null, lng = null, limit = 3 } = {}) =>
+// Ratings and review excerpts for a mapped venue. OpenStreetMap has neither, so
+// the server looks them up: Yelp when a key is configured, otherwise the keyless
+// web provider that quotes the review sites and forums which publish them.
+export const getReviews = async ({ name, city = '', address = '', lat = null, lng = null, limit = 4 } = {}) =>
   request('/api/live/reviews', { name, city, address, lat, lng, limit })
+
+// Ratings for result cards, keyed by venue name. Best effort and bounded: the
+// server caps how many names one call may carry.
+export const getRatings = async (names = [], city = '') => {
+  const wanted = names.map((name) => String(name ?? '').trim()).filter(Boolean).slice(0, 6)
+  if (wanted.length === 0) return {}
+  const payload = await request('/api/live/ratings', { names: wanted.join('|'), city })
+  return payload.ratings ?? {}
+}
 
 export const searchRestaurants = async (query) => {
   try {

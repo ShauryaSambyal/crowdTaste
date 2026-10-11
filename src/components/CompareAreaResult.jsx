@@ -32,7 +32,7 @@ const methodNote = (result) => {
       heading: 'How this open-data ranking works',
       lines: (result.method.basis ?? []).map((line) => `Listings are scored on ${line.toLowerCase()}.`),
       footer:
-        'OpenStreetMap has no diner ratings, so taste itself is not ranked here. Paste a Google Places key in .env for a rating-based leaderboard.',
+        'OpenStreetMap has no diner ratings, so taste itself is not ranked here. A Google Places key or the review-site ratings on each card give a rating-based leaderboard instead.',
     }
   }
   return {

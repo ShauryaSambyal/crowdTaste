@@ -10,6 +10,7 @@ import { LiveDataError, createPlacesClient, hasGoogleKey } from './placesClient.
 import { createOsmProvider, OsmError } from './osmProvider.js'
 import { createMealsProvider } from './mealsProvider.js'
 import { createReviewsProvider, hasYelpKey } from './reviewsProvider.js'
+import { createWebReviewsProvider } from './webReviewsProvider.js'
 import { compareArea, comparePair } from './compare.js'
 import { keylessAreaCompare, keylessPairCompare } from './keylessRank.js'
 
@@ -58,10 +59,13 @@ export default function liveDataPlugin(env = {}) {
   const osm = createOsmProvider({ timeoutMs, nominatimEmail })
   const meals = createMealsProvider({ timeoutMs })
   const reviews = createReviewsProvider({ apiKey: env.YELP_API_KEY ?? '', timeoutMs })
+  const webReviews = createWebReviewsProvider({ timeoutMs })
 
-  // Which source can actually answer for written reviews. Google-sourced venues
-  // carry their own reviews; Yelp fills them in for mapped (OSM) venues.
-  const reviewsSource = hasYelpKey(env.YELP_API_KEY) ? 'yelp' : null
+  // Ratings and reviews now always have somewhere to come from: Google-sourced
+  // venues carry their own, Yelp fills in mapped venues when a key is present,
+  // and the keyless web provider covers everything else by quoting the review
+  // sites and forums that already publish ratings and review text.
+  const reviewsSource = hasYelpKey(env.YELP_API_KEY) ? 'yelp' : 'web'
 
   const status = {
     osm: true,
@@ -171,8 +175,19 @@ export default function liveDataPlugin(env = {}) {
           theMealDB: 'https://www.themealdb.com/api.php',
           googlePlaces: 'https://developers.google.com/maps/documentation/places/web-service/op-overview',
           yelp: 'https://docs.developer.yelp.com/docs/places-intro',
+          webReviews: 'https://html.duckduckgo.com/html/',
         },
-        endpoints: ['/search', '/nearby', '/place/:id', '/photo', '/dishes', '/reviews', '/compare', '/compare/area'],
+        endpoints: [
+          '/search',
+          '/nearby',
+          '/place/:id',
+          '/photo',
+          '/dishes',
+          '/reviews',
+          '/ratings',
+          '/compare',
+          '/compare/area',
+        ],
       })
     }
 
@@ -197,23 +212,41 @@ export default function liveDataPlugin(env = {}) {
       if (name.length < 2) {
         throw new LiveDataError('A venue name is required to look up reviews.', { status: 400 })
       }
-      if (reviewsSource !== 'yelp') {
-        throw new LiveDataError('No reviews provider is configured.', {
-          status: 501,
-          hint: 'OpenStreetMap has no review data. Add YELP_API_KEY to .env and restart the dev server to pull real written reviews for mapped venues.',
-        })
+      const query = {
+        name,
+        city: (params.get('city') ?? '').trim(),
+        address: (params.get('address') ?? '').trim(),
+        lat: params.get('lat') ? Number(params.get('lat')) : null,
+        lng: params.get('lng') ? Number(params.get('lng')) : null,
       }
-      const outcome = await reviews.lookup(
-        {
-          name,
-          city: (params.get('city') ?? '').trim(),
-          address: (params.get('address') ?? '').trim(),
-          lat: params.get('lat') ? Number(params.get('lat')) : null,
-          lng: params.get('lng') ? Number(params.get('lng')) : null,
-        },
-        { limit: params.get('limit') ?? 3 },
-      )
-      return sendJson(res, 200, outcome)
+      const limit = Math.max(Number(params.get('limit')) || 4, 4)
+
+      // Yelp first when a key exists: its review text is licensed for display.
+      let yelp = null
+      if (reviewsSource === 'yelp') {
+        try {
+          yelp = await reviews.lookup(query, { limit })
+        } catch (error) {
+          console.error('[live-data] yelp reviews failed, falling back to the web:', error?.message ?? error)
+        }
+      }
+
+      // Keyless path, and the safety net when Yelp has nothing for this venue:
+      // published ratings plus excerpts from the sites that host the reviews.
+      // A failure here is the caller's to see - there is no further fallback.
+      const web = await webReviews.lookup(query, { limit })
+      if (!yelp?.matched) return sendJson(res, 200, web)
+
+      return sendJson(res, 200, {
+        ...web,
+        source: yelp.reviews.length > 0 ? 'yelp' : web.source,
+        rating: yelp.rating ?? web.rating,
+        ratingSource: yelp.rating !== null ? 'Yelp' : web.ratingSource,
+        ratingSourceUrl: yelp.url ?? web.ratingSourceUrl,
+        reviewCount: yelp.reviewCount ?? web.reviewCount,
+        reviews: yelp.reviews.length > 0 ? yelp.reviews : web.reviews,
+        notice: yelp.reviews.length > 0 ? null : web.notice,
+      })
     }
 
     if (pathname === '/search') {
@@ -225,6 +258,27 @@ export default function liveDataPlugin(env = {}) {
       }
       const outcome = await osm.searchPlaces({ query, limit })
       return sendJson(res, 200, { source: 'osm', query, results: outcome.results, notice: outcome.notice })
+    }
+
+    // Ratings for result cards. Bounded to a handful of names per call so a
+    // search page can never become a burst against the public search endpoint;
+    // the provider serialises and caches these on its side.
+    if (pathname === '/ratings') {
+      const names = (params.get('names') ?? '')
+        .split('|')
+        .map((value) => value.trim())
+        .filter((value) => value.length > 1)
+        .slice(0, 6)
+      if (names.length === 0) {
+        throw new LiveDataError('At least one venue name is required.', { status: 400 })
+      }
+      const city = (params.get('city') ?? '').trim()
+      const entries = await Promise.all(names.map(async (name) => [name, await webReviews.ratingFor({ name, city })]))
+      const ratings = {}
+      for (const [name, value] of entries) {
+        if (value?.rating !== null && value?.rating !== undefined) ratings[name] = value
+      }
+      return sendJson(res, 200, { source: 'web', ratings })
     }
 
     if (pathname.startsWith('/place/')) {

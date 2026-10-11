@@ -4,7 +4,9 @@ Restaurant discovery for Bengaluru: live venues, realtime opening hours, real ph
 tool that scores two restaurants head to head - or ranks every restaurant in an area.
 
 It runs with **no API keys at all**: venues, opening hours, contact details and photos come from OpenStreetMap,
-Nominatim, Overpass and Wikimedia Commons, dish photos from TheMealDB. One optional key adds written reviews.
+Nominatim, Overpass and Wikimedia Commons, dish photos from TheMealDB, and ratings and review excerpts are gathered
+from the public review sites and forums that publish them. One optional key upgrades the reviews to licensed Yelp
+text.
 
 ## Quick start
 
@@ -12,9 +14,9 @@ Nominatim, Overpass and Wikimedia Commons, dish photos from TheMealDB. One optio
 2. `npm run dev` and open the printed local URL - that is the whole setup; nothing is required in `.env`
 3. Optionally copy `.env.example` to `.env` and add keys (see [Get the API keys](#get-the-api-keys))
 
-With no keys you get live OpenStreetMap venues, realtime open/closed, distance-ranked Nearby results, photos and
-Compare. The bundled list of 118 Bengaluru restaurants in `src/data.json` remains as an offline fallback when the
-public map services cannot be reached.
+With no keys you get live OpenStreetMap venues, realtime open/closed, distance-ranked Nearby results, photos,
+ratings, review excerpts and Compare. The bundled list of 118 Bengaluru restaurants in `src/data.json` remains as an
+offline fallback when the public map services cannot be reached.
 
 ## Get the API keys
 
@@ -37,17 +39,18 @@ so an IP restriction to your machine also works and keeps browser users from eve
 SKU - India-specific pricing has higher allowances. Ratings, review counts and written reviews sit in the higher tiers,
 so a search that returns ratings costs more than a bare lookup. Check the current pricing before heavy use.
 
-### 2. Yelp Fusion - `YELP_API_KEY` (written reviews)
+### 2. Yelp Fusion - `YELP_API_KEY` (optional, nothing is locked behind it)
 
-OpenStreetMap carries **no review data at all**, so this is the only route to written reviews for mapped venues.
+Ratings and reviews already work without any key - see [How reviews work](#how-reviews-work). This key only changes
+*whose* review text is shown, from quoted public sources to licensed Yelp excerpts for mapped venues.
 
 1. Open https://docs.developer.yelp.com/docs/places-intro and create an app in the developer portal.
 2. Copy the API key and paste it into `.env` as `YELP_API_KEY=...`, then restart `npm run dev`.
 3. A venue card then matches its Yelp listing and shows up to three review excerpts, a rating and a review count.
+   When Yelp has nothing for that venue, the keyless web provider fills the gap, so no card is ever blank.
 
 **Cost warning, checked 2026:** Yelp ended its free tier in 2024, and Foursquare's tips, ratings and photos sit
-behind paid *Premium* endpoints. There is currently no free-of-charge reviews source, so the app shows no review
-text rather than inventing any.
+behind paid *Premium* endpoints. Nothing in this app is gated behind either.
 
 ## How the keys are wired in
 
@@ -57,13 +60,13 @@ preview server:
 
 | Endpoint | Purpose | Provider |
 | --- | --- | --- |
-| `GET /api/live/status` | which sources are configured (UI notices) | - |
+| `GET /api/live/status` | which sources are configured | - |
 | `GET /api/live/search?q=&limit=` | restaurant search by name, dish, cuisine or area | Nominatim (or Google) |
 | `GET /api/live/nearby?lat=&lng=&radius=&cuisine=` | **realtime**: what is around a position, closest first | Nominatim bounded viewbox, Overpass `around` as fallback |
 | `GET /api/live/place/:id` | full details incl. hours, contacts and photos | Nominatim + Overpass (or Google) |
 | `GET /api/live/photo?name=&w=` | streams Google photo media (hides the key) | Places Photo Media |
 | `GET /api/live/dishes?q=&number=` | dish photos + ingredients for a cuisine | TheMealDB |
-| `GET /api/live/reviews?name=&city=&lat=&lng=` | written reviews for a mapped venue | Yelp Fusion (501 without a key) |
+| `GET /api/live/reviews?name=&city=&lat=&lng=` | published rating, review count and review excerpts | Yelp Fusion when keyed, otherwise the keyless web provider |
 | `GET /api/live/compare?left=&right=&city=` | head-to-head score, verdict and reasons | local scoring |
 | `GET /api/live/compare/area?location=&cuisine=` | area leaderboard with the best pick | local scoring |
 
@@ -71,8 +74,9 @@ Caching keeps the request count sane: search and nearby 5 minutes, place details
 dish photos 1 hour. Nominatim is throttled to one request per second as its usage policy requires.
 
 Files: `server/osmProvider.js` (OpenStreetMap: search, nearby, details, photos), `server/openingHours.js` (the
-`opening_hours` parser behind realtime open/closed), `server/reviewsProvider.js` (Yelp), `server/placesClient.js`
-(optional Google), `server/mealsProvider.js` (TheMealDB), `server/compare.js` and `server/keylessRank.js` (scoring),
+`opening_hours` parser behind realtime open/closed), `server/reviewsProvider.js` (Yelp),
+`server/webReviewsProvider.js` (keyless ratings and review excerpts), `server/placesClient.js` (optional Google),
+`server/mealsProvider.js` (TheMealDB), `server/compare.js` and `server/keylessRank.js` (scoring),
 `server/liveDataPlugin.js` (routes). To swap providers, change the client files only.
 
 ### Realtime behaviour
@@ -86,6 +90,33 @@ Files: `server/osmProvider.js` (OpenStreetMap: search, nearby, details, photos),
   and remember whichever answered. Mirror lists must stay planet-wide - regional extracts silently return zero rows.
 - **Resilience**: the nearby lookup uses a reliable bounded Nominatim viewbox first and only falls back to Overpass
   `around` when it finds nothing. The geolocation promise has a hard watchdog, so the UI never sticks on "Locating".
+
+## How reviews work
+
+OpenStreetMap carries no ratings or reviews of its own, and every mainstream review API charges for them, so the
+keyless path in `server/webReviewsProvider.js` reads what the web already publishes:
+
+- **The rating** is one real figure from one named platform - `4.3/5, Tripadvisor` - never an average the app
+  invented. Only recognised review platforms are eligible to supply it, so a blog repeating someone else's number
+  cannot become the headline rating under the blog's name.
+- **The excerpts** are quoted verbatim from Reddit threads, review sites and food blogs, each one linked back to the
+  page it came from. The venue's own website is excluded: that is marketing copy, not a review.
+- **Nothing is generated.** If a venue has no coverage anywhere, the card says so instead of inventing a rating.
+
+Getting from a restaurant name to that data needs real filtering, because names collide: "Toit" is also an ESP32
+programming language, "Truffles" is also a chocolate, and "TOIT Training LLC" is a different company on Trustpilot.
+A result has to match the venue's name *and* be anchored to food, either by naming the area or by talking about eating
+and drinking. Listing pages, forum chrome and filter tables are dropped, and at most two excerpts per source are shown
+so one chatty blog cannot fill the page.
+
+The source is DuckDuckGo's no-JavaScript HTML endpoint - the one search surface that answers a plain GET with no key,
+token or card. It deserves the same care as any other rate-limited public service: requests are serialised with a gap
+between them, results are cached for 30 minutes, and a throttle returns an empty card plus a notice rather than a wall
+of errors.
+
+`node web-reviews-smoke.mjs` proves the parsers (rating, review count, redirect unwrapping, boilerplate and
+homonym filtering) and runs three live lookups against real network data. `node reviews-smoke.mjs` covers the Yelp
+path against a stubbed API.
 
 ## How Compare scores restaurants
 
@@ -127,7 +158,8 @@ switch is a native radio group, and verdict metrics are a real `table`. Keyboard
 
 OpenStreetMap asks to credit its contributors (ODbL) wherever its data is shown, Wikimedia Commons images carry
 per-file attribution, TheMealDB asks for a mention, Google requires "Powered by Google", and Yelp requires
-"Powered by Yelp" for its content. `src/components/Attribution.jsx` renders exactly the set in use on each screen.
+"Powered by Yelp" for its content. Quoted ratings and review excerpts keep their own source name and link on every
+card. `src/components/Attribution.jsx` renders exactly the set in use on each screen.
 
 ## Tech stack
 
@@ -140,9 +172,12 @@ Design tokens live in `src/theme.js` and are the single source of truth for the 
 | `INDIGO` | `#3A0CA3` | headings and body ink |
 | `VIOLET` | `#6A00F4` | primary actions, links, focus ring |
 | `GREEN` | `#064E3B` | success, "open now" |
-| `YELLOW` | `#FFF275` | highlight, rating pills, eyebrow chips |
-| `CREAM` | `#F8E7C9` | page surface |
-| `PEACH` | `#FFD6A5` | secondary surfaces, borders, hover rows |
+| `YELLOW` | `#FFF275` | page surface |
+| `CREAM` | `#F8E7C9` | inset surfaces, quiet pills |
+| `PEACH` | `#FFD6A5` | highlight chips, rating pills, borders, hover rows |
+
+The page sits on `YELLOW`, so anything that has to stand out from the surface - the eyebrow chips, the rating badges -
+is built from `PEACH` or `CREAM` instead. Two yellows would merge.
 
 Everything is set in **Bricolage Grotesque** (variable, 200-800) with weights chosen per role: 800 display, 700
 headlines, 600 buttons and subheads, 500 body, 400 fine print. The sort menu is a custom accessible listbox

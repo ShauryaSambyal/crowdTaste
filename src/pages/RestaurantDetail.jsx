@@ -23,7 +23,6 @@ import {
 import Attribution from '../components/Attribution'
 import MenuSection from '../components/MenuSection'
 import PhotoGallery from '../components/PhotoGallery'
-import ProviderNotice from '../components/ProviderNotice'
 import RatingBadge from '../components/RatingBadge'
 import ReviewsList from '../components/ReviewsList'
 
@@ -112,8 +111,9 @@ const RestaurantDetail = () => {
   const [menuItems, setMenuItems] = useState([])
   const [menuState, setMenuState] = useState('idle')
   const [menuProblem, setMenuProblem] = useState(null)
-  // OpenStreetMap has no reviews, so written reviews arrive from the configured
-  // reviews provider (none, and we say so plainly).
+  // OpenStreetMap has no ratings or reviews of its own, so both arrive from the
+  // reviews lookup: Yelp when a key is configured, otherwise the keyless web
+  // provider that quotes the sites which already publish them.
   const [providerReviews, setProviderReviews] = useState(null)
   const [reviewsState, setReviewsState] = useState('idle')
   const [reviewsNote, setReviewsNote] = useState('')
@@ -166,8 +166,8 @@ const RestaurantDetail = () => {
     if (!place || state !== 'ready') return undefined
     if (source !== 'osm') return undefined
     if (place.reviews?.length) return undefined
-    // Wait for the status check, then skip the request entirely when no reviews
-    // provider is configured - no point asking for something we know is absent.
+    // Wait for the status check so the request only goes out once we know a
+    // reviews source is available.
     if (!live) return undefined
     if (!live.reviews) {
       setReviewsState('unavailable')
@@ -271,20 +271,23 @@ const RestaurantDetail = () => {
   const menuQuery = menuQueryFor(place)
   const menuReady = menuState === 'ready' && menuItems.length > 0
 
-  // Prefer reviews that came with the place itself; fall back to the provider.
+  // Prefer reviews that came with the place itself; fall back to the lookup.
   const shownReviews = place.reviews?.length ? place.reviews : (providerReviews?.reviews ?? [])
   const shownReviewCount = place.reviewCount ?? providerReviews?.reviewCount ?? null
+  const shownRating = place.rating ?? providerReviews?.rating ?? null
+  const ratingSource = isLive ? 'Google' : (providerReviews?.ratingSource ?? null)
+  const reviewLinks = providerReviews?.links ?? []
   const reviewNote = isLive
     ? ''
     : source === 'sample'
       ? 'This is a bundled sample entry, so only the short review snippets from data.json are shown.'
       : reviewsState === 'loading'
-        ? `Looking up written reviews for ${place.name}...`
+        ? `Looking up ratings and reviews for ${place.name}...`
         : reviewsState === 'unavailable'
-          ? 'OpenStreetMap carries no review data. Add a YELP_API_KEY to .env and restart the dev server to pull real written reviews for mapped venues.'
+          ? `Nothing was found online for ${place.name} yet.`
           : reviewsState === 'error'
-            ? reviewsNote || 'The reviews provider could not be reached just now.'
-            : `No written reviews were found for ${place.name} yet.`
+            ? reviewsNote || 'The review sources could not be reached just now.'
+            : providerReviews?.notice || `Nothing was found online for ${place.name} yet.`
 
   return (
     <div style={{ position: 'relative', zIndex: 10, maxWidth: '1100px', margin: '0 auto', padding: '124px 24px 88px' }}>
@@ -349,6 +352,7 @@ const RestaurantDetail = () => {
         <RatingBadge
           rating={place.rating ?? providerReviews?.rating ?? null}
           reviewCount={place.reviewCount ?? providerReviews?.reviewCount ?? null}
+          source={isLive ? 'Google' : (providerReviews?.ratingSource ?? null)}
         />
         {place.address ? (
           <p
@@ -381,12 +385,6 @@ const RestaurantDetail = () => {
         </p>
       </motion.header>
 
-      {!isLive ? (
-        <div style={{ marginTop: '26px' }}>
-          <ProviderNotice live={live} />
-        </div>
-      ) : null}
-
       <div className="grid gap-5 md:grid-cols-2" style={{ marginTop: '26px' }}>
         <div style={{ ...card, padding: '24px' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
@@ -399,17 +397,15 @@ const RestaurantDetail = () => {
             <div>
               <dt style={factLabel}>Rating</dt>
               <dd style={factValue}>
-                {typeof (place.rating ?? providerReviews?.rating) === 'number'
-                  ? `${(place.rating ?? providerReviews.rating).toFixed(1)} / 5`
+                {typeof shownRating === 'number'
+                  ? `${shownRating.toFixed(1)} / 5${ratingSource ? ` - ${ratingSource}` : ''}`
                   : 'Not listed'}
               </dd>
             </div>
             <div>
               <dt style={factLabel}>Reviews</dt>
               <dd style={factValue}>
-                {typeof (place.reviewCount ?? providerReviews?.reviewCount) === 'number'
-                  ? formatCount(place.reviewCount ?? providerReviews.reviewCount)
-                  : 'Not listed'}
+                {typeof shownReviewCount === 'number' ? formatCount(shownReviewCount) : 'Not listed'}
               </dd>
             </div>
             <div>
@@ -493,6 +489,8 @@ const RestaurantDetail = () => {
         reviews={shownReviews}
         placeName={place.name}
         reviewCount={shownReviewCount}
+        ratingSource={ratingSource}
+        links={reviewLinks}
         note={reviewNote}
       />
 
@@ -535,7 +533,8 @@ const RestaurantDetail = () => {
         osm={source === 'osm'}
         sample={source === 'sample'}
         meals={menuReady}
-        yelp={Boolean(providerReviews?.reviews?.length)}
+        yelp={providerReviews?.source === 'yelp'}
+        web={providerReviews?.source === 'web'}
       />
     </div>
   )

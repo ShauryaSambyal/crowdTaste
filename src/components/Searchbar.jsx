@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Link, useSearchParams } from 'react-router-dom'
-import { getLiveStatus, nearbyRestaurants, resolvePhoto, searchRestaurants } from '../lib/api'
+import { getLiveStatus, getRatings, nearbyRestaurants, resolvePhoto, searchRestaurants } from '../lib/api'
 import { currentPosition, distanceKm, formatDistance } from '../lib/geo'
 import { FILTERS, SORTS, applyFilters, applySort } from '../lib/searchOptions'
 import {
@@ -213,6 +213,46 @@ const Searchbar = () => {
     }
   }, [setSearchParams])
 
+  // Result cards carry a rating too. Bounded to the first few results so a search
+  // page never turns into a burst against the public search endpoint, and skipped
+  // once a result set has already been enriched.
+  const enriched = useRef('')
+  useEffect(() => {
+    if (state !== 'ready' || results.length === 0) return undefined
+    const key = results.map((place) => place.id).join('|')
+    if (enriched.current === key) return undefined
+    const targets = results.filter((place) => place.source !== 'google' && typeof place.rating !== 'number')
+    if (targets.length === 0) {
+      enriched.current = key
+      return undefined
+    }
+    enriched.current = key
+
+    const city = /\bin\s+([^,]+)$/i.exec(query)?.[1]?.trim() ?? ''
+    let cancelled = false
+    getRatings(
+      targets.slice(0, 6).map((place) => place.name),
+      city,
+    )
+      .then((found) => {
+        if (cancelled || Object.keys(found).length === 0) return
+        setResults((current) =>
+          current.map((place) => {
+            const hit = found[place.name]
+            if (!hit || typeof place.rating === 'number') return place
+            return { ...place, rating: hit.rating, reviewCount: hit.reviewCount ?? null, ratingSource: hit.source }
+          }),
+        )
+      })
+      .catch(() => {
+        // A card without a rating is still a useful result; nothing to report.
+      })
+
+    return () => {
+      cancelled = true
+    }
+  }, [state, results, query])
+
   // Deep links survive a refresh: /discover?q=... searches, /discover?near=1
   // re-runs the nearby lookup (the browser asks for location again if needed).
   useEffect(() => {
@@ -414,8 +454,8 @@ const Searchbar = () => {
       {live ? (
         <p style={{ ...methodHint, justifyContent: 'center', marginTop: '14px' }} role="note">
           <i className="ri-map-pin-line" aria-hidden="true" />
-          Live venues, opening hours and photos come from OpenStreetMap (no key needed).
-          {live.reviews ? ' Reviews are on.' : ' Written reviews need a YELP_API_KEY.'}
+          Live venues, opening hours and photos come from OpenStreetMap. Ratings and reviews are gathered from the
+          review sites and forums that publish them.
         </p>
       ) : null}
 
@@ -584,7 +624,13 @@ const Searchbar = () => {
                             {place.name}
                           </h4>
 
-                          <RatingBadge rating={place.rating} reviewCount={place.reviewCount} />
+                          {typeof place.rating === 'number' ? (
+                            <RatingBadge
+                              rating={place.rating}
+                              reviewCount={place.reviewCount}
+                              source={place.ratingSource ?? null}
+                            />
+                          ) : null}
 
                           {place.address ? (
                             <p style={{ ...methodHint, marginTop: '6px' }}>

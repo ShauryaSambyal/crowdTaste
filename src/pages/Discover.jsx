@@ -5,7 +5,6 @@ import { sampleCount } from '../lib/sampleData'
 const visibleSourceCount = 'OpenStreetMap + TheMealDB'
 import { bodyText, eyebrowPill, heroHeadline } from '../theme'
 import Attribution from '../components/Attribution'
-import ProviderNotice from '../components/ProviderNotice'
 import Searchbar from '../components/Searchbar'
 
 const Discover = () => {
@@ -50,14 +49,11 @@ const Discover = () => {
           transition={{ duration: 0.7, delay: 0.16, ease: 'easeOut' }}
           style={{ ...bodyText, maxWidth: '540px', margin: '16px auto 0' }}
         >
-          Names, addresses, opening hours, contact details and photos come from OpenStreetMap. Filter on what the map knows about each place
-          and what it costs, then open a card for the details.
+          Names, addresses, opening hours, contact details and photos come from OpenStreetMap. Ratings and reviews are
+          gathered from the review sites and forums that publish them. Filter on what the map knows about each place and
+          what it costs, then open a card for the details.
         </motion.p>
       </header>
-
-      <div style={{ marginTop: '34px' }}>
-        <ProviderNotice live={live} />
-      </div>
 
       <Searchbar />
 
@@ -71,10 +67,10 @@ const Discover = () => {
       >
         {live?.google
           ? 'Live Google ratings and reviews are switched on.'
-          : `Open map data serves ${visibleSourceCount} search and Compare requests; bundled sample holds ${sampleCount} Bengaluru restaurants for the truly offline moments.`}
+          : `Open map data serves ${visibleSourceCount} search and Compare requests; ratings and reviews come from public review sites, with ${sampleCount} bundled Bengaluru restaurants for the truly offline moments.`}
       </p>
 
-      <Attribution osm google={live?.google === true} />
+      <Attribution osm google={live?.google === true} web />
     </div>
   )
 }

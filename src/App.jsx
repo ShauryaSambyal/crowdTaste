@@ -76,7 +76,7 @@ const App = () => {
     <BrowserRouter>
       <ScrollToHash />
 
-      {/* Warm misty wash over the dot grid, keeping the indigo ink legible */}
+      {/* Bright misty wash over the yellow surface, keeping the indigo ink legible */}
       <div
         aria-hidden="true"
         style={{
@@ -85,7 +85,7 @@ const App = () => {
           zIndex: 0,
           pointerEvents: 'none',
           background: [
-            'radial-gradient(ellipse 80% 55% at 50% -10%, rgba(248,231,201,0.95) 0%, rgba(248,231,201,0.45) 45%, rgba(248,231,201,0) 74%)',
+            'radial-gradient(ellipse 80% 55% at 50% -10%, rgba(255,253,247,0.92) 0%, rgba(255,253,247,0.38) 45%, rgba(255,253,247,0) 74%)',
             `radial-gradient(ellipse 60% 45% at 92% 104%, ${hexToRgba(INDIGO, 0.07)} 0%, ${hexToRgba(INDIGO, 0)} 70%)`,
             `radial-gradient(ellipse 50% 40% at 4% 72%, ${hexToRgba(GREEN, 0.06)} 0%, ${hexToRgba(GREEN, 0)} 70%)`,
           ].join(', '),

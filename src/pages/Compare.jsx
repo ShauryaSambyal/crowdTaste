@@ -1,11 +1,10 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import { useSearchParams } from 'react-router-dom'
-import { compareBestInArea, compareRestaurantPair, getLiveStatus } from '../lib/api'
+import { compareBestInArea, compareRestaurantPair } from '../lib/api'
 import { FONT, INK, INK_55, INK_70, PILL_SHADOW, PEACH, bodyText, card, eyebrowPill, frost, heroHeadline, hexToRgba, primaryButton } from '../theme'
 import CompareAreaResult from '../components/CompareAreaResult'
 import ComparePairResult from '../components/ComparePairResult'
-import ProviderNotice from '../components/ProviderNotice'
 
 const MODES = [
   { id: 'pair', label: 'Two restaurants' },
@@ -55,22 +54,7 @@ const Compare = () => {
   const [state, setState] = useState('idle')
   const [result, setResult] = useState(null)
   const [problem, setProblem] = useState(null)
-  const [live, setLive] = useState(null)
   const ranFromUrl = useRef(false)
-
-  useEffect(() => {
-    let cancelled = false
-    getLiveStatus()
-      .then((status) => {
-        if (!cancelled) setLive(status)
-      })
-      .catch(() => {
-        if (!cancelled) setLive({ google: false, spoonacular: false, mode: 'sample' })
-      })
-    return () => {
-      cancelled = true
-    }
-  }, [])
 
   const runComparison = useCallback(async (nextMode, values) => {
     setState('loading')
@@ -170,10 +154,6 @@ const Compare = () => {
           and price.
         </motion.p>
       </header>
-
-      <div style={{ marginTop: '34px' }}>
-        <ProviderNotice live={live} />
-      </div>
 
       <fieldset style={{ margin: 0, padding: 0, border: 'none' }}>
         <legend className="sr-only">Choose a comparison mode</legend>
